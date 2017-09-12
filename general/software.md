@@ -6,26 +6,38 @@ libreoffice
 
 ## Internet
 firefox
+
 thunderbird
+
 citrix (keine Paketquelle)
 
 ## Media
 gimp
+
 inkscape
+
 blender
+
 vlc
+
 audacity
 
 ## Programmierung
 git
+
 texlive-full
+
 texstudio
+
 openjdk-9-jdk
+
 python3
+
 colordiff
 
 ## Utility
 keyutils
+
 cifs-utils
 
 ## Ideen
