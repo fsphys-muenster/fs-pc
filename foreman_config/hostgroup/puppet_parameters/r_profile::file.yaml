@@ -1,0 +1,10 @@
+--- # files
+# keytab für Active Directory-Join
+- krb_keytab:
+  path: /tmp/.kr922392
+  owner: root
+  group: root
+  mode: '0400'
+  source: puppet:///modules/profile/nwzjoin/keytab
+  notify: Class['::realmd::join::keytab']
+

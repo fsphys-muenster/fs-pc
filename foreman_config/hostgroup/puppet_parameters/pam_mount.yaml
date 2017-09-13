@@ -1,0 +1,240 @@
+--- # pam_mount_conf_validate_cmd
+# Befehl muss angepasst werden, da der standardmäßig eingestellte Befehl in
+# kb/pam_mount v0.0.5 den falschen Pfad (--path) angibt
+/usr/bin/xmllint --nonet --noout --loaddtd --valid --path /usr/share/xml/pam_mount/dtd/ %
+
+--- # pam_mount_debug_enable
+false
+
+--- # pam_mount_mkmountpoint_enable
+true
+
+--- # pam_mount_mkmountpoint_remove
+true
+
+--- # volume_definitions
+# Mount des Gruppenlaufwerks der Fachschaft
+- user: "*"
+  fstype: cifs
+  options:
+  - nodev
+  - nosuid
+  server: nwz.wwu.de
+  path: dfs/Group/Fachbereiche/Physik/p0fsphys/
+  mountpoint: "/home/%(DOMAIN_USER)/Fachschaftsplatte/"
+# Mount der persönlichen Netzlaufwerke der Nutzer.
+# Der einzige Weg, mit Home-Netzlaufwerken umzugehen, die jeweils
+# Unterverzeichnisse eines Verzeichnisses sind, das nach dem Anfangsbuchstaben
+# des Nutzernamens benannt ist, scheint zu sein, die Konfiguration zum Mount
+# für alle 26 Buchstaben zu kopieren.
+- extended_user_control: <user regex="yes">^a.*</user>
+  fstype: cifs
+  options:
+  - nodev
+  - nosuid
+  server: nwz.wwu.de
+  path: dfs/home/a/%(DOMAIN_USER)/
+  mountpoint: "/home/%(DOMAIN_USER)/IVV4 I-Laufwerk/"
+- extended_user_control: <user regex="yes">^b.*</user>
+  fstype: cifs
+  options:
+  - nodev
+  - nosuid
+  server: nwz.wwu.de
+  path: dfs/home/b/%(DOMAIN_USER)/
+  mountpoint: "/home/%(DOMAIN_USER)/IVV4 I-Laufwerk/"
+- extended_user_control: <user regex="yes">^c.*</user>
+  fstype: cifs
+  options:
+  - nodev
+  - nosuid
+  server: nwz.wwu.de
+  path: dfs/home/c/%(DOMAIN_USER)/
+  mountpoint: "/home/%(DOMAIN_USER)/IVV4 I-Laufwerk/"
+- extended_user_control: <user regex="yes">^d.*</user>
+  fstype: cifs
+  options:
+  - nodev
+  - nosuid
+  server: nwz.wwu.de
+  path: dfs/home/d/%(DOMAIN_USER)/
+  mountpoint: "/home/%(DOMAIN_USER)/IVV4 I-Laufwerk/"
+- extended_user_control: <user regex="yes">^e.*</user>
+  fstype: cifs
+  options:
+  - nodev
+  - nosuid
+  server: nwz.wwu.de
+  path: dfs/home/e/%(DOMAIN_USER)/
+  mountpoint: "/home/%(DOMAIN_USER)/IVV4 I-Laufwerk/"
+- extended_user_control: <user regex="yes">^f.*</user>
+  fstype: cifs
+  options:
+  - nodev
+  - nosuid
+  server: nwz.wwu.de
+  path: dfs/home/f/%(DOMAIN_USER)/
+  mountpoint: "/home/%(DOMAIN_USER)/IVV4 I-Laufwerk/"
+- extended_user_control: <user regex="yes">^g.*</user>
+  fstype: cifs
+  options:
+  - nodev
+  - nosuid
+  server: nwz.wwu.de
+  path: dfs/home/g/%(DOMAIN_USER)/
+  mountpoint: "/home/%(DOMAIN_USER)/IVV4 I-Laufwerk/"
+- extended_user_control: <user regex="yes">^h.*</user>
+  fstype: cifs
+  options:
+  - nodev
+  - nosuid
+  server: nwz.wwu.de
+  path: dfs/home/h/%(DOMAIN_USER)/
+  mountpoint: "/home/%(DOMAIN_USER)/IVV4 I-Laufwerk/"
+- extended_user_control: <user regex="yes">^i.*</user>
+  fstype: cifs
+  options:
+  - nodev
+  - nosuid
+  server: nwz.wwu.de
+  path: dfs/home/i/%(DOMAIN_USER)/
+  mountpoint: "/home/%(DOMAIN_USER)/IVV4 I-Laufwerk/"
+- extended_user_control: <user regex="yes">^j.*</user>
+  fstype: cifs
+  options:
+  - nodev
+  - nosuid
+  server: nwz.wwu.de
+  path: dfs/home/j/%(DOMAIN_USER)/
+  mountpoint: "/home/%(DOMAIN_USER)/IVV4 I-Laufwerk/"
+- extended_user_control: <user regex="yes">^k.*</user>
+  fstype: cifs
+  options:
+  - nodev
+  - nosuid
+  server: nwz.wwu.de
+  path: dfs/home/k/%(DOMAIN_USER)/
+  mountpoint: "/home/%(DOMAIN_USER)/IVV4 I-Laufwerk/"
+- extended_user_control: <user regex="yes">^l.*</user>
+  fstype: cifs
+  options:
+  - nodev
+  - nosuid
+  server: nwz.wwu.de
+  path: dfs/home/l/%(DOMAIN_USER)/
+  mountpoint: "/home/%(DOMAIN_USER)/IVV4 I-Laufwerk/"
+- extended_user_control: <user regex="yes">^m.*</user>
+  fstype: cifs
+  options:
+  - nodev
+  - nosuid
+  server: nwz.wwu.de
+  path: dfs/home/m/%(DOMAIN_USER)/
+  mountpoint: "/home/%(DOMAIN_USER)/IVV4 I-Laufwerk/"
+- extended_user_control: <user regex="yes">^n.*</user>
+  fstype: cifs
+  options:
+  - nodev
+  - nosuid
+  server: nwz.wwu.de
+  path: dfs/home/n/%(DOMAIN_USER)/
+  mountpoint: "/home/%(DOMAIN_USER)/IVV4 I-Laufwerk/"
+- extended_user_control: <user regex="yes">^o.*</user>
+  fstype: cifs
+  options:
+  - nodev
+  - nosuid
+  server: nwz.wwu.de
+  path: dfs/home/o/%(DOMAIN_USER)/
+  mountpoint: "/home/%(DOMAIN_USER)/IVV4 I-Laufwerk/"
+- extended_user_control: <user regex="yes">^p.*</user>
+  fstype: cifs
+  options:
+  - nodev
+  - nosuid
+  server: nwz.wwu.de
+  path: dfs/home/p/%(DOMAIN_USER)/
+  mountpoint: "/home/%(DOMAIN_USER)/IVV4 I-Laufwerk/"
+- extended_user_control: <user regex="yes">^q.*</user>
+  fstype: cifs
+  options:
+  - nodev
+  - nosuid
+  server: nwz.wwu.de
+  path: dfs/home/q/%(DOMAIN_USER)/
+  mountpoint: "/home/%(DOMAIN_USER)/IVV4 I-Laufwerk/"
+# Der reguläre Ausdruck für den Buchstaben „r“ muss modifiziert werden, damit
+# root nicht auch davon erfasst wird.
+- extended_user_control: <user regex="yes">^(?!root$)r.*</user>
+  fstype: cifs
+  options:
+  - nodev
+  - nosuid
+  server: nwz.wwu.de
+  path: dfs/home/r/%(DOMAIN_USER)/
+  mountpoint: "/home/%(DOMAIN_USER)/IVV4 I-Laufwerk/"
+- extended_user_control: <user regex="yes">^s.*</user>
+  fstype: cifs
+  options:
+  - nodev
+  - nosuid
+  server: nwz.wwu.de
+  path: dfs/home/s/%(DOMAIN_USER)/
+  mountpoint: "/home/%(DOMAIN_USER)/IVV4 I-Laufwerk/"
+- extended_user_control: <user regex="yes">^t.*</user>
+  fstype: cifs
+  options:
+  - nodev
+  - nosuid
+  server: nwz.wwu.de
+  path: dfs/home/t/%(DOMAIN_USER)/
+  mountpoint: "/home/%(DOMAIN_USER)/IVV4 I-Laufwerk/"
+- extended_user_control: <user regex="yes">^u.*</user>
+  fstype: cifs
+  options:
+  - nodev
+  - nosuid
+  server: nwz.wwu.de
+  path: dfs/home/u/%(DOMAIN_USER)/
+  mountpoint: "/home/%(DOMAIN_USER)/IVV4 I-Laufwerk/"
+- extended_user_control: <user regex="yes">^v.*</user>
+  fstype: cifs
+  options:
+  - nodev
+  - nosuid
+  server: nwz.wwu.de
+  path: dfs/home/v/%(DOMAIN_USER)/
+  mountpoint: "/home/%(DOMAIN_USER)/IVV4 I-Laufwerk/"
+- extended_user_control: <user regex="yes">^w.*</user>
+  fstype: cifs
+  options:
+  - nodev
+  - nosuid
+  server: nwz.wwu.de
+  path: dfs/home/w/%(DOMAIN_USER)/
+  mountpoint: "/home/%(DOMAIN_USER)/IVV4 I-Laufwerk/"
+- extended_user_control: <user regex="yes">^x.*</user>
+  fstype: cifs
+  options:
+  - nodev
+  - nosuid
+  server: nwz.wwu.de
+  path: dfs/home/x/%(DOMAIN_USER)/
+  mountpoint: "/home/%(DOMAIN_USER)/IVV4 I-Laufwerk/"
+- extended_user_control: <user regex="yes">^y.*</user>
+  fstype: cifs
+  options:
+  - nodev
+  - nosuid
+  server: nwz.wwu.de
+  path: dfs/home/y/%(DOMAIN_USER)/
+  mountpoint: "/home/%(DOMAIN_USER)/IVV4 I-Laufwerk/"
+- extended_user_control: <user regex="yes">^z.*</user>
+  fstype: cifs
+  options:
+  - nodev
+  - nosuid
+  server: nwz.wwu.de
+  path: dfs/home/z/%(DOMAIN_USER)/
+  mountpoint: "/home/%(DOMAIN_USER)/IVV4 I-Laufwerk/"
+
