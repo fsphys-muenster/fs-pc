@@ -4,7 +4,7 @@
 /usr/bin/xmllint --nonet --noout --loaddtd --valid --path /usr/share/xml/pam_mount/dtd/ %
 
 --- # pam_mount_debug_enable
-false
+0
 
 --- # pam_mount_mkmountpoint_enable
 true
