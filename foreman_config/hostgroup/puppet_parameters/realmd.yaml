@@ -20,7 +20,8 @@ domain/nwz.wwu.de:
   ldap_user_search_base: OU=Physik,OU=Fachbereiche,OU=Domain Members,DC=nwz,DC=wwu,DC=de
   ldap_group_search_base: OU=Physik,OU=Fachbereiche,OU=Domain Members,DC=nwz,DC=wwu,DC=de
   simple_allow_groups: p0stud
-  # Without this option, login fails with (4 System Error), for some reason
-  # see https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=859445
+  # Ohne diese Einstellung schlägt der Login aus irgendeinem Grund mit dem
+  # Ergebnis (4 System Error) fehl
+  # S. auch https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=859445
   ad_gpo_access_control: permissive
 

@@ -1,0 +1,8 @@
+--- # sshd_config_challenge_resp_auth
+'no'
+
+--- # sshd_config_print_motd
+# Verhindern, dass die MOTD beim SSH-Login zweimal ausgegeben wird
+# S. auch https://serverfault.com/q/481146/246354
+'no'
+

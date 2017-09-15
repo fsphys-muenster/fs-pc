@@ -1,4 +1,5 @@
 --- # resources
+# Dateien
 file:
   # keytab für Active Directory-Join
   krb_keytab:
@@ -13,6 +14,7 @@ file:
     path: /tmp/icaclient.deb
     source: puppet:///modules/profile/icaclient_13.6.0.10243651_amd64.deb
 
+# Software-Pakete
 package:
   # Citric Receiver via gdebi installieren
   citrix-receiver:
