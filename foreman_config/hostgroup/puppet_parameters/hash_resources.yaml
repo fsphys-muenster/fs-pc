@@ -34,7 +34,9 @@ package:
     ensure: present
     before: Class[pam_mount]
   # keyutils installieren, bevor pam_mount aktiviert wird
-  # keyutils wird benötigt, 
+  # keyutils wird benötigt, um beim Einbinden von CIFS-Dateisystemen
+  # DFS-Umleitungen (z.B. auf //nwz.wwu.de/dfs/) verarbeiten zu können
+  # S. auch https://bugs.launchpad.net/ubuntu/+source/samba/+bug/493565
   keyutils:
     ensure: present
     before: Class[pam_mount]
