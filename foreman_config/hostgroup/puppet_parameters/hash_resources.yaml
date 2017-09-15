@@ -1,0 +1,75 @@
+--- # resources
+file:
+  # keytab für Active Directory-Join
+  krb_keytab:
+    path: /tmp/.kr922392
+    owner: root
+    group: root
+    mode: '0400'
+    source: puppet:///modules/profile/nwzjoin/keytab
+    notify: Class[realmd::join::keytab]
+  # Citrix Receiver als .deb-Paket
+  citrix_receiver_deb:
+    path: /tmp/icaclient.deb
+    source: puppet:///modules/profile/icaclient_13.6.0.10243651_amd64.deb
+
+package:
+  # Citric Receiver via gdebi installieren
+  citrix-receiver:
+    provider: gdebi
+    source: /tmp/icaclient.deb
+  # Pakete zur Installation via APT
+  # Utility
+  # xmllint installieren, bevor pam_mount aktiviert wird
+  # pam_mount verwendet xmllint, um die Konfigurationsdatei pam_mount.conf.xml
+  # zu validieren
+  libxml2-utils:
+    ensure: present
+    before: Class[pam_mount]
+  # cifs-utils installieren, bevor pam_mount aktiviert wird
+  # mount.cifs wird benötigt, um Netzlaufwerke der IVV4 einzubinden
+  cifs-utils:
+    ensure: present
+    before: Class[pam_mount]
+  # keyutils installieren, bevor pam_mount aktiviert wird
+  # keyutils wird benötigt, 
+  keyutils:
+    ensure: present
+    before: Class[pam_mount]
+  # Office
+  libreoffice:
+    ensure: present
+  texlive-full:
+    ensure: present
+  texstudio:
+    ensure: present
+  # Internet
+  firefox:
+    ensure: present
+  thunderbird:
+    ensure: present
+  # Media
+  gimp:
+    ensure: present
+  inkscape:
+    ensure: present
+  blender:
+    ensure: present
+  vlc:
+    ensure: present
+  audacity:
+    ensure: present
+  # Programmierung
+  git:
+    ensure: present
+  python3:
+    ensure: present
+  ipython3:
+    ensure: present
+  default-jdk:
+    ensure: present
+  colordiff:
+    ensure: present
+  wdiff:
+    ensure: present
+

@@ -10,8 +10,10 @@ if [ -z "$path" ]; then
 	path="$path_default"
 fi
 for module in \
+	cpick/gdebi \
+	stbenjam/hash_resources \
+	puppetlabs/motd \
 	kb/pam_mount \
-	geoffwilliams/r_profile \
 	walkamongus/realmd \
 	ghoneycutt/ssh \
 ; do
