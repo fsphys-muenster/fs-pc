@@ -1,7 +1,13 @@
 --- # pam_mount_conf_validate_cmd
 # Befehl muss angepasst werden, da der standardmäßig eingestellte Befehl in
 # kb/pam_mount v0.0.5 den falschen Pfad (--path) angibt
-/usr/bin/xmllint --nonet --noout --loaddtd --valid --path /usr/share/xml/pam_mount/dtd/ %
+#/usr/bin/xmllint --nonet --noout --loaddtd --valid --path /usr/share/xml/pam_mount/dtd/ %
+
+# Validierung muss zur Zeit leider deaktiviert werden, da die Datei
+# pam_mount.conf.xml.dtd von pam_mount nicht mehr das aktuelle Format der
+# Konfigurationsdatei widerspiegelt
+# S. auch https://sourceforge.net/p/pam-mount/bugs/121/
+'true'
 
 --- # pam_mount_debug_enable
 0
