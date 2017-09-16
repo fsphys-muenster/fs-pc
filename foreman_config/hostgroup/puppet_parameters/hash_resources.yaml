@@ -28,11 +28,25 @@ file:
     target: ../Fachschaftsplatte/G01/Fachschaft/Sitzungsprotokolle/Aktuelle Vorlage Protokoll/fs-physik-logo.pdf
   # Konfiguration von Firefox und Thunderbird im Netzlaufwerk ablegen
   /etc/skel/.mozilla:
+    ensure: directory
+  /etc/skel/.mozilla/firefox:
     ensure: link
-    target: ../IVV4_I-Laufwerk/FSPHYS-PC/.mozilla/
+    target: ../IVV4_I-Laufwerk/AppData/Mozilla/Firefox/
   /etc/skel/.thunderbird:
     ensure: link
-    target: ../IVV4_I-Laufwerk/FSPHYS-PC/.thunderbird/
+    target: ../IVV4_I-Laufwerk/AppData/Thunderbird/
+  # Zur Sicherheit einige Ordner in /IVV4_I-Laufwerk/ anlegen, falls das
+  # Einbinden fehlschlägt
+  /etc/skel/IVV4_I-Laufwerk:
+    ensure: directory
+  /etc/skel/IVV4_I-Laufwerk/AppData:
+    ensure: directory
+  /etc/skel/IVV4_I-Laufwerk/AppData/Mozilla:
+    ensure: directory
+  /etc/skel/IVV4_I-Laufwerk/AppData/Mozilla/Firefox:
+    ensure: directory
+  /etc/skel/IVV4_I-Laufwerk/AppData/Thunderbird:
+    ensure: directory
 
 # Software-Pakete
 package:
@@ -89,14 +103,14 @@ package:
   # Programmierung
   git:
     ensure: present
+  colordiff:
+    ensure: present
+  wdiff:
+    ensure: present
   python3:
     ensure: present
   ipython3:
     ensure: present
   default-jdk:
-    ensure: present
-  colordiff:
-    ensure: present
-  wdiff:
     ensure: present
 
