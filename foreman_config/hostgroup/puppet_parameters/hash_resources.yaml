@@ -13,6 +13,26 @@ file:
   citrix_receiver_deb:
     path: /tmp/icaclient.deb
     source: puppet:///modules/profile/icaclient_13.6.0.10243651_amd64.deb
+  # Vorlagen in /etc/skel/ anlegen
+  /etc/skel/Vorlagen:
+    ensure: directory
+  # Vorlage für Sitzungsprotokolle
+  /etc/skel/Vorlagen/JJJJ-MM-TT_protokoll.tex:
+    ensure: link
+    target: ../Fachschaftsplatte/G01/Fachschaft/Sitzungsprotokolle/Aktuelle Vorlage Protokoll/yyyy-mm-dd_protokoll.tex
+  /etc/skel/Vorlagen/fsphys-protokoll.cls:
+    ensure: link
+    target: ../Fachschaftsplatte/G01/Fachschaft/Sitzungsprotokolle/Aktuelle Vorlage Protokoll/fsphys-protokoll.cls
+  /etc/skel/Vorlagen/fs-physik-logo.pdf:
+    ensure: link
+    target: ../Fachschaftsplatte/G01/Fachschaft/Sitzungsprotokolle/Aktuelle Vorlage Protokoll/fs-physik-logo.pdf
+  # Konfiguration von Firefox und Thunderbird im Netzlaufwerk ablegen
+  /etc/skel/.mozilla:
+    ensure: link
+    target: ../IVV4_I-Laufwerk/FSPHYS-PC/.mozilla/
+  /etc/skel/.thunderbird:
+    ensure: link
+    target: ../IVV4_I-Laufwerk/FSPHYS-PC/.thunderbird/
 
 # Software-Pakete
 package:
@@ -40,6 +60,9 @@ package:
   keyutils:
     ensure: present
     before: Class[pam_mount]
+  # Desktop
+  ubuntu-gnome-desktop:
+    ensure: present
   # Office
   libreoffice:
     ensure: present
