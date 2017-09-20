@@ -76,6 +76,45 @@ cron:
     hour: 1
     require: File[/srv/fsphys]
 
+### GNOME-Einstellungen
+gnome::gsettings:
+  # Benachrichtigungen über Software-Updates deaktivieren (Updates werden
+  # automatisch durch das Paket „unattended-upgrades“ installiert)
+  disable-update-notifications:
+    schema: com.ubuntu.update-notifier
+    key: no-show-notifications
+    value: true
+  # Knopf zum Ausloggen anzeigen
+  show-logout:
+    schema: org.gnome.shell
+    key: always-show-log-out
+    value: true
+  # Begrüßungstext auf dem Login-Bildschirm anzeigen
+  login-banner-enable:
+    schema: org.gnome.login-screen
+    key: banner-message-enable
+    value: true
+  login-banner-text:
+    schema: org.gnome.login-screen
+    key: banner-message-text
+    value: "'Willkommen am Fachschafts-PC!'"
+  login-logo:
+    schema: org.gnome.login-screen
+    key: logo
+    value: "'/srv/fsphys/login-screen-logo.png'"
+    require: File[/srv/fsphys]
+  # Desktop-Hintergrundbild
+  desktop-background:
+    schema: org.gnome.desktop.background
+    key: picture-uri
+    value: "'file:///srv/fsphys/desktop-background.jpg'"
+    require: File[/srv/fsphys]
+  # Programme in der Seitenleiste („Dash“/„Favoriten“) der GNOME Shell
+  launcher-apps:
+    schema: org.gnome.shell
+    key: favorite-apps
+    value: "['nautilus.desktop', 'firefox.desktop', 'thunderbird.desktop', 'texstudio.desktop', 'libreoffice-startcenter.desktop', 'yelp.desktop']"
+
 ### Software-Pakete
 package:
   # Citrix Receiver via gdebi installieren
