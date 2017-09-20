@@ -220,6 +220,8 @@ package:
     ensure: present
   thunderbird:
     ensure: present
+  xul-ext-ubufox:
+    ensure: purged
   xul-ext-ublock-origin:
     ensure: present
   enigmail:
