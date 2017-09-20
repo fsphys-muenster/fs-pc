@@ -20,7 +20,7 @@ true
 
 --- # volume_definitions
 # Mount des Gruppenlaufwerks der Fachschaft
-- user: "*"
+- extended_user_control: <user regex="yes">^(?!root$)</user>
   fstype: cifs
   options:
   - nodev

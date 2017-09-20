@@ -22,6 +22,7 @@ for module in \
 ; do
 	puppet module install --target-dir "$path" "$module"
 done
-# Schreiben in die Verzeichnisse durch Mitglieder der Gruppe p2fsphys zulassen
-chmod -R g+w "$path"
+# Berechtigungen setzen
+chgrp -R p2fsphys "$path"
+chmod -R u=rwx,g=rwx,o=rx "$path"
 

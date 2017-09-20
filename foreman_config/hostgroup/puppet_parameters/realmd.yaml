@@ -1,3 +1,21 @@
+--- # domain
+nwz.wwu.de
+
+--- # domain_join_user
+ysmay
+
+--- # krb_keytab
+/tmp/.kr922392
+
+--- # krb_ticket_join
+true
+
+--- # manage_sssd_config
+true
+
+--- # sssd_config_cache_file
+'/var/lib/sss/db/*'
+
 --- # sssd_config
 sssd:
   domains: nwz.wwu.de
@@ -15,7 +33,6 @@ domain/nwz.wwu.de:
   ldap_id_mapping: 'False'
   enumerate: 'False'
   override_homedir: /home/%u
-  homedir_umask: '077'
   ldap_search_base: OU=Physik,OU=Fachbereiche,OU=Domain Members,DC=nwz,DC=wwu,DC=de
   ldap_user_search_base: OU=Physik,OU=Fachbereiche,OU=Domain Members,DC=nwz,DC=wwu,DC=de
   ldap_group_search_base: OU=Physik,OU=Fachbereiche,OU=Domain Members,DC=nwz,DC=wwu,DC=de

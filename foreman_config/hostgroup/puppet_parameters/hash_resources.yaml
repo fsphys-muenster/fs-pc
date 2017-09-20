@@ -1,64 +1,106 @@
 --- # resources
-# Dateien
+### Dateien
 file:
   # keytab für Active Directory-Join
-  krb_keytab:
+  krb-keytab:
     path: /tmp/.kr922392
     owner: root
     group: root
     mode: '0400'
-    source: puppet:///modules/profile/nwzjoin/keytab
+    source: puppet:///modules/fsphys/keytab
     notify: Class[realmd::join::keytab]
   # Citrix Receiver als .deb-Paket
-  citrix_receiver_deb:
+  citrix-receiver-deb:
     path: /tmp/icaclient.deb
-    source: puppet:///modules/profile/icaclient_13.6.0.10243651_amd64.deb
-  # Vorlagen in /etc/skel/ anlegen
-  /etc/skel/Vorlagen:
+    source: puppet:///modules/fsphys/icaclient_13.6.0.10243651_amd64.deb
+  # Vorgabe-Dateien für persönliche Ordner in /etc/skel/ anlegen
+  /etc/skel:
     ensure: directory
-  # Vorlage für Sitzungsprotokolle
-  /etc/skel/Vorlagen/JJJJ-MM-TT_protokoll.tex:
-    ensure: link
-    target: ../Fachschaftsplatte/G01/Fachschaft/Sitzungsprotokolle/Aktuelle Vorlage Protokoll/yyyy-mm-dd_protokoll.tex
-  /etc/skel/Vorlagen/fsphys-protokoll.cls:
-    ensure: link
-    target: ../Fachschaftsplatte/G01/Fachschaft/Sitzungsprotokolle/Aktuelle Vorlage Protokoll/fsphys-protokoll.cls
-  /etc/skel/Vorlagen/fs-physik-logo.pdf:
-    ensure: link
-    target: ../Fachschaftsplatte/G01/Fachschaft/Sitzungsprotokolle/Aktuelle Vorlage Protokoll/fs-physik-logo.pdf
-  # Konfiguration von Firefox und Thunderbird im Netzlaufwerk ablegen
-  /etc/skel/.mozilla:
+    recurse: remote
+    links: manage
+    source: puppet:///modules/fsphys/etc/skel
+  # Ausführen eines Skripts bei jedem Login (/etc/profile.d/)
+  /etc/profile.d/fsphys.sh:
+    source: puppet:///modules/fsphys/etc/profile.d/fsphys.sh
+  # WWU-Schrift (FontFont Meta Office Pro) installieren
+  /usr/local/share/fonts/ff-meta:
     ensure: directory
-  /etc/skel/.mozilla/firefox:
-    ensure: link
-    target: ../IVV4_I-Laufwerk/AppData/Mozilla/Firefox/
-  /etc/skel/.thunderbird:
-    ensure: link
-    target: ../IVV4_I-Laufwerk/AppData/Thunderbird/
-  # Zur Sicherheit einige Ordner in /IVV4_I-Laufwerk/ anlegen, falls das
-  # Einbinden fehlschlägt
-  /etc/skel/IVV4_I-Laufwerk:
+    recurse: remote
+    source: puppet:///modules/fsphys/usr/local/share/fonts/ff-meta
+    notify: Exec[update-font-cache-local]
+  # Globale Firefox-Einstellungen
+  /usr/lib/firefox/distribution:
     ensure: directory
-  /etc/skel/IVV4_I-Laufwerk/AppData:
+    recurse: remote
+    source: puppet:///modules/fsphys/usr/lib/firefox/distribution
+    # Firefox-Konfiguration kann erst angelegt werden, nachdem Firefox
+    # installiert wurde
+    require: Package[firefox]
+  # FSPHYS-spezifische Ressourcen
+  /srv/fsphys:
     ensure: directory
-  /etc/skel/IVV4_I-Laufwerk/AppData/Mozilla:
-    ensure: directory
-  /etc/skel/IVV4_I-Laufwerk/AppData/Mozilla/Firefox:
-    ensure: directory
-  /etc/skel/IVV4_I-Laufwerk/AppData/Thunderbird:
-    ensure: directory
+    recurse: remote
+    source: puppet:///modules/fsphys/srv/fsphys
 
-# Software-Pakete
+# Dummy-Nutzer anlegen um zu verhindern, dass gnome-initial-setup nach der
+# Installation ausgeführt wird
+user:
+  disable-gis:
+    ensure: present
+    managehome: true
+
+### Befehle
+exec:
+  update-font-cache-local:
+    command: fc-cache -f /usr/local/share/fonts/
+    path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+    user: root
+    refreshonly: true
+  # Citrix Receiver via dpkg installieren
+  # Dies muss per „exec“ (statt „package“) durchgeführt werden, damit die
+  # Option
+  # -E (--skip-same-version) angegeben werden kann
+  install-icaclient:
+    command: dpkg -E -i /tmp/icaclient.deb
+    path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+    user: root
+    refreshonly: true
+    subscribe: File[citrix-receiver-deb]
+
+### Periodische Skripte (cron)
+cron:
+  # Gruppe jedes Home-Verzeichnisses einmalig auf p0fsphys ändern
+  homedir-set-group:
+    command: /srv/fsphys/homedir-set-group.sh
+    user: root
+    hour: 1
+    require: File[/srv/fsphys]
+
+### Software-Pakete
 package:
-  # Citric Receiver via gdebi installieren
-  citrix-receiver:
-    provider: gdebi
-    source: /tmp/icaclient.deb
-  # Pakete zur Installation via APT
-  # Utility
+  # Citrix Receiver via gdebi installieren
+  # TODO- Dies sorgt dafür, dass das Paket jedes Mal neu installiert wird, wenn
+  #       Puppet ausgeführt wird (Provider dpkg hat leider dasselbe Problem).
+  #       S. auch
+  #       https://answers.launchpad.net/ubuntu/+source/gdebi/+question/658069
+#  citrix-receiver:
+#    provider: gdebi
+#    source: /tmp/icaclient.deb
+#    require: File[citrix-receiver-deb]
+  ## Pakete zur Installation via APT
+  ## Utility (Kommandozeile)
   # xmllint installieren, bevor pam_mount aktiviert wird
   # pam_mount verwendet xmllint, um die Konfigurationsdatei pam_mount.conf.xml
   # zu validieren
+  # =============
+  # Abhängigkeiten von Citrix Receiver
+  libjavascriptcoregtk-1.0-0:
+    ensure: present
+    before: Exec[install-icaclient]
+  libwebkitgtk-1.0-0:
+    ensure: present
+    before: Exec[install-icaclient]
+  # =============
   libxml2-utils:
     ensure: present
     before: Class[pam_mount]
@@ -74,43 +116,107 @@ package:
   keyutils:
     ensure: present
     before: Class[pam_mount]
-  # Desktop
+  gnupg2:
+    ensure: present
+  curl:
+    ensure: present
+  wget:
+    ensure: present
+  tree:
+    ensure: present
+  unp:
+    ensure: present
+  wine-stable:
+    ensure: present
+  # PDF-Werkzeuge
+  ghostscript:
+    ensure: present
+  pdftk:
+    ensure: present
+  pdf2svg:
+    ensure: present
+  pdfgrep:
+    ensure: present
+  poppler-utils:
+    ensure: present
+  libpodofo-utils:
+    ensure: present
+  imagemagick:
+    ensure: present
+  ## Desktop
   ubuntu-gnome-desktop:
     ensure: present
-  # Office
+  ## Utility (GUI)
+  gnuplot5-qt:
+    ensure: present
+  keepass2:
+    ensure: present
+  virtualbox-qt:
+    ensure: present
+  ## Office
   libreoffice:
     ensure: present
   texlive-full:
     ensure: present
   texstudio:
     ensure: present
-  # Internet
+  lyx:
+    ensure: present
+  gedit-plugins:
+    ensure: present
+  okular:
+    ensure: present
+  pdfchain:
+    ensure: present
+  pdfshuffler:
+    ensure: present
+  scribus:
+    ensure: present
+  ## Internet
   firefox:
+    ensure: present
+  torbrowser-launcher:
+    ensure: present
+  chromium-browser:
     ensure: present
   thunderbird:
     ensure: present
-  # Media
+  xul-ext-ublock-origin:
+    ensure: present
+  enigmail:
+    ensure: present
+  owncloud-client:
+    ensure: present
+  nautilus-owncloud:
+    ensure: present
+  filezilla:
+    ensure: present
+  ## Media
+  vlc:
+    ensure: present
   gimp:
+    ensure: present
+  krita:
     ensure: present
   inkscape:
     ensure: present
   blender:
     ensure: present
-  vlc:
-    ensure: present
   audacity:
     ensure: present
-  # Programmierung
-  git:
+  ## Programmierung
+  git-all:
     ensure: present
   colordiff:
     ensure: present
   wdiff:
     ensure: present
-  python3:
-    ensure: present
   ipython3:
     ensure: present
+  jupyter-notebook:
+    ensure: present
   default-jdk:
+    ensure: present
+  php-cli:
     ensure: present
 
