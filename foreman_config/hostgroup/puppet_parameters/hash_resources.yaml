@@ -25,6 +25,8 @@ file:
   /etc/profile.d/fsphys.sh:
     source: puppet:///modules/fsphys/etc/profile.d/fsphys.sh
   # WWU-Schrift (FontFont Meta Office Pro) installieren
+  # S. auch
+  # https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/desktop_migration_and_administration_guide/configure-fonts
   /usr/local/share/fonts/ff-meta:
     ensure: directory
     recurse: remote

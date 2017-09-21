@@ -38,6 +38,11 @@ true
   options:
   - nodev
   - nosuid
+  # nobrl wird benötigt, damit SQLite-Datenbanken (z.B. von Firefox und
+  # Thunderbird verwendet) auf den I-Laufwerken funktionieren
+  # S. z.B.
+  # https://bugs.launchpad.net/debian/+source/samba/+bug/117730
+  - nobrl
   server: nwz.wwu.de
   path: dfs/home/a/%(DOMAIN_USER)/
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -46,6 +51,7 @@ true
   options:
   - nodev
   - nosuid
+  - nobrl
   server: nwz.wwu.de
   path: dfs/home/b/%(DOMAIN_USER)/
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -54,6 +60,7 @@ true
   options:
   - nodev
   - nosuid
+  - nobrl
   server: nwz.wwu.de
   path: dfs/home/c/%(DOMAIN_USER)/
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -62,6 +69,7 @@ true
   options:
   - nodev
   - nosuid
+  - nobrl
   server: nwz.wwu.de
   path: dfs/home/d/%(DOMAIN_USER)/
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -70,6 +78,7 @@ true
   options:
   - nodev
   - nosuid
+  - nobrl
   server: nwz.wwu.de
   path: dfs/home/e/%(DOMAIN_USER)/
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -78,6 +87,7 @@ true
   options:
   - nodev
   - nosuid
+  - nobrl
   server: nwz.wwu.de
   path: dfs/home/f/%(DOMAIN_USER)/
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -86,6 +96,7 @@ true
   options:
   - nodev
   - nosuid
+  - nobrl
   server: nwz.wwu.de
   path: dfs/home/g/%(DOMAIN_USER)/
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -94,6 +105,7 @@ true
   options:
   - nodev
   - nosuid
+  - nobrl
   server: nwz.wwu.de
   path: dfs/home/h/%(DOMAIN_USER)/
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -102,6 +114,7 @@ true
   options:
   - nodev
   - nosuid
+  - nobrl
   server: nwz.wwu.de
   path: dfs/home/i/%(DOMAIN_USER)/
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -110,6 +123,7 @@ true
   options:
   - nodev
   - nosuid
+  - nobrl
   server: nwz.wwu.de
   path: dfs/home/j/%(DOMAIN_USER)/
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -118,6 +132,7 @@ true
   options:
   - nodev
   - nosuid
+  - nobrl
   server: nwz.wwu.de
   path: dfs/home/k/%(DOMAIN_USER)/
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -126,6 +141,7 @@ true
   options:
   - nodev
   - nosuid
+  - nobrl
   server: nwz.wwu.de
   path: dfs/home/l/%(DOMAIN_USER)/
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -134,6 +150,7 @@ true
   options:
   - nodev
   - nosuid
+  - nobrl
   server: nwz.wwu.de
   path: dfs/home/m/%(DOMAIN_USER)/
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -142,6 +159,7 @@ true
   options:
   - nodev
   - nosuid
+  - nobrl
   server: nwz.wwu.de
   path: dfs/home/n/%(DOMAIN_USER)/
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -150,6 +168,7 @@ true
   options:
   - nodev
   - nosuid
+  - nobrl
   server: nwz.wwu.de
   path: dfs/home/o/%(DOMAIN_USER)/
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -158,6 +177,7 @@ true
   options:
   - nodev
   - nosuid
+  - nobrl
   server: nwz.wwu.de
   path: dfs/home/p/%(DOMAIN_USER)/
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -166,6 +186,7 @@ true
   options:
   - nodev
   - nosuid
+  - nobrl
   server: nwz.wwu.de
   path: dfs/home/q/%(DOMAIN_USER)/
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -176,6 +197,7 @@ true
   options:
   - nodev
   - nosuid
+  - nobrl
   server: nwz.wwu.de
   path: dfs/home/r/%(DOMAIN_USER)/
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -184,6 +206,7 @@ true
   options:
   - nodev
   - nosuid
+  - nobrl
   server: nwz.wwu.de
   path: dfs/home/s/%(DOMAIN_USER)/
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -192,6 +215,7 @@ true
   options:
   - nodev
   - nosuid
+  - nobrl
   server: nwz.wwu.de
   path: dfs/home/t/%(DOMAIN_USER)/
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -200,6 +224,7 @@ true
   options:
   - nodev
   - nosuid
+  - nobrl
   server: nwz.wwu.de
   path: dfs/home/u/%(DOMAIN_USER)/
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -208,6 +233,7 @@ true
   options:
   - nodev
   - nosuid
+  - nobrl
   server: nwz.wwu.de
   path: dfs/home/v/%(DOMAIN_USER)/
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -216,6 +242,7 @@ true
   options:
   - nodev
   - nosuid
+  - nobrl
   server: nwz.wwu.de
   path: dfs/home/w/%(DOMAIN_USER)/
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -224,6 +251,7 @@ true
   options:
   - nodev
   - nosuid
+  - nobrl
   server: nwz.wwu.de
   path: dfs/home/x/%(DOMAIN_USER)/
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -232,6 +260,7 @@ true
   options:
   - nodev
   - nosuid
+  - nobrl
   server: nwz.wwu.de
   path: dfs/home/y/%(DOMAIN_USER)/
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -240,6 +269,7 @@ true
   options:
   - nodev
   - nosuid
+  - nobrl
   server: nwz.wwu.de
   path: dfs/home/z/%(DOMAIN_USER)/
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
