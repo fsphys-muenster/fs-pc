@@ -1,5 +1,5 @@
 <%#
-name: puppet_setup
+name: puppet_setup_p2fsphys
 snippet: true
 model: ProvisioningTemplate
 %>
@@ -12,7 +12,7 @@ if os_family == 'Freebsd'
   freebsd_package = @host.param_true?('enable-puppet4') ? 'puppet4' : 'puppet38'
   etc_path = '/usr/local/etc/puppet'
   bin_path = '/usr/local/bin'
-elsif @host.param_true?('enable-puppetlabs-pc1-repo') || @host.param_true?('enable-puppet4')
+elsif false #@host.param_true?('enable-puppetlabs-pc1-repo') || @host.param_true?('enable-puppet4')
   linux_package = 'puppet-agent'
   etc_path = '/etc/puppetlabs/puppet'
   bin_path = '/opt/puppetlabs/bin'
@@ -26,6 +26,7 @@ end
 <% if os_family == 'Debian' -%>
 apt-get update
 apt-get install -y <%= linux_package %>
+<%= bin_path %>/puppet resource service puppet enable=true # 2017-09-06 Simon May
 <% elsif os_family == 'Freebsd' -%>
 pkg install -y <%= freebsd_package %>
 <% elsif os_family == 'Redhat' -%>
@@ -41,7 +42,7 @@ rpmkeys --import http://yum.puppetlabs.com/RPM-GPG-KEY-puppet
 <% end -%>
 
 cat > <%= etc_path %>/puppet.conf << EOF
-<%= snippet 'puppet.conf' %>
+<%= snippet 'puppet_p2fsphys.conf' %>
 EOF
 
 <% if os_family == 'Redhat' -%>
@@ -55,7 +56,8 @@ puppet_unit=puppet
 <% if os_family == 'Freebsd' -%>
 echo 'puppet_enable="YES"' >>/etc/rc.conf
 <% end -%>
-<% unless @host.param_true?('enable-puppetlabs-pc1-repo') -%>
+<% unless false #@host.param_true?('enable-puppetlabs-pc1-repo') 
+-%>
 <% if os_family == 'Debian' -%>
 if [ -f "/etc/default/puppet" ]
 then

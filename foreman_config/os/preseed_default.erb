@@ -1,10 +1,10 @@
 <%#
-name: Preseed default
+name: Preseed default_p2fsphys
 snippet: false
 model: ProvisioningTemplate
 kind: provision
 oses:
-- Ubuntu
+- Ubuntu_p2fsphys
 %>
 <%
   # safemode renderer does not support unary negation
@@ -16,7 +16,7 @@ oses:
   squeeze_or_older = (@host.operatingsystem.name == 'Debian' && os_major <= 6)
 %>
 # Locale
-d-i debian-installer/locale string <%= @host.params['lang'] || 'en_US' %>
+d-i debian-installer/locale string <%= @host.params['lang'] || 'de_DE.UTF-8' %>
 # country and keyboard settings are automatic. Keep them ...
 # ... for wheezy and newer:
 d-i keyboard-configuration/xkb-keymap seen true
@@ -108,9 +108,10 @@ d-i apt-setup/local<%= repos %>/key string http://keyserver.ubuntu.com/pks/looku
 <% end -%>
 
 # Install minimal task set (see tasksel --task-packages minimal)
-tasksel tasksel/first multiselect minimal, ssh-server, openssh-server
+# tasksel tasksel/first multiselect minimal, ssh-server, openssh-server
+tasksel tasksel/first multiselect standard, ssh-server, openssh-server # 2017-09-07 Simon May
 
-<% if puppet_enabled && !(@host.param_true?('enable-puppetlabs-repo') || @host.param_true?('enable-puppetlabs-pc1-repo')) %>
+<% if puppet_enabled && true #!(@host.param_true?('enable-puppetlabs-repo') || @host.param_true?('enable-puppetlabs-pc1-repo')) %>
 <% puppet_package = 'puppet' -%>
 <% else -%>
 <% puppet_package = '' -%>

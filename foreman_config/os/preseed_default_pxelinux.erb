@@ -1,10 +1,10 @@
 <%#
-name: Preseed default PXELinux
+name: Preseed default PXELinux_p2fsphys
 snippet: false
 model: ProvisioningTemplate
 kind: PXELinux
 oses:
-- Ubuntu
+- Ubuntu_p2fsphys
 %>
 #
 # This file was deployed via '<%= template_name %>' template
@@ -26,9 +26,10 @@ oses:
     options << "auto=true"
     options << "domain=#{@host.domain}"
   else
-    options << 'console-setup/ask_detect=false console-setup/layout=USA console-setup/variant=USA keyboard-configuration/layoutcode=us localechooser/translation/warn-light=true localechooser/translation/warn-severe=true'
+    #options << 'console-setup/ask_detect=false console-setup/layout=USA console-setup/variant=USA keyboard-configuration/layoutcode=us localechooser/translation/warn-light=true localechooser/translation/warn-severe=true'
+    options << 'console-setup/ask_detect=false console-setup/layoutcode=de keyboard-configuration/layoutcode=de localechooser/translation/warn-light=true localechooser/translation/warn-severe=true'
   end
-  options << "locale=#{@host.params['lang'] || 'en_US'}"
+  options << "locale=#{@host.params['lang'] || 'de_DE.UTF-8'}"
   options = options.join(' ')
 -%>
 

@@ -1,10 +1,10 @@
 <%#
-name: Preseed default user data
+name: Preseed default user data_p2fsphys
 snippet: false
 model: ProvisioningTemplate
 kind: user_data
 oses:
-- Ubuntu
+- Ubuntu_p2fsphys
 %>
 #!/bin/bash
 
@@ -30,10 +30,11 @@ oses:
 <% end -%>
 
 <% if puppet_enabled %>
-<% if @host.param_true?('enable-puppetlabs-pc1-repo') || @host.param_true?('enable-puppetlabs-repo') -%>
+<% if false #@host.param_true?('enable-puppetlabs-pc1-repo') || @host.param_true?('enable-puppetlabs-repo')
+-%>
 <%= snippet 'puppetlabs_repo' %>
 <% end -%>
-<%= snippet 'puppet_setup' %>
+<%= snippet 'puppet_setup_p2fsphys' %>
 <% end -%>
 
 <% if salt_enabled %>
