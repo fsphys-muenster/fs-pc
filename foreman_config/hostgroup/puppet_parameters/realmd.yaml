@@ -5,7 +5,7 @@ nwz.wwu.de
 ysmay
 
 --- # krb_keytab
-/tmp/.kr922392
+/srv/fsphys/keytab
 
 --- # krb_ticket_join
 true
