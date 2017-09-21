@@ -14,13 +14,13 @@ file:
     recurse: remote
     links: manage
     source: puppet:///modules/fsphys/etc/skel
-  # Einstellungen für PAM-Authentifizierung (/etc/pam.d/)
+  # Einstellungen für PAM-Authentifizierung (/usr/share/pam-configs/)
   # (Zur Zeit verwendet, um Nutzergruppe neuer Home-Verzeichnisse auf p0fsphys
   # zu setzen)
-  /etc/pam.d:
+  /usr/share/pam-configs:
     ensure: directory
     recurse: remote
-    source: puppet:///modules/fsphys/etc/pam.d
+    source: puppet:///modules/fsphys/usr/share/pam-configs
   # Ausführen eines Skripts bei jedem Login (/etc/profile.d/)
   /etc/profile.d/fsphys.sh:
     source: puppet:///modules/fsphys/etc/profile.d/fsphys.sh
@@ -51,6 +51,7 @@ file:
 # Einige überflüssige Dateien löschen
 tidy:
   /etc/skel:
+    recurse: true
     matches: .gitkeep
 
 # Dummy-Nutzer anlegen um zu verhindern, dass gnome-initial-setup nach der
@@ -62,6 +63,12 @@ user:
 
 ### Befehle
 exec:
+  pam-auth-update:
+    command: pam-auth-update --package
+    user: root
+    refreshonly: true
+    require: File[/srv/fsphys]
+    subscribe: File[/usr/share/pam-configs]
   update-font-cache-local:
     command: fc-cache -f /usr/local/share/fonts/
     path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -91,6 +98,8 @@ gnome::gsettings:
     schema: org.gnome.shell
     key: always-show-log-out
     value: true
+  # Login-Bildschirm anpassen – s. auch
+  # https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/desktop_migration_and_administration_guide/customizing-login-screen
   # Begrüßungstext auf dem Login-Bildschirm anzeigen
   login-banner-enable:
     schema: org.gnome.login-screen
@@ -100,6 +109,8 @@ gnome::gsettings:
     schema: org.gnome.login-screen
     key: banner-message-text
     value: "'Willkommen am Fachschafts-PC!'"
+  # Achtung! Das Logo wird so skaliert, dass es eine Höhe von 48px hat!
+  # (S. Red Hat-Link oben)
   login-logo:
     schema: org.gnome.login-screen
     key: logo
