@@ -5,6 +5,9 @@ model: ProvisioningTemplate
 kind: provision
 oses:
 - Ubuntu_p2fsphys
+
+More information about preseeding:
+https://help.ubuntu.com/lts/installation-guide/amd64/apb.html
 %>
 <%
   # safemode renderer does not support unary negation
@@ -64,7 +67,7 @@ d-i mirror/udeb/suite string <%= @host.operatingsystem.release_name %>
 
 # Time settings
 d-i clock-setup/utc boolean true
-d-i time/zone string <%= @host.params['time-zone'] || 'UTC' %>
+d-i time/zone string <%= @host.params['time-zone'] || 'Europe/Berlin' %>
 
 # NTP
 d-i clock-setup/ntp boolean true
