@@ -1,0 +1,23 @@
+- Firefox-Startseite mit nützlichen Links für Fachschaftsarbeit erstellen
+- Drucker einrichten (FS-Drucker, ZIV-Drucker, dckp)
+- realmd-Modul aktualisieren
+- Probleme mit Firefox/Thunderbird auf dem Netzlaufwerk?
+  (Firefox: Addons können nicht installiert werden;
+  Thunderbird: Stürzt beim Beenden des Programms ab?)
+- Bildschirmkonfiguration (externer Monitor links vom AIO)
+- Nutzer werden nur ihrer Hauptgruppe zugeordnet – warum fehlen die Zusatzgruppen?
+- Alle Nutzer zu den Gruppen cdrom, plugdev, lpadmin hinzufügen
+  https://wiki.ubuntu.com/Security/Privileges
+- W-/Y-Accounts aus der FSPHYS-OU zu den Gruppen adm und sudo hinzufügen
+  https://wiki.ubuntu.com/Security/Privileges
+
+- Symbole auf dem Desktop (ja/nein? org.gnome.nautilus.desktop)
+- Soll außer Firefox/Thunderbird noch etwas auf das Netzlaufwerk synchronisiert
+  werden? Falls ja: was?
+- pam_mount scheint beim Login zweimal ausgeführt zu werden?
+  (“(rdconf1.c:598): pcre_exec: no match”… erscheint vor und nach MOTD)
+- Wie Nachrichten von pam_mount “(rdconf1.c:598): pcre_exec: no match”…
+  deaktivieren?
+- „user“-Ressourcen in Puppet für Nutzer aus dem Active Directory anlegen?
+  (Eigenes Puppet-Modul?)
+
