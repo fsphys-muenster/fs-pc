@@ -48,6 +48,11 @@ file:
     mode: '0744'
     source: puppet:///modules/fsphys/srv/fsphys/homedir-set-group.sh
 
+# Einige überflüssige Dateien löschen
+tidy:
+  /etc/skel:
+    matches: .gitkeep
+
 # Dummy-Nutzer anlegen um zu verhindern, dass gnome-initial-setup nach der
 # Installation ausgeführt wird
 user:
