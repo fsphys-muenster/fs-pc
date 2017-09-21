@@ -2,8 +2,7 @@
 ### Dateien
 file:
   # keytab für Active Directory-Join
-  krb-keytab:
-    path: /srv/fsphys/.kr922392
+  /srv/fsphys/keytab:
     owner: root
     group: root
     mode: '0400'
