@@ -14,6 +14,13 @@ file:
     recurse: remote
     links: manage
     source: puppet:///modules/fsphys/etc/skel
+  # Einstellungen für PAM-Authentifizierung (/etc/pam.d/)
+  # (Zur Zeit verwendet, um Nutzergruppe neuer Home-Verzeichnisse auf p0fsphys
+  # zu setzen)
+  /etc/pam.d:
+    ensure: directory
+    recurse: remote
+    source: puppet:///modules/fsphys/etc/pam.d
   # Ausführen eines Skripts bei jedem Login (/etc/profile.d/)
   /etc/profile.d/fsphys.sh:
     source: puppet:///modules/fsphys/etc/profile.d/fsphys.sh
@@ -36,6 +43,10 @@ file:
     ensure: directory
     recurse: remote
     source: puppet:///modules/fsphys/srv/fsphys
+  # Skripte sollen ausführbar sein
+  /srv/fsphys/homedir-set-group.sh:
+    mode: '0744'
+    source: puppet:///modules/fsphys/srv/fsphys/homedir-set-group.sh
 
 # Dummy-Nutzer anlegen um zu verhindern, dass gnome-initial-setup nach der
 # Installation ausgeführt wird
@@ -61,15 +72,6 @@ exec:
     user: root
     refreshonly: true
     subscribe: File[/srv/fsphys]
-
-### Periodische Skripte (cron)
-cron:
-  # Gruppe jedes Home-Verzeichnisses einmalig auf p0fsphys ändern
-  homedir-set-group:
-    command: /srv/fsphys/homedir-set-group.sh
-    user: root
-    hour: 1
-    require: File[/srv/fsphys]
 
 ### GNOME-Einstellungen
 gnome::gsettings:
@@ -160,6 +162,8 @@ package:
     ensure: present
   unp:
     ensure: present
+  rdesktop:
+    ensure: present
   wine-stable:
     ensure: present
   # PDF-Werkzeuge
@@ -184,6 +188,8 @@ package:
   gnuplot5-qt:
     ensure: present
   keepass2:
+    ensure: present
+  remmina:
     ensure: present
   virtualbox-qt:
     ensure: present
