@@ -3,16 +3,12 @@
 file:
   # keytab für Active Directory-Join
   krb-keytab:
-    path: /tmp/.kr922392
+    path: /srv/fsphys/.kr922392
     owner: root
     group: root
     mode: '0400'
-    source: puppet:///modules/fsphys/keytab
+    source: puppet:///modules/fsphys/srv/fsphys/keytab
     notify: Class[realmd::join::keytab]
-  # Citrix Receiver als .deb-Paket
-  citrix-receiver-deb:
-    path: /tmp/icaclient.deb
-    source: puppet:///modules/fsphys/icaclient_13.6.0.10243651_amd64.deb
   # Vorgabe-Dateien für persönliche Ordner in /etc/skel/ anlegen
   /etc/skel:
     ensure: directory
@@ -61,11 +57,11 @@ exec:
   # Option
   # -E (--skip-same-version) angegeben werden kann
   install-icaclient:
-    command: dpkg -E -i /tmp/icaclient.deb
+    command: dpkg -E -i /srv/fsphys/icaclient.deb
     path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
     user: root
     refreshonly: true
-    subscribe: File[citrix-receiver-deb]
+    subscribe: File[/srv/fsphys]
 
 ### Periodische Skripte (cron)
 cron:
@@ -124,8 +120,8 @@ package:
   #       https://answers.launchpad.net/ubuntu/+source/gdebi/+question/658069
 #  citrix-receiver:
 #    provider: gdebi
-#    source: /tmp/icaclient.deb
-#    require: File[citrix-receiver-deb]
+#    source: /srv/fsphys/icaclient.deb
+#    require: File[/srv/fsphys]
   ## Pakete zur Installation via APT
   ## Utility (Kommandozeile)
   # xmllint installieren, bevor pam_mount aktiviert wird
