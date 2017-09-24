@@ -1,0 +1,6 @@
+# Den Gruppen p2fsphys (Y-Accounts der Fachschaft Physik) und p1fsphys
+# (W-Accounts der Fachschaft Physik) die gleichen sudo-Rechte geben wie root
+# bzw. der Gruppe sudo
+%p2fsphys	ALL=(ALL:ALL) ALL
+%p1fsphys	ALL=(ALL:ALL) ALL
+
