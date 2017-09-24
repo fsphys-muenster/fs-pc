@@ -8,15 +8,23 @@ file:
     mode: '0400'
     source: puppet:///modules/fsphys/srv/fsphys/keytab
     notify: Class[realmd::join::keytab]
+  # Einstellungen für sudo
+  /etc/sudoers.d/fsphys:
+    owner: root
+    group: root
+    mode: '0440'
+    source: puppet:///modules/fsphys/etc/sudoers.d/fsphys
   # Vorgabe-Dateien für persönliche Ordner in /etc/skel/ anlegen
   /etc/skel:
     ensure: directory
     recurse: remote
     links: manage
+    ignore: .gitkeep
     source: puppet:///modules/fsphys/etc/skel
   # Einstellungen für PAM-Authentifizierung (/usr/share/pam-configs/)
   # (Zur Zeit verwendet, um Nutzergruppe neuer Home-Verzeichnisse auf p0fsphys
   # zu setzen)
+  # S. auch https://wiki.ubuntu.com/PAMConfigFrameworkSpec
   /usr/share/pam-configs:
     ensure: directory
     recurse: remote
@@ -49,12 +57,6 @@ file:
   /srv/fsphys/homedir-set-group.sh:
     mode: '0744'
     source: puppet:///modules/fsphys/srv/fsphys/homedir-set-group.sh
-
-# Einige überflüssige Dateien löschen
-tidy:
-  /etc/skel:
-    recurse: true
-    matches: .gitkeep
 
 # Dummy-Nutzer anlegen um zu verhindern, dass gnome-initial-setup nach der
 # Installation ausgeführt wird
@@ -101,17 +103,6 @@ gnome::gsettings:
     schema: org.gnome.shell
     key: always-show-log-out
     value: true
-  # Login-Bildschirm anpassen – s. auch
-  # https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/desktop_migration_and_administration_guide/customizing-login-screen
-  # Begrüßungstext auf dem Login-Bildschirm anzeigen
-  login-banner-enable:
-    schema: org.gnome.login-screen
-    key: banner-message-enable
-    value: true
-  login-banner-text:
-    schema: org.gnome.login-screen
-    key: banner-message-text
-    value: "'Willkommen am Fachschafts-PC!'"
   # Achtung! Das Logo wird so skaliert, dass es eine Höhe von 48px hat!
   # (S. Red Hat-Link oben)
   login-logo:
@@ -141,12 +132,9 @@ package:
 #  citrix-receiver:
 #    provider: gdebi
 #    source: /srv/fsphys/icaclient.deb
-#    require: File[/srv/fsphys]
+#    subscribe: File[/srv/fsphys]
   ## Pakete zur Installation via APT
   ## Utility (Kommandozeile)
-  # xmllint installieren, bevor pam_mount aktiviert wird
-  # pam_mount verwendet xmllint, um die Konfigurationsdatei pam_mount.conf.xml
-  # zu validieren
   # =============
   # Abhängigkeiten von Citrix Receiver
   libjavascriptcoregtk-1.0-0:
@@ -156,6 +144,9 @@ package:
     ensure: present
     before: Exec[install-icaclient]
   # =============
+  # xmllint installieren, bevor pam_mount aktiviert wird
+  # Das Puppet-Modul pam_mount verwendet xmllint, um die Konfigurationsdatei
+  # pam_mount.conf.xml zu validieren
   libxml2-utils:
     ensure: present
     before: Class[pam_mount]
