@@ -67,6 +67,7 @@ user:
 exec:
   pam-auth-update:
     command: pam-auth-update --package
+    path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
     user: root
     refreshonly: true
     require: File[/srv/fsphys]
