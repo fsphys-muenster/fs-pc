@@ -18,6 +18,10 @@ true
 --- # pam_mount_mkmountpoint_remove
 true
 
+--- # pam_mount_mntoptions_require
+- nodev
+- nosuid
+
 --- # volume_definitions
 # Mount des Gruppenlaufwerks der Fachschaft
 - extended_user_control: <user regex="yes">^(?!root$)</user>

@@ -104,7 +104,8 @@ gnome::gsettings:
     key: always-show-log-out
     value: true
   # Achtung! Das Logo wird so skaliert, dass es eine Höhe von 48px hat!
-  # (S. Red Hat-Link oben)
+  # S.
+  # https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/desktop_migration_and_administration_guide/customizing-login-screen
   login-logo:
     schema: org.gnome.login-screen
     key: logo

@@ -6,7 +6,7 @@
   Thunderbird: Stürzt beim Beenden des Programms ab?)
 - Bildschirmkonfiguration (externer Monitor links vom AIO)
 - Nutzer werden nur ihrer Hauptgruppe zugeordnet – warum fehlen die Zusatzgruppen?
-  → Mit enumerate=True und ldap_schema=AD in sssd.conf funktioniert es
+  → Mit enumerate=True in sssd.conf funktioniert es
   ⇒ Nachfragen, wie das auf nwzpuppet.nwz.wwu.de konfiguriert ist
 - Alle Nutzer zu den Gruppen cdrom, plugdev, lpadmin hinzufügen
   https://wiki.ubuntu.com/Security/Privileges
@@ -32,4 +32,9 @@
   (Eigenes Puppet-Modul?)
 - Können Dateiberechtigungen (Windows-ACL) auf den Netzlaufwerken (CIFS)
   angezeigt/bearbeitet werden?
+- Das Betriebssystem eines Rechners, der mit einer selbst angelegten Version
+  installiert wurde (z.B. Ubuntu_p2fsphys 17.04) wird nach der Installation
+  in Foreman (durch die automatische Weitergabe von Systeminformationen an
+  Foreman) auf das Betriebssystem mit dem „echten“ Namen (z.B. Ubuntu 17.04)
+  umgeschaltet, wenn ein solches existiert.
 

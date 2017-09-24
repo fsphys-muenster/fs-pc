@@ -10,16 +10,16 @@ if [ -z "$path" ]; then
 	path="$path_default"
 fi
 for module in \
-	 puppetlabs/apt \
-	  leoarnold/cups \
-	      cpick/gdebi \
-	 camptocamp/gnome \
-	   stbenjam/hash_resources \
-	 puppetlabs/motd \
-	         kb/pam_mount \
-	walkamongus/realmd \
-	 ghoneycutt/ssh \
-	     puppet/unattended_upgrades \
+	 puppetlabs-apt \
+	  leoarnold-cups \
+	      cpick-gdebi \
+	 camptocamp-gnome \
+	   stbenjam-hash_resources \
+	 puppetlabs-motd \
+	         kb-pam_mount \
+	walkamongus-realmd \
+	 ghoneycutt-ssh \
+	     puppet-unattended_upgrades \
 ; do
 	puppet module install --target-dir "$path" "$module"
 done
