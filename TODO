@@ -6,18 +6,30 @@
   Thunderbird: Stürzt beim Beenden des Programms ab?)
 - Bildschirmkonfiguration (externer Monitor links vom AIO)
 - Nutzer werden nur ihrer Hauptgruppe zugeordnet – warum fehlen die Zusatzgruppen?
+  → Mit enumerate=True und ldap_schema=AD in sssd.conf funktioniert es
+  ⇒ Nachfragen, wie das auf nwzpuppet.nwz.wwu.de konfiguriert ist
 - Alle Nutzer zu den Gruppen cdrom, plugdev, lpadmin hinzufügen
   https://wiki.ubuntu.com/Security/Privileges
-- W-/Y-Accounts aus der FSPHYS-OU zu den Gruppen adm und sudo hinzufügen
-  https://wiki.ubuntu.com/Security/Privileges
+- Beim Neustart des PC erscheinen in den Foreman-Berichten Fehlermeldungen der
+  Form „Failed to open TCP connection to nwzpuppet.nwz.wwu.de:8140
+  (getaddrinfo: Name or service not known)“
 
+- Symbol für kabelgebundenes Netzwerk in GNOME Shell zeigt an, dass keine
+  Verbindung besteht, obwohl das Kabel verbunden ist und die Netzwerk-/
+  Internet-Verbindung funktioniert
 - Symbole auf dem Desktop (ja/nein? org.gnome.nautilus.desktop)
 - Soll außer Firefox/Thunderbird noch etwas auf das Netzlaufwerk synchronisiert
   werden? Falls ja: was?
 - pam_mount scheint beim Login zweimal ausgeführt zu werden?
-  (“(rdconf1.c:598): pcre_exec: no match”… erscheint vor und nach MOTD)
-- Wie Nachrichten von pam_mount “(rdconf1.c:598): pcre_exec: no match”…
+  („(rdconf1.c:598): pcre_exec: no match“… erscheint vor und nach MOTD)
+- Wie Nachrichten von pam_mount „(rdconf1.c:598): pcre_exec: no match“…
   deaktivieren?
+- Citrix Receiver mit gdebi statt mit dpkg installieren, damit die
+  Abhängigkeiten automatisch installiert werden.
+  Problem: Bei jeder Ausführung von puppet agent wird das Paket neuinstalliert
+  https://answers.launchpad.net/ubuntu/+source/gdebi/+question/658069
 - „user“-Ressourcen in Puppet für Nutzer aus dem Active Directory anlegen?
   (Eigenes Puppet-Modul?)
+- Können Dateiberechtigungen (Windows-ACL) auf den Netzlaufwerken (CIFS)
+  angezeigt/bearbeitet werden?
 

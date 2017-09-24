@@ -3,14 +3,15 @@
 # nwzpuppet.nwz.wwu.de
 
 path_default='/etc/puppetlabs/code/environments/p2fsphys/modules/'
-echo 'Bitte den gewünschten Zielpfad angeben'
+echo 'Bitte den gewünschten Zielpfad (…/modules/) angeben'
 echo "(Voreinstellung: $path_default)"
-read path
+read -r path
 if [ -z "$path" ]; then
 	path="$path_default"
 fi
 for module in \
 	 puppetlabs/apt \
+	  leoarnold/cups \
 	      cpick/gdebi \
 	 camptocamp/gnome \
 	   stbenjam/hash_resources \

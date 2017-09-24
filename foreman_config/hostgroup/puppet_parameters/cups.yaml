@@ -1,0 +1,24 @@
+--- # default_queue
+FS-Drucker (Dell Color MFP S2825cdn)
+
+--- # papersize
+a4
+
+--- # resources
+FS-Drucker_Dell-Color-MFP-S2825cdn:
+  ensure: printer
+  description: Drucker im Fachschaftsraum (Dell Color MFP S2825cdn)
+  location: Raum der Fachschaft Physik
+  uri: usb://Dell/Color%20MFP%20S2825cdn?serial=FH8080296&interface=1
+  model: foomatic-db-compressed-ppds:0/ppd/foomatic-ppd/Generic-PostScript_Printer-Postscript.ppd
+  accepting: true
+  enabled: true
+  shared: false
+  options:
+    PageSize: A4
+    Duplex: DuplexNoTumble
+  access:
+    policy: allow
+    users:
+      - '@p0fsphys'
+
