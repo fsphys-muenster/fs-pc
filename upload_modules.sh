@@ -27,7 +27,7 @@ sshpass -e ssh "$user@nwzpuppet.nwz.wwu.de" \
 "cp    private/*.*      srv/fsphys/;"\
 "cp -r private/ff-meta/ usr/local/share/fonts/;"\
 "chgrp -R p2fsphys '$path';"\
-"chmod -R u=rwx,g=rwx,o=rx '$path'"
+"chmod -R u=rwx,g=rwx,o-rwx '$path'"
 
 SSHPASS=''
 

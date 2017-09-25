@@ -1,6 +1,8 @@
 - Firefox-Startseite mit nützlichen Links für Fachschaftsarbeit erstellen
 - Drucker einrichten (FS-Drucker, ZIV-Drucker, dckp)
-- realmd-Modul aktualisieren
+- Test, ob Rechner bereits der Domäne beigetreten ist, schlägt in neuester
+  Version des realmd-Moduls fehl. Hervorgerufen durch die Änderung
+  https://github.com/walkamongus/realmd/commit/fd73597dc7d3149815c04f2928ca790db3b2e661
 - Probleme mit Firefox/Thunderbird auf dem Netzlaufwerk?
   (Firefox: Addons können nicht installiert werden;
   Thunderbird: Stürzt beim Beenden des Programms ab?)

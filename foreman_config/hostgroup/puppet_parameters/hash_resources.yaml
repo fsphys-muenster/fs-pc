@@ -1,13 +1,6 @@
 --- # resources
 ### Dateien
 file:
-  # keytab für Active Directory-Join
-  /srv/fsphys/keytab:
-    owner: root
-    group: root
-    mode: '0400'
-    source: puppet:///modules/fsphys/srv/fsphys/keytab
-    notify: Class[realmd::join::keytab]
   # Einstellungen für sudo
   /etc/sudoers.d/fsphys:
     owner: root

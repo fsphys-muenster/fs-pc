@@ -4,6 +4,9 @@ nwz.wwu.de
 --- # domain_join_user
 ysmay
 
+--- # homedir_umask
+'0077'
+
 --- # krb_keytab
 /srv/fsphys/keytab
 
@@ -27,11 +30,10 @@ domain/nwz.wwu.de:
   id_provider: ad
   cache_credentials: 'True'
   default_shell: /bin/bash
-  enumerate: 'False'
+  enumerate: 'True'
   krb5_realm: nwz.wwu.de
   krb5_store_password_if_offline: 'True'
   ldap_id_mapping: 'False'
-  ldap_schema: ad
   ldap_search_base: OU=Physik,OU=Fachbereiche,OU=Domain Members,DC=nwz,DC=wwu,DC=de
   ldap_group_search_base: OU=Physik,OU=Fachbereiche,OU=Domain Members,DC=nwz,DC=wwu,DC=de
   ldap_user_search_base: OU=Physik,OU=Fachbereiche,OU=Domain Members,DC=nwz,DC=wwu,DC=de
