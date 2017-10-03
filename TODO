@@ -7,7 +7,6 @@
 - Probleme mit Firefox/Thunderbird auf dem Netzlaufwerk?
   (Firefox: Addons können nicht installiert werden;
   Thunderbird: Stürzt beim Beenden des Programms ab?)
-- Bildschirmkonfiguration (externer Monitor links vom AIO)
 - Nutzer werden nur ihrer Hauptgruppe zugeordnet – warum fehlen die Zusatzgruppen?
   → Mit enumerate=True in sssd.conf funktioniert es
   ⇒ Nachfragen, wie das auf nwzpuppet.nwz.wwu.de konfiguriert ist
