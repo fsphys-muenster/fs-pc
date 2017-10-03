@@ -11,8 +11,8 @@ FS-Drucker_Dell-Color-MFP-S2825cdn:
   location: Raum der Fachschaft Physik (Corrensstraße 4, Raum 315)
   uri: usb://Dell/Color%20MFP%20S2825cdn?serial=FH8080296&interface=1
   model: lsb/usr/Dell/Dell_Color_MFP_S2825cdn.ppd.gz
-  accepting: true
   enabled: true
+  accepting: true
   shared: false
   access:
     policy: allow
@@ -26,10 +26,12 @@ DCKP01:
   location: Wilhelm-Klemm-Straße 9 (KP/TP), Raum 210
   uri: smb://zivprint.uni-muenster.de/DCKP01
   model: postscript-hp:0/ppd/hplip/HP/hp-laserjet_5100_series-ps.ppd
+  accepting: true
 DCLFTLASER-PS:
   ensure: printer
   description: HP LaserJet P4014dn
   location: Wilhelm-Klemm-Straße 10 (IG1), Raum 747
   uri: smb://zivprint2.uni-muenster.de/DCLFTLASER-PS
   model: drv:///hpcups.drv/hp-laserjet_p4014dn.ppd
+  accepting: true
 
