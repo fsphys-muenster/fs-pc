@@ -82,12 +82,16 @@ exec:
     path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
     user: root
     refreshonly: true
-  # Citrix Receiver via dpkg installieren
-  # Dies muss per „exec“ (statt „package“) durchgeführt werden, damit die
-  # Option
-  # -E (--skip-same-version) angegeben werden kann
+  # Citrix Receiver via APT installieren
   install-icaclient:
-    command: dpkg -E -i /srv/fsphys/icaclient.deb
+    command: apt install /srv/fsphys/icaclient.deb
+    path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+    user: root
+    refreshonly: true
+    subscribe: File[/srv/fsphys]
+  # Dell-Druckertreiber für Dell Color MFP S2825cdn via APT installieren
+  install-dell-printer-driver:
+    command: apt install /srv/fsphys/dell-color-mfp-s2825cdn.deb
     path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
     user: root
     refreshonly: true
@@ -128,26 +132,15 @@ gnome::gsettings:
 
 ### Software-Pakete
 package:
-  # Citrix Receiver via gdebi installieren
-  # TODO- Dies sorgt dafür, dass das Paket jedes Mal neu installiert wird, wenn
-  #       Puppet ausgeführt wird (Provider dpkg hat leider dasselbe Problem).
-  #       S. auch
-  #       https://answers.launchpad.net/ubuntu/+source/gdebi/+question/658069
-#  citrix-receiver:
-#    provider: gdebi
-#    source: /srv/fsphys/icaclient.deb
-#    subscribe: File[/srv/fsphys]
   ## Pakete zur Installation via APT
+  # Citrix Receiver von lokaler .deb-Datei installieren
+  # TODO- Dies sorgt dafür, dass das Paket jedes Mal neu installiert wird, wenn
+  #       Puppet ausgeführt wird (Provider dpkg und gdebi haben leider dasselbe
+  #       Problem).
+  #  citrix-receiver:
+  #    source: /srv/fsphys/icaclient.deb
+  #    subscribe: File[/srv/fsphys]
   ## Utility (Kommandozeile)
-  # =============
-  # Abhängigkeiten von Citrix Receiver
-  libjavascriptcoregtk-1.0-0:
-    ensure: present
-    before: Exec[install-icaclient]
-  libwebkitgtk-1.0-0:
-    ensure: present
-    before: Exec[install-icaclient]
-  # =============
   # xmllint installieren, bevor pam_mount aktiviert wird
   # Das Puppet-Modul pam_mount verwendet xmllint, um die Konfigurationsdatei
   # pam_mount.conf.xml zu validieren
@@ -214,6 +207,10 @@ package:
   ## Office
   libreoffice:
     ensure: present
+  libreoffice-l10n-de:
+    ensure: present
+  libreoffice-help-de:
+    ensure: present
   texlive-full:
     ensure: present
   texstudio:
@@ -255,6 +252,8 @@ package:
   vlc:
     ensure: present
   gimp:
+    ensure: present
+  gimp-help-de:
     ensure: present
   krita:
     ensure: present
