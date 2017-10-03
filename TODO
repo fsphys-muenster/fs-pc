@@ -1,8 +1,9 @@
 - Firefox-Startseite mit nützlichen Links für Fachschaftsarbeit erstellen
 - Drucker einrichten (FS-Drucker, ZIV-Drucker, dckp)
-- Test, ob Rechner bereits der Domäne beigetreten ist, schlägt in neuester
-  Version des realmd-Moduls fehl. Hervorgerufen durch die Änderung
-  https://github.com/walkamongus/realmd/commit/fd73597dc7d3149815c04f2928ca790db3b2e661
+- Scanner einrichten
+- Test, ob Rechner bereits der Domäne beigetreten ist, schlägt in der neuesten
+  Version des realmd-Moduls fehl. Siehe
+  https://github.com/walkamongus/realmd/issues/36
 - Probleme mit Firefox/Thunderbird auf dem Netzlaufwerk?
   (Firefox: Addons können nicht installiert werden;
   Thunderbird: Stürzt beim Beenden des Programms ab?)
@@ -10,8 +11,10 @@
 - Nutzer werden nur ihrer Hauptgruppe zugeordnet – warum fehlen die Zusatzgruppen?
   → Mit enumerate=True in sssd.conf funktioniert es
   ⇒ Nachfragen, wie das auf nwzpuppet.nwz.wwu.de konfiguriert ist
-- Alle Nutzer zu den Gruppen cdrom, plugdev, lpadmin hinzufügen
+- Alle Nutzer zu den Gruppen cdrom und plugdev hinzufügen?
   https://wiki.ubuntu.com/Security/Privileges
+- CUPS-Berechtigungen konfigurieren (/etc/cups/cupsd.conf)
+- FS-Platte mit ownCloud synchronisieren
 - Beim Neustart des PC erscheinen in den Foreman-Berichten Fehlermeldungen der
   Form „Failed to open TCP connection to nwzpuppet.nwz.wwu.de:8140
   (getaddrinfo: Name or service not known)“

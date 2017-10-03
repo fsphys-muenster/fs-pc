@@ -3,5 +3,5 @@ Default: yes
 Priority: 0
 Session-Type: Additional
 Session:
-	required			pam_exec.so /srv/fsphys/homedir-set-group.sh
+	optional			pam_exec.so /srv/fsphys/homedir-set-group.sh
 
