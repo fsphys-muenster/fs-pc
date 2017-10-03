@@ -1,0 +1,182 @@
+Gebruiksrechtovereenkomst Dell
+
+Dit is een juridische overeenkomst ("overeenkomst") tussen u, de gebruiker, en Dell Products L.P of Dell Global B.V. 
+(Singapore-divisie), een in Singapore gevestigde bedrijfstak van een besloten vennootschap in Nederland die namensde 
+dochterondernemingen van Dell Inc. en Dell Inc opereert, en daaraan gelieerde bedrijven (gezamenlijk "Dell"). Deze 
+overeenkomst is van toepassing op alle software die met of voor het product van Dell werd geleverd (evenals upgrades en 
+updates daarvan) en waarop geen afzonderlijke licentieovereenkomst tussen u en de fabrikant of eigenaar van de software 
+(collectief de "software" genoemd) van toepassing is. Deze overeenkomst is niet van toepassing op de verkoop van software 
+of enige andere vorm van intellectueel eigendom. Alle aanspraak en intellectuele eigendomsrechten op, en met betrekking 
+tot de software zijn het eigendom van de fabrikant of eigenaar van de software. Alle rechten die op basis van deze 
+overeenkomst niet nadrukkelijk zijn verleend, zijn gereserveerd door de fabrikant of eigenaar van de software. Door het 
+openen of verbreken van het zegel op het softwarepakket/de softwarepakketten, het installeren of downloaden van de 
+software of het gebruiken van software die op uw product is geïnstalleerd of voorgeïnstalleerd, gaat u akkoord met, en bent 
+u gebonden aan de voorwaarden van deze overeenkomst. Retourneer direct alle softwareonderdelen (schijven, 
+documentatie en verpakking) en verwijder vooraf geïnstalleerde of ingebedde software als u niet met deze voorwaarden 
+instemt.
+ 
+U mag slechts één exemplaar van de software op slechts één Dell-computer of -apparaat tegelijk gebruiken. Als u over 
+meerdere licenties beschikt voor de Software, mag u te allen tijde zoveel kopieën gebruiken als u licenties hebt. Met de term 
+"gebruik" wordt verwezen naar het laden van de software in het permanente geheugen van de computer of van het apparaat.
+ Installatie op een netwerkserver voor distributie naar andere computers of apparaten wordt niet beschouwd als "gebruik" 
+indien (en alleen indien) u voor elke computer of elk apparaat waarnaar de software wordt gedistribueerd over een 
+afzonderlijke licentie beschikt. U dient ervoor te zorgen dat het aantal licenties waarover u beschikt niet wordt overschreden 
+door het aantal gebruikers van de software die op een netwerkserver is geïnstalleerd. Als het aantal licenties wordt 
+overschreden door het aantal gebruikers van de software die op een netwerkserver is geïnstalleerd, moet u extra licenties 
+aanschaffen, zodat het aantal licenties overeenkomt met het aantal gebruikers, anders mogen de extra gebruikers de 
+software niet gebruiken. Als u een commerciële klant of een partner van Dell bent, verleent u Dell of een door Dell 
+geselecteerde tussenpersoon hierbij het recht om tijdens kantooruren te controleren hoe u de software gebruikt. U stemt 
+ermee in om met Dell samen te werken tijdens een dergelijke controle en aan Dell alle documenten te overleggen die 
+redelijkerwijs verband houden met uw gebruik van de software. Tijdens de controle wordt alleen nagegaan of u zich aan de 
+voorwaarden van deze overeenkomst houdt.
+ 
+De software wordt beschermd door auteursrechten in de Verenigde Staten en andere wetten en internationale verdragen. 
+U mag uitsluitend voor back-up- of archiveringsdoeleinden één kopie van de software maken of de software overdragen naar 
+één vaste schijf, op voorwaarde dat u deze kopie uitsluitend voor back-up- of archiveringsdoeleinden bewaart. U dient de 
+kennisgevingen inzake auteursrecht en eigendomsrecht op en binnen alle kopieën in stand te houden. U mag geen sublicentie 
+verlenen op de software en de software niet verhuren of leasen en het schriftelijke materiaal dat met de software wordt 
+meegeleverd niet kopiëren. Het is wel toegestaan om de software en alle vergezellende materialen permanent over te dragen 
+door middel van verkoop of overdracht van het Dell-product, mits u geen kopieën van deze software achterhoudt en de 
+ontvanger met de voorwaarden van deze overeenkomst instemt. Hierbij moet u ook de meest recente updates en alle eerdere 
+versies overdragen. U mag geen 'reverse engineering' toepassen op de software of de software decompileren of uiteennemen, 
+wijzigen of afgeleide werken maken van de software. Als de verpakking die bij uw Dell-computer of -apparaat wordt geleverd 
+optische schijven of andere gegevensdragers bevat, mag u alleen de schijven of gegevensdragers gebruiken die voor uw 
+specifieke computer of apparaat zijn bestemd. U mag de optische schijven of gegevensdragers niet gebruiken op een andere 
+computer, een ander apparaat of een ander netwerk. U mag deze evenmin uitlenen, verhuren, leasen of overdragen aan een 
+andere gebruiker, tenzij dit is toegestaan volgens deze overeenkomst.
+ 
+Beperkte garantie
+
+Dell garandeert dat de diskettes en/of schijven die bij de software worden geleverd (indien van toepassing) gedurende negentig 
+(90) dagen na de ontvangst ervan bij normaal gebruik vrij zijn van materiaal- en productiefouten. Deze garantie is beperkt tot 
+u en kan niet worden overgedragen. Impliciete garanties zijn beperkt tot negentig dagen na de datum waarop u de software 
+ontvangt. In sommige rechtsgebieden mag de duur van impliciete garantie niet worden beperkt, waardoor deze beperking 
+mogelijk niet op u van toepassing is. De volledige aansprakelijkheid van Dell en diens leveranciers en uw enige 
+verhaalsmogelijkheid bestaan uit (a) de beëindiging van deze overeenkomst en terugbetaling van de prijs die u voor de software 
+hebt betaald of (b) vervanging van iedere schijf die niet voldoet aan deze garantie en die u op eigen kosten en risico binnen de 
+garantieperiode van 90 dagen hebt opgestuurd naar Dell, onder vermelding van een machtigingsnummer. Deze beperkte 
+garantie vervalt als een schijf is beschadigd als gevolg van een ongeluk, misbruik, een verkeerde toepassing of reparatie of 
+wijziging door een andere partij dan Dell. Op elke vervangende schijf rust een garantie voor de resterende tijd van de 
+oorspronkelijke garantieperiode of dertig dagen, waarbij de langste periode geldt.
+ 
+Dell en zijn leveranciers garanderen NIET dat de functies van de software voldoen aan uw eisen of dat de software 
+onafgebroken of foutloos werkt. Aangezien u zelf de software hebt gekozen om de beoogde resultaten te bereiken, bent u 
+zelf verantwoordelijk voor het gebruik en de resultaten die met de software worden verkregen. De voorwaarden van deze 
+overeenkomst verlenen u geen recht op enige vorm van onderhoud of ondersteuning voor de software. 
+
+DELL VERWERP NAMENS ZICHZELF EN HAAR LEVERANCIER ALLE ANDERE GARANTIES, HET ZIJ EXPLICIET, 
+IMPLICIET OF ANDERSZINS, INCLUSIEF MAAR NOT BEPERKT TOT IMPLICIETE GARANTIES VAN 
+VERKOOPBAARHEID OF GESCHIKTHEID VOOR EEN BEPAALD DOEL OF ENGIE GARANTIE MET BETREKKING 
+TOT AANSPRAAK OF TEGEN HET MAKEN VAN INBREUK OP RECHTEN, DIT VOOR DE SOFTWARE EN 
+DE BIJGEVOEGDE SCHRIFTELIJKE MATERIALEN. Deze beperkte garantie verleent u specifieke juridische rechten; 
+mogelijk hebt u nog meer rechten die per rechtsgebied kunnen verschillen. 
+
+DELL EN ZIJN LEVERANCIERS ZIJN IN GEEN GEVAL AANSPRAKELIJK VOOR ENIGE SCHADE (MET INBEGRIP VAN, 
+MAAR NIET BEPERKT TOT SCHADE ALS GEVOLG VAN WINSTDERVING, ONDERBREKING VAN DE 
+BEDRIJFSVOERING, VERLIES VAN BEDRIJFSGEGEVENS OF ANDERE INFORMATIE OF ANDERE GELDELIJKE 
+VERLIEZEN) DIE VOORTVLOEIT UIT HET GEBRUIK OF DE ONMOGELIJKHEID VAN HET GEBRUIK VAN DE 
+SOFTWARE, ZELFS INDIEN ZIJ OP DE HOOGTE ZIJN GESTELD VAN DE MOGELIJKHEID VAN DERGELIJKE SCHADE. 
+Omdat in sommige rechtsgebieden de aansprakelijkheid voor gevolgschade of incidentele schade niet mag worden beperkt 
+of uitgesloten, is bovenstaande beperking mogelijk niet op u van toepassing. 
+
+Open source-software
+
+Een gedeelte van de software kan open source-software bevatten of daaruit bestaan. U kunt deze open source-software 
+gebruiken in overeenstemming met de voorwaarden van de specifieke licentie op basis waarvan de open source-software 
+wordt gedistribueerd.
+
+DEZE OPEN SOURCE-SOFTWARE WORDT GEDISTRIBUEERD IN DE HOOP DAT DEZE VOOR U VAN NUT ZAL ZIJN, 
+MAAR WORDT GELEVERD 'ZOALS DEZE IS', ZONDER EXPLICIETE OF IMPLICIETE OF OVERIGE GARANTIES, MET 
+INBEGRIP VAN, MAAR NIET BEPERKT TOT DE IMPLICIETE GARANTIE VAN VERKOOPBAARHEID OF GESCHIKTHEID 
+VOOR EEN BEPAALD DOEL OF ENIGE GARANTIE MET BETREKKING TOT EIGENDOMSRECHT OF HET NIET MAKEN 
+VAN INBREUK OP ANDERE RECHTEN. IN GEEN GEVAL ZULLEN DELL, DE EIGENAARS VAN HET COPYRIGHT OF 
+PARTIJEN DIE AAN DE SOFTWARE HEBBEN BIJGEDRAGEN AANSPRAKELIJK ZIJN VOOR ENIGE DIRECTE, 
+INDIRECTE, SPECIALE, VOORBEELD- OF GEVOLGSCHADE (MET INBEGRIP VAN, MAAR NIET BEPERKT TOT, DE 
+AANSCHAF VAN VERVANGENDE PRODUCTEN OF DIENSTEN, HET VERLIES VAN GEGEVENS OF WINSTEN OF 
+BEDRIJFSONDERBREKINGEN), ONGEACHT DE OORZAAK, VOLGENS WELKE THEORIE VAN AANSPRAKELIJKHEID 
+DAN OOK, OP BASIS VAN EEN CONTRACT, STRIKTE AANSPRAKELIJKHEID OF VERWIJTBARE SCHULD (MET 
+INBEGRIP VAN NALATIGHEID OF ANDERSZINS) DIE OP ENIGE WIJZE HET RESULTAAT IS VAN HET GEBRUIK 
+VAN DEZE SOFTWARE, ZELFS INDIEN ZIJ VAN DE MOGELIJKHEID VAN DERGELIJKE SCHADE OP DE HOOGTE 
+BENT GESTELD.
+
+Op basis van bepaalde licenties voor open source-software hebt u het recht om de overeenkomstige bronbestanden te 
+verkrijgen. Mogelijk zijn de overeenkomstige bronbestanden van de software beschikbaar via http://opensource.dell.com of 
+andere door Dell aanwezen locaties.
+
+Exporteren
+
+Deze software is onderworpen aan zowel de exportwetgeving van de Verenigde Staten als aan de wetgeving van het land 
+waarin de software wordt geleverd of gebruikt. U stemt ermee in dat u zich aan deze wetten zult houden. }Onder deze 
+wetgeving mag de Software niet worden verkocht, geleast of overgedragen aan landen of eindgebruikers waarvoor een 
+exportverbod geldt (momenteel Cuba, Iran, Noord-Korea, Soedan en Syrië) of voor verboden vormen van eindgebruik. 
+U verplicht zich uitdrukkelijk dat het van Dell afgenomen Product niet zal worden gebruikt voor activiteiten die verband houden 
+met massavernietigingswapens, met inbegrip van maar niet beperkt tot, activiteiten in verband met het ontwerpen, ontwikkelen, 
+produceren of gebruiken van kernmaterialen, kerncentrales of kernwapens, raketten of steun voor raketprojecten of chemische 
+of biologische wapens. 
+
+Beperkte rechten van de Amerikaanse overheid
+
+De software en documentatie zijn "commercial items", volgens de definitie van die term in 48 C.F.R. , bestaande uit 
+"commercial computer software" en "commercial computer software documentation", zoals dergelijke termen worden gebruikt 
+in 48 C.F.R. 12.212. Overeenkomstig 48 C.F.R. 12.212 en 48 C.F.R. 227.7202-1 tot en met 227.7202-4 worden de software 
+en documentatie in licentie gegeven aan eindgebruikers bij de overheid van de V.S. met uitsluitend die rechten die in dit 
+document worden verleend. De contractant/fabrikant is Dell Products L.P., One Dell Way, Round Rock, Texas, 78682. 
+
+Algemeen
+
+De licentie is van kracht totdat deze wordt beëindigd. De beëindiging ervan vindt plaats volgens bovenstaande voorwaarden 
+of als u zich niet aan een van de voorwaarden houdt. Bij beëindiging stemt u ermee in de software en het bijbehorende 
+materiaal, en alle kopieën hiervan, te zullen vernietigen. Op deze overeenkomst is de wetgeving van de staat Texas van 
+kracht, zonder rekening te houden met conflicten van juridische principes. Elke bepaling van deze overeenkomst is 
+scheidbaar. Als blijkt dat een bepaling niet kan worden afgedwongen, is dit feit niet van invloed op de toepasbaarheid van 
+de resterende voorwaarden of bepalingen van deze overeenkomst. Deze overeenkomst is bindend voor erfgenamen en 
+cessionarissen. Voor zover is toegestaan volgens toepasselijk recht, stemt zowel Dell als u ermee in afstand te doen van het 
+recht om juridische stappen te ondernemen met betrekking tot de software of deze overeenkomst. Omdat een verklaring van 
+afstand niet in elk rechtsgebied geldig is, is deze mogelijk niet op u van toepassing. U verklaart dat u deze overeenkomst hebt 
+gelezen en begrepen en dat u ermee instemt aan de voorwaarden gebonden te zijn. Daarnaast verklaart u dat dit de volledige 
+en enige overeenkomst tussen u en Dell is met betrekking tot de software.
+ 
+Dell is een merk van Dell Inc. (rev. 101311)
+
+Uw nieuwe Dell-printer wordt geleverd met printercartridges waarop octrooi is aangevraagd en die speciaal zijn geprijsd voor 
+eenmalig gebruik. Met het gebruik van deze cartridge geeft u aan dat u ermee instemt dat u deze slechts eenmalig zult 
+gebruiken. Na dit eenmalig gebruik zal de licentie voor het gebruik van de cartridge komen te vervallen. De cartridge is 
+ontwikkeld om te stoppen met functioneren nadat een vaste hoeveelheid materiaal is uitgeprint. Er zijn standaardcartridges 
+verkrijgbaar waarop deze licentievoorwaarden niet van toepassingen zijn en opnieuw kunnen worden gevuld. Als u niet met 
+deze voorwaarden instemt, dient u contact op te nemen met Dell via visiting www.dell.com/contactdell.
+
+Door firmware-updates kunnen de instellingen van de Dell-printer worden gewijzigd. Hierdoor is het mogelijk dat 
+ongeautoriseerde en/of imitatieproducten, verbruiksgoederen, onderdelen, materialen (zoals toners), software en interfaces 
+niet langer functioneren. Dit zal niet van invloed zijn op oorspronkelijke producten van Dell en door Dell goedgekeurde 
+producten.
+
+
+
+ADDITIONAL LICENSE TERMS FOR SUN MICROSYSTEMS, INC. SOFTWARE
+
+In addition to the foregoing, with respect to any Sun Microsystems, Inc. software ("Sun Software") licensed hereunder, the following terms apply:
+
+1. LICENSE RESTRICTIONS.  The Sun Software is licensed to Licensee only under the terms of this Agreement, and Sun reserves all rights not expressly granted to Licensee. Licensee may not use, copy, modify, or transfer the Sun Software, or any copy thereof, except as expressly provided for in this Agreement or by applicable law. Except as otherwise provided by law for purposes of decompilation of the Sun Software solely for inter-operability, error correction or security testing, Licensee may not reverse engineer, disassemble, decompile, or translate the Sun Software, or otherwise attempt to derive the source code of the Sun Software. Licensee may not rent, lease, loan, or sell the Sun Software, or any part of the Software. No right, title, or interest in or to any trademarks, service marks, or trade names of Sun or Sun's licensors is granted hereunder.
+
+2. AIRCRAFT PRODUCT AND NUCLEAR APPLICATIONS RESTRICTION.  Sun Software is not designed or intended for use in on-line control of aircraft, air traffic, aircraft navigation or aircraft communications; or in the design, construction, operation or maintenance of any nuclear facility.  Sun disclaims any express or implied warranty of fitness for such uses. Licensee warrants that it will not use or redistribute the Sun Software for such purposes.
+
+3. NO WARRANTY.  To the full extent permitted by law, the Sun Software is provided to licensee "AS IS". All express or implied conditions, representations, and warranties, including any implied warranty of merchantability, satisfactory quality, fitness for a particular purpose, or non-infringement, are disclaimed, except to the extent that such disclaimers are held to be legally invalid.
+
+4. LIMITATION OF DAMAGES.  To the extent not prohibited by applicable law, Sun's aggregate liability to Licensee or to any third party for claims relating to this agreement, whether for breach or in tort, will be limited to the fees paid by Licensee for Sun Software which is the subject matter of the claims. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. Liability for damages will be limited and excluded, even if any exclusive remedy provided for in this Agreement fails of its essential purpose.
+
+5. GOVERNMENT USER RIGHTS IN DATA: If procured by, or provided to, the U.S. Government, use, duplication, or disclosure of technical data is subject to restrictions as set forth in DFARS 252.227-7013(c) (1) (ii), FAR 52.227-14(g)(2), Rights in Data-General (June 1987); and for computer software and computer software documentation, FAR 52-227-19, Commercial Computer Software-Restricted Rights (June 1987). However, if under DOD, use, duplication, or disclosure of technical data is subject to DFARS 252.227-7015(b), Technical Data-Commercial Items (June 1995); and for computer software and computer software documentation, as specified in the license under which the computer software was procured pursuant to DFARS 227.7202-3(a).  Licensee shall not provide Sun Software nor technical data to any third party, including the U.S. Government, unless such third party accepts the same restrictions. Licensee is responsible for ensuring that proper notice is given to all such third parties and that the Sun Software and technical data are properly marked.
+
+6. EXPORT LAW.  Licensee acknowledges and agrees that the Sun Software and/or technology is subject to the U.S. Export Administration Laws and Regulations. Diversion of such Sun Software and/or technology contrary to U.S. law is prohibited. Licensee agrees that none of the Sun Software and/or technology, nor any direct product therefrom, is being or will be acquired for, shipped, transferred, or reexported, directly or indirectly, to proscribed or embargoed countries or their nationals, nor be used for nuclear activities, chemical biological weapons, or missile projects unless authorized by the U.S. Government. Proscribed countries are set forth in the U.S. Export Administration Regulations. Countries subject to U.S. embargo are: Cuba, Iran, Iraq, Libya, North Korea, Syria, and the Sudan. This list is subject to change without further notice from Sun, and Licensee must comply with the list as it exists in fact. Licensee certifies that it is not on the U.S. Department of Commerce's Denied Persons List or affiliated lists or on the U.S. Department of Treasury's Specially Designated Nationals List.  Licensee agrees to comply strictly with all U.S. export laws and assumes sole responsibility for obtaining licenses to export or re-export as may be required.  Licensee is responsible for complying with any applicable local laws and regulations, including but not limited to, the export and import laws and regulations of other countries.
+
+7. TRADEMARKS AND LOGOS.  This Agreement does not authorize Licensee to use any Sun name, trademark or logo. Licensee acknowledges that Sun owns the Java trademark and all Java-related trademarks, logos and icons including the Coffee Cup and Duke ("Java Marks") and agrees to:  (i) comply with the Java Trademark Guidelines at http://java.sun.com/trademarks.html; (ii) not do anything harmful to or inconsistent with Sun's rights in the Java Marks; and (iii) assist Sun in protecting those rights, including assigning to Sun any rights acquired by Licensee in any Java Mark.
+
+8. TERMINATION.  This Agreement is effective until terminated.  You may terminate this Agreement at any time by destroying all copies of Sun Software.  This Agreement will terminate immediately without notice from Sun if you fail to comply with any provision of this Agreement.  Upon Termination, you must destroy all copies of Sun Software.
+
+9. GOVERNING LAW.  Any action related to the Sun Software will be governed by California law and controlling U.S. federal law.  No choice of law rules of any jurisdiction will apply.
+
+10. SEVERABILITY.  If any provision of this Agreement is held to be unenforceable, this Agreement will remain in effect with the provision omitted, unless omission would frustrate the intent of the parties, in which case this Agreement will immediately terminate.
+
+11. INTEGRATION.  This Agreement is the entire agreement between you and Sun relating to its subject matter.  It supersedes all prior or contemporaneous oral or written communications, proposals, representations and warranties and prevails over any conflicting or additional terms of any quote, order, acknowledgment, or other communication between the parties relating to its subject matter during the term of this Agreement.  No modification of this Agreement will be binding, unless in writing and signed by an authorized representative of each party.
+
+
+EU2D-0027-NL

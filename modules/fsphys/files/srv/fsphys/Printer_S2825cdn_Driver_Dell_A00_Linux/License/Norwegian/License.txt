@@ -1,0 +1,176 @@
+Lisensavtale for Dell-programvare
+
+Dette er en juridisk avtale ("avtalen") mellom deg, brukeren, og Dell Products L.P eller Dell Global B.V. 
+(Singapore-filialen), en Singapore-filial av en bedrift etablert i Nederland med begrenset ansvar på vegne av 
+Dell Inc. og Dell Inc.sdatterselskaper og tilknyttede selskaper (samlet "Dell"). Denne avtalen dekker all 
+programvare som distribueres med eller for Dell-produktet (samt tilhørende oppgraderinger og oppdateringer) 
+som det ikke finnes en separat lisensavtale for mellom deg og produsenten eller eieren av programvaren 
+(samlet "programvaren"). Denne avtalen omfatter ikke salg av programvare eller annet åndsverk. Alle 
+eiendoms- og åndsverksrettigheter i og til programvaren beholdes av produsenten eller eieren av 
+programvaren. Produsenten eller eieren av programvaren har enerett til alle rettigheter som ikke er uttrykkelig 
+fremsatt i denne avtalen. Ved å åpne eller bryte forseglingen på programvarepakken(e), installere eller laste 
+ned programvaren, eller bruke programvaren som ikke er forhåndslastet i produktet, er du bundet av 
+betingelsene i denne avtalen. Hvis du ikke samtykker til disse betingelsene, skal du umiddelbart returnere alle 
+programvareelementer (medier, skriftlig materiell og emballasje) og slette eventuell forhåndslastet eller 
+innebygd programvare.
+ 
+Du kan bruke én kopi av programvaren på kun én Dell-datamaskin eller -enhet om gangen. Hvis du har flere 
+programvarelisenser, kan du bruke så mange kopier om gangen som det foreligger lisenser for. "Bruke" betyr 
+å laste programvaren inn i midlertidig minne eller lagre den permanent på datamaskinen eller enheten. 
+Installasjon på en nettverksserver kun for å distribuere programvaren til andre datamaskiner eller enheter 
+defineres ikke som "bruk" hvis (men bare hvis) du har separate lisenser for hver datamaskin eller enhet som 
+programvaren distribueres til. Du må kontrollere at antallet personer som bruker programvaren på en 
+nettverksserver, ikke overskrider det faktiske antallet lisenser. Hvis antallet brukere av programvare på en 
+nettverksserver overskrider antallet lisenser, er du pålagt å kjøpe ekstra lisenser til lisensantallet tilsvarer 
+antallet brukere, før flere brukere kan bruke programvaren. Kommersielle kunder av Dell eller et Dell-tilsluttet 
+selskap, gir herved Dell, eller en agent som er utpekt av Dell, tillatelse til å granske bruken av programvaren 
+under en vanlig arbeidsdag. De samtykker også til å samarbeide med Dell under en slik granskning, samt gi 
+Dell alle fortegnelser som er rimelig knyttet til bruken av programvaren. Granskningen vil være begrenset til å 
+kontrollere overholdelse av betingelsene i denne avtalen.
+ 
+Programvaren beskyttes av amerikanske og andre gjeldende opphavsrettlover og internasjonale traktater. Du 
+kan lage en kopi av programvaren utelukkende for sikkerhetskopierings- og arkiveringsformål eller for å 
+overføre den til en enkelt harddisk eller lagringsenhet, forutsatt at du utelukkende bevarer kopien for 
+sikkerhetskopierings- eller arkiveringsformål. Du skal kopiere og inkludere opphavsrettslige og andre 
+eiendomsmerknader på og i alle kopier av programvaren. Du kan ikke viderelisensiere, leie ut eller lease 
+programvaren eller kopiere det trykte materiellet som følger med programvaren, men du kan overføre 
+programvaren og alt medfølgende materiell på permanent basis som en del av et salg eller overføing av 
+Dell-produktet hvis du ikke beholder noen kopier, og mottakeren samtykker til disse betingelsene.. Eventuell 
+overføring skal inkludere den aller siste oppdateringen og alle tidligere versjoner. Du kan ikke 
+bakoverkompilere, dekompilere eller demontere, endre eller skape avledede arbeider av Programvaren. 
+Hvis pakken som fulgte med din datamaskin eller enhet fra Dell inneholder optiske disker eller andre 
+lagringsmedier, må du kun bruke det lagringsmediet som er korrekt for din datamaskin eller enhet. Du 
+må ikke bruke de optiske diskene eller lagringsmediene på en annen datamaskin, enhet eller nettverk 
+eller låne ut, leie ut, lease eller overføre dem til en annen bruker unntatt slik det er tillatt etter denne avtalen.
+ 
+BEGRENSET GARANTI
+
+Dell garanterer at programvaremediene (hvis passende) er frie for materialdefekter og fabrikasjonsfeil 
+under normal bruk i 90 dager fra den datoen du mottok dem. Garantiendekningen gjelder bare for deg, og kan 
+ikke overføres. Eventuelle underforståtte garantier er begrenset til nitti 90 dager fra den datoen du mottok 
+Programvaren. Noen jurisdiksjoner tillater ikke begrensninger i varigheten av en underforstått garanti, så 
+denne begrensningen gjelder kanskje ikke for alle kunder. Hele ansvaret til Dell og deres leverandører og 
+ditt eksklusive rettsmiddel skal være, etter Dells beslutning, enten (a) avslutning av denne Avtalen og retur 
+av kjøpsprisen for progravaren eller (b) erstatning av medier som ikke oppfyller denne garantien som er 
+sendt med et returautorisasjonsnummer til Dell innenfor den 90-dagers garantiperioden for egen kostnad og 
+egen risiko. Denne begrensede garantien er ikke gjeldende hvis en mediaskade er forårsaket ved uhell, vold,
+ misbruk eller dersom service eller modifikasjon er utført av andre enn av Dell. Alle erstatningsmedier er 
+garantert for resten av den opprinnelige garantiperioden eller i 30 dager, det som er lengst.
+ 
+Dell og deres leverandører garanterer IKKE at funksjonene til programvaren vil tilfredsstille dine krav eller at 
+bruk av programvaren vil foregå uavbrutt eller feilfritt. Det er ditt ansvar å velge den programvaren som 
+oppfyller de tilsiktede resultatene, og for bruken og resultatene du oppnår med programvaren. Vilkårene i 
+denne avtalen gir deg ikke rett til vedlikehold eller støtte for programvaren. 
+
+DELL, PÅ VEGNE AV SEG SELV OG SINE LEVERANDØRER, FRASKRIVER SEG ALLE ANDRE 
+GARANTIER, UTTRYKTE, UNDERFORSTÅTTE ELLER ANNET, INKLUDERT, MEN IKKE BEGRENSET 
+TIL UNDERFORSTÅTTE GARANTIER FOR SALGBARHET OG EGNETHET TIL ET BESTEMT FORMÅL 
+ELLER NOEN GARANTI FOR EIENDOMSRETT ELLER MOT OVERTREDELSER, FOR PROGRAMVAREN 
+OG ALT VEDLAGT SKRIFTLIG MATERIELL Denne begrensede garantien gir forbrukeren bestemte juridiske 
+rettigheter. Det er også mulig at du har andre juridiske rettigheter som varierer fra jurisdiksjon til jurisdiksjon. 
+
+DELL ELLER DERES LEVERANDØRER SKAL IKKE I NOE TILFELLE HOLDES ANSVARLIGE FOR 
+EVENTUELLE SKADER (INKLUDERT OG UTEN BEGRENSNING, SKADER SOM FØRER TIL TAPT 
+FORTJENESTE, DRIFTSAVBRUDD, TAPT FORRETNINGSDATA ELLER DATA ELLER ANDRE 
+ØKONOMISKE TAP) SOM FØLGE AV BRUK ELLER MANGLENDE EVNE TIL Å BRUKE PROGRAMVAREN, 
+SELV OM DELL ER UNDERRETTET OM MULIGHETEN FOR SLIKE SKADER.. Fordi noen jurisdiksjoner ikke 
+tillater utelatelse eller ansvarsbegrensning for følgeskader eller tilfeldige skader, er det mulig at begrensningene 
+ovenfor ikke gjelder for alle kunder. 
+
+GRATISPROGRAMVARE MED ÅPEN KILDEKODE
+
+En del av Programvaren kan inneholde eller bestå av programvare med åpen kildekode. Denne kan du bruke i 
+henhold til vilkårene og betingelsene i den aktuelle lisensen som programvare fra åpen kilde er distribuert under.
+
+DENNE ÅPNE GRATISPROGRAMVAREN MED ÅPEN KILDEKODE ER DISTRIBUERT I HÅP OM AT DEN SKAL 
+KOMME TIL NYTTE, MEN DEN LEVERES "SOM DEN ER" (AS IS) UTEN NOEN UTTRYKTE, 
+UNDERFORSTÅTTE ELLER ANDRE GARANTIER; INKLUDERT, MEN IKKE BEGRENSET TIL EVENTUELL 
+UNDERFORSTÅTT GARANTI FOR SALGBARHET ELLER EGNETHET TIL ET BESTEMT FORMÅL ELLER 
+NOEN GARANTI FOR EIENDOMSRETT ELLER MOT OVERTREDELSE. DELL, OPPHAVSRETTINNEHAVERNE 
+ELLER DERES MEDVIRKENDE SKAL IKKE I NOE TILFELLE VÆRE ANSVARLIG FOR EVENTUELLE DIREKTE, 
+INDIREKTE, TILFELDIGE, SPESIELLE ELLER EKSEMPLARISKE SKADER ELLER FØLGESKADER 
+(INKLUDERT, MEN IKKE BEGRENSET TIL INNKJØP AV ERSTATNINGSVARER ELLER -TJENESTER, TAP 
+AV BRUK, DATA ELLER FORTJENESTE ELLER DRIFTSAVBRUDD), UANSETT ÅRSAK OG EVENTUELL 
+ANSVARSTEORI, ENTEN DETTE ER BASERT PÅ KONTRAKT, UTTRYKKELIG ANSVAR ELLER SIVILT 
+SØKSMÅL (INKLUDERT UAKTSOMHET ELLER ANNET) SOM OPPSTÅR SOM FØLGE AV BRUK AV DENNE 
+GRATISPROGRAMVAREN MED ÅPENKILDEKODE, SELV OM DET ER UNDERRETTET OM MULIGHETENE 
+FOR SLIK SKADE.
+
+Under visse lisenser for åpne programvarer har du rett til å motta de tilsvarende kildefilene. Du finner 
+korresponderende kildefiler for programvaren på http://opensource.dell.com eller på andre slike steder angitt av Dell.
+
+Eksporter
+
+Du informeres med dette om at Programvaren er underlagt både amerikanske eksportlover og lovene i landet det 
+leveres til eller brukes i. Du samtykker i å overholde disse lovene. I henhold til disse lovene kan ikke 
+programvaren selges, leases eller overføres til land underlagt restriksjoner (for øyeblikket Cuba, Iran, Nord-Korea, 
+Sudan og Syria), sluttbrukere underlagt restriksjoner eller sluttbruk underlagt restriksjoner. Du samtykker spesifikt 
+i at programvaren ikke skal brukes til aktiviteter som er relatert til masseutryddelsesvåpen, inkludert men ikke 
+begrenset til aktiviteter som er relatert til utforming, utvikling. produksjon eller bruk av kjernefysiske materialer, 
+kjernefysiske innretninger eller kjernefysiske våpen, raketter eller støtte for rakettprosjekter eller for kjemiske eller 
+biologiske våpen.  
+
+BEGRENSEDE RETTIGHETER IFØLGE USAS REGJERING
+
+Programvaren og dokumentasjonen er "kommersielle artikler", slik begrepet er definert i 48 C.F.R. 2.101, som 
+dekker "kommersiell dataprogramvare" og "kommersiell dataprogramvaredokumentasjon" slik begrepene er 
+definert i 48 C.F.R. 12.212. I samsvar med 48 C.F.R. 12.212 og 48 C.F.R. 227.7202-1 til og med 227.7202-4, 
+får alle statlige amerikanske sluttbrukere programvaren og dokumentasjonen kun med de rettighetene som er 
+nevnt i denne avtalen.. Kontraktør/produsent er Dell Products L.P., One Dell Way, Round Rock, Texas, 78682. 
+
+GENERELT
+
+Denne lisensen gjelder til den blir opphevet. Den oppheves på grunnlag av vilkårene som er fremsatt ovenfor, 
+eller dersom noen av vilkårene ikke blir overholdt. Ved opphør samtykker du i at programvaren og vedlagt 
+materiell, samt alle kopier av dette, skal tilintetgjøres. Denne Avtalen styres av lovene i delstaten Texas, uten 
+hensyn til prinsippene i motstridende lover. Alle bestemmelsene i denne avtalen fungerer separat. Hvis en 
+bestemmelse ikke kan håndheves, vil slik holdning ikke påvirke håndhevelsen av de andre bestemmelsene i 
+denne Avtalen. Denne avtalen er bindende for nye eiere og de som blir tilordnet den. Dell og du samtykker til 
+å fraskrive dere, i den utstrekning det er tillatt ved lov, eventuelle rettigheter til en rettssak med jury med hensyn 
+til programvaren eller denne avtalen. Siden denne fraskrivelsen ikke håndheves i alle jurisdiksjoner, gjelder 
+kanskje ikke denne fraskrivelsen for alle kunder. Du bekrefter at du har lest denne avtalen, at du har forstått 
+den, at du samtykker til å være bundet av betingelsene og at dette er den fullstendige og eksklusive erklæringen 
+av avtalen mellom deg og Dell vedrørende programvaren.
+ 
+Dell er et varemerke tilhørende Dell Inc. (rev. 101311)
+
+Den nye Dell-skriveren din er vedlagt patenterte utskriftspatroner spesielt priset for én enkelt bruk. Bruken av 
+denne patronen bekrefter ditt samtykke i én enkelt bruk. Etter denne ene bruken, avsluttes lisensen til å bruke 
+patronen. Patronen er laget silk at den slutter å fungere etter å ha levert et bestemt antall utskrifter. Vanlige 
+patroner, uten disse lisensvilkårene, er tilgjengelig for salg og kan fylles på. Hvis du ikke samtykker i disse 
+vilkårene, kan du kontakte Dell på www.dell.com/contactdell.
+
+Fastvareoppdateringer kan modifisere Dell-skriverinnstillinger og forårsake at falske og/eller uautoriserte 
+produkter, rekvisita, deler, materiell (f.eks. tonere), programvare eller grensesnitt slutter å fungere. Bruken av 
+ekte Dell- eller Dell-autoriserte produkter blir ikke påvirket.
+
+
+
+ADDITIONAL LICENSE TERMS FOR SUN MICROSYSTEMS, INC. SOFTWARE
+
+In addition to the foregoing, with respect to any Sun Microsystems, Inc. software ("Sun Software") licensed hereunder, the following terms apply:
+
+1. LICENSE RESTRICTIONS.  The Sun Software is licensed to Licensee only under the terms of this Agreement, and Sun reserves all rights not expressly granted to Licensee. Licensee may not use, copy, modify, or transfer the Sun Software, or any copy thereof, except as expressly provided for in this Agreement or by applicable law. Except as otherwise provided by law for purposes of decompilation of the Sun Software solely for inter-operability, error correction or security testing, Licensee may not reverse engineer, disassemble, decompile, or translate the Sun Software, or otherwise attempt to derive the source code of the Sun Software. Licensee may not rent, lease, loan, or sell the Sun Software, or any part of the Software. No right, title, or interest in or to any trademarks, service marks, or trade names of Sun or Sun's licensors is granted hereunder.
+
+2. AIRCRAFT PRODUCT AND NUCLEAR APPLICATIONS RESTRICTION.  Sun Software is not designed or intended for use in on-line control of aircraft, air traffic, aircraft navigation or aircraft communications; or in the design, construction, operation or maintenance of any nuclear facility.  Sun disclaims any express or implied warranty of fitness for such uses. Licensee warrants that it will not use or redistribute the Sun Software for such purposes.
+
+3. NO WARRANTY.  To the full extent permitted by law, the Sun Software is provided to licensee "AS IS". All express or implied conditions, representations, and warranties, including any implied warranty of merchantability, satisfactory quality, fitness for a particular purpose, or non-infringement, are disclaimed, except to the extent that such disclaimers are held to be legally invalid.
+
+4. LIMITATION OF DAMAGES.  To the extent not prohibited by applicable law, Sun's aggregate liability to Licensee or to any third party for claims relating to this agreement, whether for breach or in tort, will be limited to the fees paid by Licensee for Sun Software which is the subject matter of the claims. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. Liability for damages will be limited and excluded, even if any exclusive remedy provided for in this Agreement fails of its essential purpose.
+
+5. GOVERNMENT USER RIGHTS IN DATA: If procured by, or provided to, the U.S. Government, use, duplication, or disclosure of technical data is subject to restrictions as set forth in DFARS 252.227-7013(c) (1) (ii), FAR 52.227-14(g)(2), Rights in Data-General (June 1987); and for computer software and computer software documentation, FAR 52-227-19, Commercial Computer Software-Restricted Rights (June 1987). However, if under DOD, use, duplication, or disclosure of technical data is subject to DFARS 252.227-7015(b), Technical Data-Commercial Items (June 1995); and for computer software and computer software documentation, as specified in the license under which the computer software was procured pursuant to DFARS 227.7202-3(a).  Licensee shall not provide Sun Software nor technical data to any third party, including the U.S. Government, unless such third party accepts the same restrictions. Licensee is responsible for ensuring that proper notice is given to all such third parties and that the Sun Software and technical data are properly marked.
+
+6. EXPORT LAW.  Licensee acknowledges and agrees that the Sun Software and/or technology is subject to the U.S. Export Administration Laws and Regulations. Diversion of such Sun Software and/or technology contrary to U.S. law is prohibited. Licensee agrees that none of the Sun Software and/or technology, nor any direct product therefrom, is being or will be acquired for, shipped, transferred, or reexported, directly or indirectly, to proscribed or embargoed countries or their nationals, nor be used for nuclear activities, chemical biological weapons, or missile projects unless authorized by the U.S. Government. Proscribed countries are set forth in the U.S. Export Administration Regulations. Countries subject to U.S. embargo are: Cuba, Iran, Iraq, Libya, North Korea, Syria, and the Sudan. This list is subject to change without further notice from Sun, and Licensee must comply with the list as it exists in fact. Licensee certifies that it is not on the U.S. Department of Commerce's Denied Persons List or affiliated lists or on the U.S. Department of Treasury's Specially Designated Nationals List.  Licensee agrees to comply strictly with all U.S. export laws and assumes sole responsibility for obtaining licenses to export or re-export as may be required.  Licensee is responsible for complying with any applicable local laws and regulations, including but not limited to, the export and import laws and regulations of other countries.
+
+7. TRADEMARKS AND LOGOS.  This Agreement does not authorize Licensee to use any Sun name, trademark or logo. Licensee acknowledges that Sun owns the Java trademark and all Java-related trademarks, logos and icons including the Coffee Cup and Duke ("Java Marks") and agrees to:  (i) comply with the Java Trademark Guidelines at http://java.sun.com/trademarks.html; (ii) not do anything harmful to or inconsistent with Sun's rights in the Java Marks; and (iii) assist Sun in protecting those rights, including assigning to Sun any rights acquired by Licensee in any Java Mark.
+
+8. TERMINATION.  This Agreement is effective until terminated.  You may terminate this Agreement at any time by destroying all copies of Sun Software.  This Agreement will terminate immediately without notice from Sun if you fail to comply with any provision of this Agreement.  Upon Termination, you must destroy all copies of Sun Software.
+
+9. GOVERNING LAW.  Any action related to the Sun Software will be governed by California law and controlling U.S. federal law.  No choice of law rules of any jurisdiction will apply.
+
+10. SEVERABILITY.  If any provision of this Agreement is held to be unenforceable, this Agreement will remain in effect with the provision omitted, unless omission would frustrate the intent of the parties, in which case this Agreement will immediately terminate.
+
+11. INTEGRATION.  This Agreement is the entire agreement between you and Sun relating to its subject matter.  It supersedes all prior or contemporaneous oral or written communications, proposals, representations and warranties and prevails over any conflicting or additional terms of any quote, order, acknowledgment, or other communication between the parties relating to its subject matter during the term of this Agreement.  No modification of this Agreement will be binding, unless in writing and signed by an authorized representative of each party.
+
+
+EU2D-0027-NO

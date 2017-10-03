@@ -1,0 +1,181 @@
+DELL SOFTWARE-LIZENZVEREINBARUNG
+
+Dies ist ein rechtsgültiger Vertrag („Vertrag“) zwischen Ihnen, dem Nutzer, und Dell Products L.P oder Dell Global B.V. 
+(Niederlassung in Singapur), einem in Singapur ansässigen Zweig einer in den Niederlanden im Namen von Dell Inc. und an 
+Dell Inc. angeschlossene Gesellschaften (unter dem Oberbegriff „Dell“) gegründeten Gesellschaft mit beschränkter Haftung. 
+Dieser Vertrag betrifft sämtliche Software, die mit dem oder für das Dell-Produkt (sowie dessen Upgrades und 
+Aktualisierungen) verteilt wird, und für die keine eigene Lizenzvereinbarung zwischen Ihnen und dem Hersteller oder 
+Eigentümer der Software besteht (zusammengefasst unter dem Begriff „Software“). Dieser Vertrag hat nicht den Verkauf der 
+Software oder eines Immaterialgüterrechts zum Gegenstand. Sämtliche Eigentums- und Immaterialgüterrechte an der 
+Software bleiben beim Hersteller oder Eigentümer der Software. Sämtliche Rechte, die im Rahmen dieses Vertrages nicht 
+ausdrücklich gewährt werden, bleiben beim Hersteller oder Eigentümer der Software. Durch Öffnen oder Zerstören des 
+Siegels an der bzw. den Software-Packung(en), durch Installieren oder Herunterladen der Software oder durch Benutzen der 
+Software, die vorab heruntergeladen wurde oder in Ihr Produkt eingebettet ist, erklären Sie sich mit den Bestimmungen dieses 
+Vertrages einverstanden. Falls sie mit den Vertragsbestimmungen nicht einverstanden sind, sind Sie verpflichtet, sämtliche 
+zur Software gehörigen Gegenstände (Medien, schriftliches Material und Verpackungsmaterial) zurückzugeben und sämtliche 
+vorab heruntergeladene oder eingebettete Software zu löschen.
+ 
+Es ist Ihnen nur gestattet, immer nur eine Kopie der Software auf jeweils einem Dell-Computer oder einem Gerät zu nutzen. 
+Wenn Sie im Besitz von mehreren Lizenzen für die Software sind, dürfen Sie so viele Kopien gleichzeitig nutzen wie Sie 
+Lizenzen besitzen. „Benutzen“ bedeutet Laden der Software in einen Arbeitsspeicher oder Festwertspeicher auf dem Computer 
+oder dem Gerät. Eine Installation auf einem Netzserver lediglich zur Verteilung auf andere Computer oder Geräte stellt keine 
+„Benutzung“ dar, wenn (und nur wenn) Sie im Besitz einer eigenen Lizenz für jeden Computer oder jedes Gerät sind, an den 
+bzw. das die Software verteilt wird. Sie sind verpflichtet, sicherzustellen, dass die Anzahl der Personen, die die Software nutzen, 
+nachdem diese auf einem Netzserver installiert wurde, die Anzahl der von Ihnen erworbenen Lizenzen nicht übersteigt. Wenn 
+die Zahl der Nutzer der Software, die auf einem Netzserver installiert ist, die Zahl der Lizenzen übersteigt, sind Sie verpflichtet, 
+weitere Lizenzen zu erwerben, bis die Zahl der Lizenzen der Zahl der Nutzer entspricht, bevor Sie es zusätzlichen Nutzern 
+gestatten, die Software zu benutzen. Wenn Sie ein gewerblicher Kunde von Dell oder einem an Dell angeschlossenen 
+Unternehmen sind, gewähren Sie hiermit Dell oder einem von Dell gewählten Vertreter das Recht, während normaler 
+Geschäftszeiten ein Audit Ihrer Benutzung der Software durchzuführen, Sie erklären sich bereit, mit Dell im Rahmen eines 
+solchen Audits zu kooperieren, und sie erklären sich bereit, Dell sämtliche Aufzeichnungen zur Verfügung zu stellen, die nach 
+vernünftigem Ermessen mit Ihrer Benutzung der Software im Zusammenhang stehen. Das Audit erstreckt sich ausschließlich 
+auf die Verifizierung Ihrer Einhaltung der in diesem Vertrag niedergelegten Bestimmungen.
+ 
+Die Software wird geschützt durch die Gesetze der USA sowie durch andere geltende Urheberrechte und internationale 
+Verträge. Sie dürfen genau eine Kopie der Software lediglich für Sicherungs- oder Archivierungszwecke erstellen. Sie sind 
+verpflichtet, Urheberrechts- und andere Eigentumsvermerke auf und in sämtlichen Kopien der Software zu reproduzieren und 
+einzufügen. Es ist Ihnen nicht gestattet, die Software zu unterlizenzieren oder zu verleihen oder zu vermieten oder die 
+schriftlichen Materialien, die der Software beigefügt sind, zu kopieren, aber Sie haben das Recht, die Software und sämtliche 
+begleitenden Materialien dauerhaft als Teil eines Verkaufs oder einer Übergabe des Dell-Produkts weiterzugeben, wenn Sie 
+keine Kopien zurückbehalten und der Empfänger den Bestimmungen dieses Vertrages zustimmt. Jede Übertragung muss das 
+jüngste Update und sämtliche vorangehenden Versionen beinhalten. Sie dürfen die Software nicht zurückentwickeln, 
+dekompilieren oder disassemblieren, modifizieren oder Derivate davon erstellen. Wenn das Paket, das Ihrem Dell-Computer 
+oder -Gerät beigefügt ist, optische Laufwerke oder andere Speichermedien enthält, dürfen Sie nur die Medien verwenden, die 
+für Ihren Computer oder Ihr Gerät ausgelegt sind. Sie dürfen die optischen Laufwerke oder Speichermedien nicht auf einem 
+anderen Computer, Gerät oder Netz verwenden oder sie an andere Benutzer verleihen, vermieten, verleasen oder weitergeben, 
+außer soweit in diesem Vertrag ausdrücklich gestattet.
+ 
+EINGESCHRÄNKTE GARANTIE
+
+Dell garantiert für 90 Tage ab dem Kaufdatum bei normalem Gebrauch, dass die Software-Medien (falls vorhanden) frei von 
+Material- und Fertigungsfehlern sind. Diese Garantie ist auf Ihre Person beschränkt und nicht übertragbar. Jegliche konkludente 
+Garantie ist ab dem Erhalt der Software auf neunzig (90) Tage beschränkt. Manche Rechtssysteme erlauben keine 
+Beschränkungen der Dauer einer gesetzlichen Gewährleistung, daher gilt eine solche Beschränkung möglicherweise nicht für 
+Sie. Die Haftung durch Dell und seine Zulieferer und eine Ihnen geleistete Entschädigung geht nicht über Folgendes hinaus: 
+im Ermessen von Dell entweder (a) eine Auflösung dieses Vertrags und eine Rückerstattung des Kaufpreises für die Software 
+oder (b) ein Ersatz eines Mediums, das dieser Garantie nicht entspricht und das innerhalb der 90-tägigen Garantiefrist auf Ihre 
+Kosten und Ihr Risiko mit einer Retouren-Nummer an Dell zurückgeschickt wird. Die beschränkte Haftung ist hinfällig, wenn eine 
+Beschädigung eines Mediums die Folge eines Unfalls, eines Missbrauchs, eines Bedienungsfehlers oder einer Dienstleistung 
+oder Modifizierung durch jemand anderen als Dell ist. Für jedes Ersatzmedium wird eine Garantie für die restliche ursprüngliche 
+Garantie oder aber mindestens für 30 Tagen gewährt.
+ 
+Dell und seine Zulieferer garantieren NICHT, dass die Merkmale der Software Ihren Bedürfnissen entsprechen oder dass die 
+Software unterbrechungs- und fehlerfrei arbeitet. Die Verantwortung für die Wahl der Software, die den von Ihnen gewünschten 
+Ergebnissen dient, und für die Verwendung der Software und der damit erzielten Ergebnisse liegt bei Ihnen. Die Bestimmungen 
+dieses Vertrages beinhalten keinen Anspruch auf Software-Wartung oder -Support. 
+
+DELL SCHLIESST FÜR SICH UND SEINE ZULIEFERER SÄMTLICHE ANDEREN AUSDRÜCKLICHEN, 
+STILLSCHWEIGENDEN ODER ANDERWEITIGEN GARANTIEN IN BEZUG AUF DIE SOFTWARE UND SÄMTLICHE DAZU 
+GEHÖRIGEN SCHRIFTLICHEN MATERIALIEN AUS, WOZU UNTER ANDEREM STILLSCHWEIGENDE 
+GEWÄHRLEISTUNGEN DER MARKTTAUGLICHKEIT UND EIGNUNG FÜR EINEN BESTIMMTEN ZWECK SOWIE 
+JEGLICHE GEWÄHRLEISTUNG IN BEZUG AUF RECHTSTITEL ODER NICHTVERLETZUNG GEHÖREN. DURCH DIESE 
+BESCHRÄNKTE GARANTIE ERHALTEN SIE BESTIMMTE GESETZLICHE RECHTE, JE NACH RECHTSSYSTEM STEHEN 
+IHNEN MÖGLICHERWEISE WEITERE RECHTE ZU. 
+
+DELL ODER SEINE ZULIEFERER ÜBERNEHMEN IN KEINEM FALL EINE HAFTUNG FÜR IRGENDWELCHE SCHÄDEN 
+(WOZU UNTER ANDEREM SCHÄDEN AUFGRUND VON ENTGANGENEN UNTERNEHMENSGEWINNEN, 
+GESCHÄFTSUNTERBRECHUNGEN, VERLUST VON UNTERNEHMENSINFORMATIONEN ODER ANDEREN DATEN 
+ODER ANDERE VERMÖGENSVERLUSTE GEHÖREN), DIE AUS DER VERWENDUNG ODER DEM UNVERMÖGEN DER 
+VERWENDUNG DER SOFTWARE ENTSTEHEN, AUCH WENN AUF DIE MÖGLICHKEIT EINES SOLCHEN SCHADENS 
+HINGEWIESEN WURDE. DA MANCHE RECHTSSYSTEME EINEN HAFTUNGSAUSSCHLUSS ODER EINE 
+BESCHRÄNKUNG FÜR FOLGE- ODER NEBENSCHÄDEN NICHT ZULASSEN, GILT DIE OBIGE BESCHRÄNKUNG FÜR 
+SIE MÖGLICHERWEISE NICHT. 
+
+OPEN-SOURCE-SOFTWARE
+
+Bei einem Teil der Software handelt es sich gegebenenfalls um Open-Source-Software, die Sie unter den Bedingungen der 
+spezifischen Lizenz, unter der die Open-Source-Software zur Verfügung gestellt wird, nutzen können.
+
+DIESE OPEN SOURCE SOFTWARE WIRD IN DER HOFFNUNG WEITERGEGEBEN, DASS SIE VON NUTZEN SEIN 
+MÖGE, ABER SIE WIRD „WIE GEKAUFT“, OHNE JEDE AUSDRÜCKLICHE, STILLSCHWEIGENDE ODER ANDERWEITIGE 
+GARANTIE WEITERGEGEBEN, WAS UNTER ANDEREM AUCH DIE BESCHRÄNKTE HAFTUNG FÜR DIE 
+STILLSCHWEIGENDE GEWÄHRLEISTUNG EINER MARKTTAUGLICHKEIT ODER EIGNUNG FÜR EINEN BESTIMMTEN 
+ZWECK ODER EINE GARANTIE IN BEZUG AUF EIGENTUMSRECHTE ODER NICHTVERLETZUNG EINSCHLIESST. 
+AUF KEINEN FALL HAFTEN DELL, DIE INHABER DES URHEBERRECHTS, ODER DIE VERTREIBER FÜR UNMITTELBARE, 
+MITTELBARE, BEILÄUFIG ENTSTANDENE, SPEZIELLE ODER FOLGESCHÄDEN ODER ZU STRAFZWECKEN (DIES GILT 
+AUCH FÜR DIE BESCHAFFUNG VON ERSATZWAREN ODER -DIENSTLEISTUNGEN; NUTZUNGSAUSFALL, 
+DATENVERLUST, ENTGANGENEN GEWINN ODER BETRIEBSUNTERBRECHUNG) GLEICHGÜLTIG, WODURCH 
+VERURSACHT UND UNTER JEDER HAFTUNGSTHEORIE, SEI ES VERTRAGLICH ODER IM RAHMEN EINER 
+KAUSAL- ODER DELIKTHAFTUNG (EINSCHLIESSLICH FAHRLÄSSIGKEIT ODER SONSTIGEM), DIE IN 
+IRGENDWELCHER WEISE AUS DER VERWENDUNG DIESER SOFTWARE HERRÜHREN, AUCH DANN, WENN SIE AUF 
+DIE MÖGLICHKEIT SOLCHER SCHÄDEN HINGEWIESEN WURDEN.
+
+Manche Open Source Softwarelizenzen gestatten Ihnen, sich die entsprechenden Quelldateien zu beschaffen. Entsprechende 
+Quelldateien für die Software finden Sie unter http://opensource.dell.com oder an den von Dell angegebenen Stellen.
+
+EXPORT
+
+Es wird darauf hingewiesen, dass die Software den Exportgesetzen der Vereinigten Staaten („USA“) sowie den Gesetzen des 
+Landes unterliegt, in das sie geliefert bzw. in dem sie benutzt wird. Sie verpflichten sich, diese Gesetze zu befolgen. Diesen 
+Gesetzen zufolge darf die Software nicht an Länder oder Endnutzer oder für Endnutzer, die auf einer Verbotsliste stehen (dies 
+sind derzeit Kuba, Iran, Nordkorea, Sudan und Syrien), verkauft, vermietet oder weitergegeben werden. Sie erklären sich 
+ausdrücklich damit einverstanden, dass die Software nicht für Aktivitäten im Zusammenhang mit Massenvernichtungswaffen 
+verwendet wird, wozu unter anderem Aktivitäten gehören, die im Zusammenhang stehen mit dem Entwerfen, dem Entwickeln, 
+der Herstellung oder dem Einsatz von nuklearen Materialien, nuklearen Einrichtungen oder Nuklearwaffen, Lenkflugkörpern 
+oder der Unterstützung von Raketenprojekten oder chemischen und biologischen Waffen. 
+
+Eingeschränkte Rechte der US-amerikanischen Regierung
+
+Die Software und die Dokumentation sind „Handelsgüter“ gemäß 48 C.F.R. 2.101 und bestehen aus „kommerzieller 
+Computer-Software“ und „kommerzieller Computer Software Dokumentation“ gemäß der Verwendung dieser Begriffe in 48 
+C.F.R. 12.212. In Übereinstimmung mit 48 C.F.R. 12.212 und 48 C.F.R. 227.7202-1 bis 227.7202-4 erwerben sämtliche 
+Endnutzer als Angehörige der US-Regierung die Software und die Dokumentation nur mit den Rechten, die hierin aufgeführt 
+sind. Auftragsnehmer/Hersteller ist Dell Products L.P., One Dell Way, Round Rock, Texas, 78682. 
+
+ALLGEMEINE BESTIMMUNGEN
+
+Dieser Lizenzvertrag gilt bis zu seiner Kündigung. Sie endet unter den Bedingungen, die oben angegeben sind, oder falls 
+Sie es versäumen, ihre sämtlichen Bestimmungen zu befolgen. Sie verpflichten sich dazu, dass nach Lizenzablauf die 
+Software und die dazugehörigen Materialien sowie sämtliche Kopien davon zerstört werden. Dieser Vertrag unterliegt den 
+Gesetzen des Staates Texas, unabhängig von irgendwelchen Kollisionsprinzipien. Jede der Bestimmungen dieses Vertrags 
+kann abgetrennt werden. Falls sich herausstellt, dass eine der Bestimmungen nicht durchsetzbar ist, hat dies keinen Einfluss 
+auf die Durchsetzbarkeit der übrigen Bestimmungen dieses Vertrags. Der Vertrag ist bindend für Nachfolger und 
+Rechtsnachfolger. Sowohl Dell als auch Sie erklären den Verzicht auf jegliches Recht auf ein Schwurgerichtsverfahren im 
+Zusammenhang mit der Software oder diesem Vertrag. Eine solche Verzichtserklärung ist möglicherweise in manchen 
+Rechtssystemen nicht zulässig, und daher gilt diese Verzichtserklärung für Sie möglicherweise nicht. Sie erklären, dass Sie 
+diesen Vertrag gelesen und verstanden haben, dass Sie seine Bestimmungen einhalten werden, und dass dieser Vertrag die 
+vollständige und ausschließliche Vereinbarung zwischen Ihnen und Dell in Bezug auf die Software darstellt.
+ 
+Dell ist ein Warenzeichen der Dell Inc. (rev. 101311)
+
+Ihr neuer Dell-Drucker wird mit patentierten Druckerpatronen ausgeliefert, die speziell für eine einmalige Verwendung 
+verbilligt wurden. Die Verwendung dieser Druckerpatrone bestätigt Ihr Einverständnis zur einmaliger Nutzung. Nach dieser 
+einmaligen Verwendung endet die Lizenz zur Verwendung der Patrone. Die Druckerpatrone ist so ausgelegt, dass sie nach 
+einer festgelegten Druckleistung nicht mehr arbeitet. Reguläre Patronen, die diesen Lizenzbedingungen nicht unterliegen und 
+die wieder aufgefüllt werden können, können käuflich erworben werden. Wenn Sie diesen Bestimmungen nicht zustimmen, 
+wenden Sie sich bitte an Dell unter www.dell.com/contactdell.
+
+Firmware-Aktualisierungen können ggf. Dell-Druckereinstellungen ändern und dazu führen, dass gefälschte und/oder nicht 
+autorisierte Produkte, Verbrauchsgüter, Teile, Werkstoffe (z.B. Toner), Software oder Schnittstellen nicht länger funktionsfähig 
+sind. Verwendung von Dell oder von Dell autorisierten Produkten wird dadurch nicht beeinflusst.
+
+
+
+ADDITIONAL LICENSE TERMS FOR SUN MICROSYSTEMS, INC. SOFTWARE
+
+In addition to the foregoing, with respect to any Sun Microsystems, Inc. software ("Sun Software") licensed hereunder, the following terms apply:
+
+1. LICENSE RESTRICTIONS.  The Sun Software is licensed to Licensee only under the terms of this Agreement, and Sun reserves all rights not expressly granted to Licensee. Licensee may not use, copy, modify, or transfer the Sun Software, or any copy thereof, except as expressly provided for in this Agreement or by applicable law. Except as otherwise provided by law for purposes of decompilation of the Sun Software solely for inter-operability, error correction or security testing, Licensee may not reverse engineer, disassemble, decompile, or translate the Sun Software, or otherwise attempt to derive the source code of the Sun Software. Licensee may not rent, lease, loan, or sell the Sun Software, or any part of the Software. No right, title, or interest in or to any trademarks, service marks, or trade names of Sun or Sun's licensors is granted hereunder.
+
+2. AIRCRAFT PRODUCT AND NUCLEAR APPLICATIONS RESTRICTION.  Sun Software is not designed or intended for use in on-line control of aircraft, air traffic, aircraft navigation or aircraft communications; or in the design, construction, operation or maintenance of any nuclear facility.  Sun disclaims any express or implied warranty of fitness for such uses. Licensee warrants that it will not use or redistribute the Sun Software for such purposes.
+
+3. NO WARRANTY.  To the full extent permitted by law, the Sun Software is provided to licensee "AS IS". All express or implied conditions, representations, and warranties, including any implied warranty of merchantability, satisfactory quality, fitness for a particular purpose, or non-infringement, are disclaimed, except to the extent that such disclaimers are held to be legally invalid.
+
+4. LIMITATION OF DAMAGES.  To the extent not prohibited by applicable law, Sun's aggregate liability to Licensee or to any third party for claims relating to this agreement, whether for breach or in tort, will be limited to the fees paid by Licensee for Sun Software which is the subject matter of the claims. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. Liability for damages will be limited and excluded, even if any exclusive remedy provided for in this Agreement fails of its essential purpose.
+
+5. GOVERNMENT USER RIGHTS IN DATA: If procured by, or provided to, the U.S. Government, use, duplication, or disclosure of technical data is subject to restrictions as set forth in DFARS 252.227-7013(c) (1) (ii), FAR 52.227-14(g)(2), Rights in Data-General (June 1987); and for computer software and computer software documentation, FAR 52-227-19, Commercial Computer Software-Restricted Rights (June 1987). However, if under DOD, use, duplication, or disclosure of technical data is subject to DFARS 252.227-7015(b), Technical Data-Commercial Items (June 1995); and for computer software and computer software documentation, as specified in the license under which the computer software was procured pursuant to DFARS 227.7202-3(a).  Licensee shall not provide Sun Software nor technical data to any third party, including the U.S. Government, unless such third party accepts the same restrictions. Licensee is responsible for ensuring that proper notice is given to all such third parties and that the Sun Software and technical data are properly marked.
+
+6. EXPORT LAW.  Licensee acknowledges and agrees that the Sun Software and/or technology is subject to the U.S. Export Administration Laws and Regulations. Diversion of such Sun Software and/or technology contrary to U.S. law is prohibited. Licensee agrees that none of the Sun Software and/or technology, nor any direct product therefrom, is being or will be acquired for, shipped, transferred, or reexported, directly or indirectly, to proscribed or embargoed countries or their nationals, nor be used for nuclear activities, chemical biological weapons, or missile projects unless authorized by the U.S. Government. Proscribed countries are set forth in the U.S. Export Administration Regulations. Countries subject to U.S. embargo are: Cuba, Iran, Iraq, Libya, North Korea, Syria, and the Sudan. This list is subject to change without further notice from Sun, and Licensee must comply with the list as it exists in fact. Licensee certifies that it is not on the U.S. Department of Commerce's Denied Persons List or affiliated lists or on the U.S. Department of Treasury's Specially Designated Nationals List.  Licensee agrees to comply strictly with all U.S. export laws and assumes sole responsibility for obtaining licenses to export or re-export as may be required.  Licensee is responsible for complying with any applicable local laws and regulations, including but not limited to, the export and import laws and regulations of other countries.
+
+7. TRADEMARKS AND LOGOS.  This Agreement does not authorize Licensee to use any Sun name, trademark or logo. Licensee acknowledges that Sun owns the Java trademark and all Java-related trademarks, logos and icons including the Coffee Cup and Duke ("Java Marks") and agrees to:  (i) comply with the Java Trademark Guidelines at http://java.sun.com/trademarks.html; (ii) not do anything harmful to or inconsistent with Sun's rights in the Java Marks; and (iii) assist Sun in protecting those rights, including assigning to Sun any rights acquired by Licensee in any Java Mark.
+
+8. TERMINATION.  This Agreement is effective until terminated.  You may terminate this Agreement at any time by destroying all copies of Sun Software.  This Agreement will terminate immediately without notice from Sun if you fail to comply with any provision of this Agreement.  Upon Termination, you must destroy all copies of Sun Software.
+
+9. GOVERNING LAW.  Any action related to the Sun Software will be governed by California law and controlling U.S. federal law.  No choice of law rules of any jurisdiction will apply.
+
+10. SEVERABILITY.  If any provision of this Agreement is held to be unenforceable, this Agreement will remain in effect with the provision omitted, unless omission would frustrate the intent of the parties, in which case this Agreement will immediately terminate.
+
+11. INTEGRATION.  This Agreement is the entire agreement between you and Sun relating to its subject matter.  It supersedes all prior or contemporaneous oral or written communications, proposals, representations and warranties and prevails over any conflicting or additional terms of any quote, order, acknowledgment, or other communication between the parties relating to its subject matter during the term of this Agreement.  No modification of this Agreement will be binding, unless in writing and signed by an authorized representative of each party.
+
+
+EU2D-0027-DE
