@@ -50,6 +50,16 @@ file:
   /srv/fsphys/homedir-set-group.sh:
     mode: '0744'
     source: puppet:///modules/fsphys/srv/fsphys/homedir-set-group.sh
+  # Drucker-Konfiguration (Drucken mit Kerberos-Zugangsdaten)
+  /usr/lib/x86_64-linux-gnu/samba/smbspool_krb5_wrapper:
+    mode: '0700'
+    owner: root
+    group: root
+    require: Package[samba]
+  /usr/lib/cups/backend/smb:
+    ensure: link
+    target: /usr/lib/x86_64-linux-gnu/samba/smbspool_krb5_wrapper
+    require: Package[cups]
 
 # Dummy-Nutzer anlegen um zu verhindern, dass gnome-initial-setup nach der
 # Installation ausgeführt wird
@@ -156,6 +166,10 @@ package:
   keyutils:
     ensure: present
     before: Class[pam_mount]
+  samba:
+    ensure: present
+  smbclient:
+    ensure: present
   gnupg2:
     ensure: present
   curl:
