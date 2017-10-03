@@ -6,17 +6,14 @@
 # - GDM: camptocamp/gnome
 class fsphys::motd
 (
-	Optional[String]  $motd         = '',
-	Optional[Boolean] $dynamic_motd = true,
+	Numeric $cli_line_length = 80,
+	Boolean $dynamic_motd = true,
+	String  $motd         = '',
 )
 {
-	if !$motd {
-		$motd = ''
-	}
-
 	### CLI
-	# Append newline to message for console output
-	$motd_cli = "$motd\n"
+	# Word-wrap message and append newline for console output
+	$motd_cli = word_wrap("$motd\n", $cli_line_length)
 	class { motd:
 		content      => $motd_cli,
 		dynamic_motd => $dynamic_motd,
