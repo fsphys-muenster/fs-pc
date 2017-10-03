@@ -99,6 +99,12 @@ exec:
 
 ### GNOME-Einstellungen
 gnome::gsettings:
+  # Liste der aktivierten Shell-Erweiterungen
+  enabled-extensions:
+    schema: org.gnome.shell
+    key: enabled-extensions
+    value: "['LogOutButton@kyle.aims.ac.za']"
+    require: Package[gnome-shell-extension-log-out-button]
   # Benachrichtigungen über Software-Updates deaktivieren (Updates werden
   # automatisch durch das Paket „unattended-upgrades“ installiert)
   disable-update-notifications:
@@ -194,6 +200,8 @@ package:
     ensure: present
   ## Desktop
   ubuntu-gnome-desktop:
+    ensure: present
+  gnome-shell-extension-log-out-button:
     ensure: present
   ## Utility (GUI)
   gnuplot5-qt:
