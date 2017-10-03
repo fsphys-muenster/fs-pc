@@ -18,4 +18,18 @@ FS-Drucker_Dell-Color-MFP-S2825cdn:
     policy: allow
     users:
       - '@p0fsphys'
+# Informationen zu Druckern im NWZ:
+# https://www.uni-muenster.de/NWZ/Angebot/Drucken.html
+DCKP01:
+  ensure: printer
+  description: HP LaserJet 5100
+  location: Wilhelm-Klemm-Straße 9 (KP/TP), Raum 210
+  uri: ksmb://zivprint.uni-muenster.de/DCKP01
+  model: postscript-hp:0/ppd/hplip/HP/hp-laserjet_5100_series-ps.ppd
+DCLFTLASER-PS:
+  ensure: printer
+  description: HP LaserJet P4014dn
+  location: Wilhelm-Klemm-Straße 10 (IG1), Raum 747
+  uri: ksmb://zivprint2.uni-muenster.de/DCLFTLASER-PS
+  model: drv:///hpcups.drv/hp-laserjet_p4014dn.ppd
 
