@@ -14,6 +14,8 @@
   https://wiki.ubuntu.com/Security/Privileges
 - CUPS-Berechtigungen konfigurieren (/etc/cups/cupsd.conf)
 - FS-Platte mit ownCloud synchronisieren
+- Timeout/automatisch neu einbinden, falls die Verbindung zu den CIFS-Mounts
+  hängt? (Evtl. autofs statt pam_mount verwenden?)
 - Beim Neustart des PC erscheinen in den Foreman-Berichten Fehlermeldungen der
   Form „Failed to open TCP connection to nwzpuppet.nwz.wwu.de:8140
   (getaddrinfo: Name or service not known)“

@@ -30,7 +30,10 @@ true
   - nodev
   - nosuid
   server: nwz.wwu.de
-  path: dfs/Group/Fachbereiche/Physik/p0fsphys/
+  # Achtung!
+  # Im Pfad sollte kein Schrägstrich am Anfang oder am Ende angegeben werden!
+  # Das Einbinden funktioniert sonst wahrscheinlich nicht.
+  path: dfs/Group/Fachbereiche/Physik/p0fsphys
   mountpoint: "/home/%(DOMAIN_USER)/Fachschaftsplatte/"
 # Mount der persönlichen Netzlaufwerke der Nutzer.
 # Der einzige Weg, mit Home-Netzlaufwerken umzugehen, die jeweils
@@ -48,7 +51,7 @@ true
   # https://bugs.launchpad.net/debian/+source/samba/+bug/117730
   - nobrl
   server: nwz.wwu.de
-  path: dfs/home/a/%(DOMAIN_USER)/
+  path: dfs/home/a/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
 - extended_user_control: <user regex="yes">^b.*</user>
   fstype: cifs
@@ -57,7 +60,7 @@ true
   - nosuid
   - nobrl
   server: nwz.wwu.de
-  path: dfs/home/b/%(DOMAIN_USER)/
+  path: dfs/home/b/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
 - extended_user_control: <user regex="yes">^c.*</user>
   fstype: cifs
@@ -66,7 +69,7 @@ true
   - nosuid
   - nobrl
   server: nwz.wwu.de
-  path: dfs/home/c/%(DOMAIN_USER)/
+  path: dfs/home/c/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
 - extended_user_control: <user regex="yes">^d.*</user>
   fstype: cifs
@@ -75,7 +78,7 @@ true
   - nosuid
   - nobrl
   server: nwz.wwu.de
-  path: dfs/home/d/%(DOMAIN_USER)/
+  path: dfs/home/d/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
 - extended_user_control: <user regex="yes">^e.*</user>
   fstype: cifs
@@ -84,7 +87,7 @@ true
   - nosuid
   - nobrl
   server: nwz.wwu.de
-  path: dfs/home/e/%(DOMAIN_USER)/
+  path: dfs/home/e/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
 - extended_user_control: <user regex="yes">^f.*</user>
   fstype: cifs
@@ -93,7 +96,7 @@ true
   - nosuid
   - nobrl
   server: nwz.wwu.de
-  path: dfs/home/f/%(DOMAIN_USER)/
+  path: dfs/home/f/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
 - extended_user_control: <user regex="yes">^g.*</user>
   fstype: cifs
@@ -102,7 +105,7 @@ true
   - nosuid
   - nobrl
   server: nwz.wwu.de
-  path: dfs/home/g/%(DOMAIN_USER)/
+  path: dfs/home/g/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
 - extended_user_control: <user regex="yes">^h.*</user>
   fstype: cifs
@@ -111,7 +114,7 @@ true
   - nosuid
   - nobrl
   server: nwz.wwu.de
-  path: dfs/home/h/%(DOMAIN_USER)/
+  path: dfs/home/h/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
 - extended_user_control: <user regex="yes">^i.*</user>
   fstype: cifs
@@ -120,7 +123,7 @@ true
   - nosuid
   - nobrl
   server: nwz.wwu.de
-  path: dfs/home/i/%(DOMAIN_USER)/
+  path: dfs/home/i/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
 - extended_user_control: <user regex="yes">^j.*</user>
   fstype: cifs
@@ -129,7 +132,7 @@ true
   - nosuid
   - nobrl
   server: nwz.wwu.de
-  path: dfs/home/j/%(DOMAIN_USER)/
+  path: dfs/home/j/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
 - extended_user_control: <user regex="yes">^k.*</user>
   fstype: cifs
@@ -138,7 +141,7 @@ true
   - nosuid
   - nobrl
   server: nwz.wwu.de
-  path: dfs/home/k/%(DOMAIN_USER)/
+  path: dfs/home/k/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
 - extended_user_control: <user regex="yes">^l.*</user>
   fstype: cifs
@@ -147,7 +150,7 @@ true
   - nosuid
   - nobrl
   server: nwz.wwu.de
-  path: dfs/home/l/%(DOMAIN_USER)/
+  path: dfs/home/l/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
 - extended_user_control: <user regex="yes">^m.*</user>
   fstype: cifs
@@ -156,7 +159,7 @@ true
   - nosuid
   - nobrl
   server: nwz.wwu.de
-  path: dfs/home/m/%(DOMAIN_USER)/
+  path: dfs/home/m/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
 - extended_user_control: <user regex="yes">^n.*</user>
   fstype: cifs
@@ -165,7 +168,7 @@ true
   - nosuid
   - nobrl
   server: nwz.wwu.de
-  path: dfs/home/n/%(DOMAIN_USER)/
+  path: dfs/home/n/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
 - extended_user_control: <user regex="yes">^o.*</user>
   fstype: cifs
@@ -174,7 +177,7 @@ true
   - nosuid
   - nobrl
   server: nwz.wwu.de
-  path: dfs/home/o/%(DOMAIN_USER)/
+  path: dfs/home/o/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
 - extended_user_control: <user regex="yes">^p.*</user>
   fstype: cifs
@@ -183,7 +186,7 @@ true
   - nosuid
   - nobrl
   server: nwz.wwu.de
-  path: dfs/home/p/%(DOMAIN_USER)/
+  path: dfs/home/p/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
 - extended_user_control: <user regex="yes">^q.*</user>
   fstype: cifs
@@ -192,7 +195,7 @@ true
   - nosuid
   - nobrl
   server: nwz.wwu.de
-  path: dfs/home/q/%(DOMAIN_USER)/
+  path: dfs/home/q/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
 # Der reguläre Ausdruck für den Buchstaben „r“ muss modifiziert werden, damit
 # root nicht auch davon erfasst wird.
@@ -203,7 +206,7 @@ true
   - nosuid
   - nobrl
   server: nwz.wwu.de
-  path: dfs/home/r/%(DOMAIN_USER)/
+  path: dfs/home/r/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
 - extended_user_control: <user regex="yes">^s.*</user>
   fstype: cifs
@@ -212,7 +215,7 @@ true
   - nosuid
   - nobrl
   server: nwz.wwu.de
-  path: dfs/home/s/%(DOMAIN_USER)/
+  path: dfs/home/s/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
 - extended_user_control: <user regex="yes">^t.*</user>
   fstype: cifs
@@ -221,7 +224,7 @@ true
   - nosuid
   - nobrl
   server: nwz.wwu.de
-  path: dfs/home/t/%(DOMAIN_USER)/
+  path: dfs/home/t/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
 - extended_user_control: <user regex="yes">^u.*</user>
   fstype: cifs
@@ -230,7 +233,7 @@ true
   - nosuid
   - nobrl
   server: nwz.wwu.de
-  path: dfs/home/u/%(DOMAIN_USER)/
+  path: dfs/home/u/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
 - extended_user_control: <user regex="yes">^v.*</user>
   fstype: cifs
@@ -239,7 +242,7 @@ true
   - nosuid
   - nobrl
   server: nwz.wwu.de
-  path: dfs/home/v/%(DOMAIN_USER)/
+  path: dfs/home/v/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
 - extended_user_control: <user regex="yes">^w.*</user>
   fstype: cifs
@@ -248,7 +251,7 @@ true
   - nosuid
   - nobrl
   server: nwz.wwu.de
-  path: dfs/home/w/%(DOMAIN_USER)/
+  path: dfs/home/w/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
 - extended_user_control: <user regex="yes">^x.*</user>
   fstype: cifs
@@ -257,7 +260,7 @@ true
   - nosuid
   - nobrl
   server: nwz.wwu.de
-  path: dfs/home/x/%(DOMAIN_USER)/
+  path: dfs/home/x/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
 - extended_user_control: <user regex="yes">^y.*</user>
   fstype: cifs
@@ -266,7 +269,7 @@ true
   - nosuid
   - nobrl
   server: nwz.wwu.de
-  path: dfs/home/y/%(DOMAIN_USER)/
+  path: dfs/home/y/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
 - extended_user_control: <user regex="yes">^z.*</user>
   fstype: cifs
@@ -275,6 +278,6 @@ true
   - nosuid
   - nobrl
   server: nwz.wwu.de
-  path: dfs/home/z/%(DOMAIN_USER)/
+  path: dfs/home/z/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
 
