@@ -14,6 +14,12 @@ file:
     links: manage
     ignore: .gitkeep
     source: puppet:///modules/fsphys/etc/skel
+  # Einstellungen für den Display-Manager (GDM)
+  /var/lib/gdm3/.config:
+    ensure: directory
+    recurse: remote
+    links: manage
+    source: puppet:///modules/fsphys/var/lib/gdm3/.config
   # Einstellungen für PAM-Authentifizierung (/usr/share/pam-configs/)
   # (Zur Zeit verwendet, um Nutzergruppe neuer Home-Verzeichnisse auf p0fsphys
   # zu setzen)
