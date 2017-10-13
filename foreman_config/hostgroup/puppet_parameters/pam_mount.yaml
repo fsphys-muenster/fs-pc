@@ -29,6 +29,15 @@ true
   options:
   - nodev
   - nosuid
+  # Mit den NAS-Servern der IVV, die mit Windows Storage Server 2016 laufen
+  # (derzeit nwznas01 und nwznas02) gibt es mit den Standardeinstellungen von
+  # Samba Probleme (das Einbinden bleibt sporadisch minutenlang hängen). Diese
+  # Probleme haben mit den Änderungen des SMB-Protokolls in Windows Server 2016
+  # zu tun. Durch Angabe der SMB-Version 3.0 lassen sich diese (hoffentlich)
+  # umgehen.
+  # S. auch Linux-News der IVV4 vom 13.10.2017
+  # https://www.uni-muenster.de/NWZ/Aktuelles/feed_unix.html
+  - vers=3.0
   server: nwznas02.nwz.wwu.de
   # Achtung!
   # Im Pfad sollte kein Schrägstrich am Anfang oder am Ende angegeben werden!
@@ -50,6 +59,7 @@ true
   # S. z.B.
   # https://bugs.launchpad.net/debian/+source/samba/+bug/117730
   - nobrl
+  - vers=3.0
   server: nwznas01.nwz.wwu.de
   path: home_a/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -59,6 +69,7 @@ true
   - nodev
   - nosuid
   - nobrl
+  - vers=3.0
   server: nwznas01.nwz.wwu.de
   path: home_b/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -68,6 +79,7 @@ true
   - nodev
   - nosuid
   - nobrl
+  - vers=3.0
   server: nwznas01.nwz.wwu.de
   path: home_c/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -77,6 +89,7 @@ true
   - nodev
   - nosuid
   - nobrl
+  - vers=3.0
   server: nwznas01.nwz.wwu.de
   path: home_d/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -86,6 +99,7 @@ true
   - nodev
   - nosuid
   - nobrl
+  - vers=3.0
   server: nwznas01.nwz.wwu.de
   path: home_e/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -95,6 +109,7 @@ true
   - nodev
   - nosuid
   - nobrl
+  - vers=3.0
   server: nwznas02.nwz.wwu.de
   path: home_f/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -106,6 +121,7 @@ true
   - nodev
   - nosuid
   - nobrl
+  - vers=3.0
   server: nwznas02.nwz.wwu.de
   path: home_g/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -115,6 +131,7 @@ true
   - nodev
   - nosuid
   - nobrl
+  - vers=3.0
   server: nwznas02.nwz.wwu.de
   path: home_h/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -124,6 +141,7 @@ true
   - nodev
   - nosuid
   - nobrl
+  - vers=3.0
   server: nwznas02.nwz.wwu.de
   path: home_i/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -133,6 +151,7 @@ true
   - nodev
   - nosuid
   - nobrl
+  - vers=3.0
   server: nwznas02.nwz.wwu.de
   path: home_j/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -142,6 +161,7 @@ true
   - nodev
   - nosuid
   - nobrl
+  - vers=3.0
   server: nwznas02.nwz.wwu.de
   path: home_k/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -151,6 +171,7 @@ true
   - nodev
   - nosuid
   - nobrl
+  - vers=3.0
   server: nwznas03.nwz.wwu.de
   path: home_l/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -160,6 +181,7 @@ true
   - nodev
   - nosuid
   - nobrl
+  - vers=3.0
   server: nwznas03.nwz.wwu.de
   path: home_m/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -169,6 +191,7 @@ true
   - nodev
   - nosuid
   - nobrl
+  - vers=3.0
   server: nwznas03.nwz.wwu.de
   path: home_n/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -178,6 +201,7 @@ true
   - nodev
   - nosuid
   - nobrl
+  - vers=3.0
   server: nwznas03.nwz.wwu.de
   path: home_o/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -187,6 +211,7 @@ true
   - nodev
   - nosuid
   - nobrl
+  - vers=3.0
   server: nwznas03.nwz.wwu.de
   path: home_p/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -196,6 +221,7 @@ true
   - nodev
   - nosuid
   - nobrl
+  - vers=3.0
   server: nwznas03.nwz.wwu.de
   path: home_q/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -207,6 +233,7 @@ true
   - nodev
   - nosuid
   - nobrl
+  - vers=3.0
   server: nwznas03.nwz.wwu.de
   path: home_r/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -216,6 +243,7 @@ true
   - nodev
   - nosuid
   - nobrl
+  - vers=3.0
   server: nwznas04.nwz.wwu.de
   path: home_s/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -225,6 +253,7 @@ true
   - nodev
   - nosuid
   - nobrl
+  - vers=3.0
   server: nwznas04.nwz.wwu.de
   path: home_t/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -234,6 +263,7 @@ true
   - nodev
   - nosuid
   - nobrl
+  - vers=3.0
   server: nwznas04.nwz.wwu.de
   path: home_u/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -243,6 +273,7 @@ true
   - nodev
   - nosuid
   - nobrl
+  - vers=3.0
   server: nwznas04.nwz.wwu.de
   path: home_v/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -252,6 +283,7 @@ true
   - nodev
   - nosuid
   - nobrl
+  - vers=3.0
   server: nwznas04.nwz.wwu.de
   path: home_w/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -261,6 +293,7 @@ true
   - nodev
   - nosuid
   - nobrl
+  - vers=3.0
   server: nwznas04.nwz.wwu.de
   path: home_x/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -270,6 +303,7 @@ true
   - nodev
   - nosuid
   - nobrl
+  - vers=3.0
   server: nwznas04.nwz.wwu.de
   path: home_y/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
@@ -279,6 +313,7 @@ true
   - nodev
   - nosuid
   - nobrl
+  - vers=3.0
   server: nwznas04.nwz.wwu.de
   path: home_z/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
