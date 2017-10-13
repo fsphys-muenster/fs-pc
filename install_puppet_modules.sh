@@ -12,7 +12,6 @@ fi
 for module in \
 	 puppetlabs-apt \
 	  leoarnold-cups \
-	      cpick-gdebi \
 	 camptocamp-gnome \
 	   stbenjam-hash_resources \
 	 puppetlabs-motd \

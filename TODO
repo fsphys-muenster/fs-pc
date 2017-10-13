@@ -8,8 +8,8 @@
   (Firefox: Addons können nicht installiert werden;
   Thunderbird: Stürzt beim Beenden des Programms ab?)
 - Nutzer werden nur ihrer Hauptgruppe zugeordnet – warum fehlen die Zusatzgruppen?
-  → Mit enumerate=True in sssd.conf funktioniert es
-  ⇒ Nachfragen, wie das auf nwzpuppet.nwz.wwu.de konfiguriert ist
+  → Mit enumerate=True in sssd.conf funktioniert es. Auf anderen Distributionen
+    (z.B. CentOS) scheint es aber auch ohne enumerate=True zu funktionieren.
 - Alle Nutzer zu den Gruppen cdrom und plugdev hinzufügen?
   https://wiki.ubuntu.com/Security/Privileges
 - CUPS-Berechtigungen konfigurieren (/etc/cups/cupsd.conf)
@@ -30,10 +30,6 @@
   („(rdconf1.c:598): pcre_exec: no match“… erscheint vor und nach MOTD)
 - Wie Nachrichten von pam_mount „(rdconf1.c:598): pcre_exec: no match“…
   deaktivieren?
-- Citrix Receiver mit gdebi statt mit dpkg installieren, damit die
-  Abhängigkeiten automatisch installiert werden.
-  Problem: Bei jeder Ausführung von puppet agent wird das Paket neuinstalliert
-  https://answers.launchpad.net/ubuntu/+source/gdebi/+question/658069
 - „user“-Ressourcen in Puppet für Nutzer aus dem Active Directory anlegen?
   (Eigenes Puppet-Modul?)
 - Können Dateiberechtigungen (Windows-ACL) auf den Netzlaufwerken (CIFS)

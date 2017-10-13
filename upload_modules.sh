@@ -5,9 +5,9 @@
 # auf nwzpuppet.nwz.wwu.de ($path/fsphys/files/private/) an den richtigen Ort
 # kopiert.
 
-path_default='/etc/puppetlabs/code/environments/p2fsphys/modules/'
-echo 'Bitte den gewünschten Zielpfad (…/modules/) angeben'
-echo "(Voreinstellung: $path_default)"
+path_default='/etc/puppetlabs/code/environments/p2fsphys'
+echo 'Bitte den gewünschten Zielpfad zur Foreman-Umgebung angeben'
+echo "(Voreinstellung: $path_default/)"
 read path
 if [ -z "$path" ]; then
 	path="$path_default"
@@ -20,14 +20,15 @@ read -r SSHPASS
 export SSHPASS
 stty echo
 
-sshpass -e rsync -avz modules/ "$user@nwzpuppet.nwz.wwu.de:$path"
+sshpass -e rsync -avz --delete \
+	modules/* "$user@nwzpuppet.nwz.wwu.de:$path/modules/"
 sshpass -e ssh "$user@nwzpuppet.nwz.wwu.de" \
-"cd '$path/fsphys/files/';"\
-"cp    private/keytab   srv/fsphys/;"\
-"cp    private/*.*      srv/fsphys/;"\
-"cp -r private/ff-meta/ usr/local/share/fonts/;"\
-"chgrp -R p2fsphys '$path';"\
-"chmod -R u=rwx,g=rwx,o-rwx '$path'"
+"cd '$path/';"\
+"cp    private/keytab   modules/fsphys/files/srv/fsphys/;"\
+"cp    private/*.*      modules/fsphys/files/srv/fsphys/;"\
+"cp -r private/ff-meta/ modules/fsphys/files/usr/local/share/fonts/;"\
+"chgrp -R p2fsphys '$path/modules/';"\
+"chmod -R u=rwx,g=rwxs,o-rwx '$path/modules/'"
 
 SSHPASS=''
 
