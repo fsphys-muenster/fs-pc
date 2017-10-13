@@ -183,6 +183,8 @@ package:
     ensure: present
   tree:
     ensure: present
+  p7zip:
+    ensure: present
   unp:
     ensure: present
   rdesktop:
@@ -244,11 +246,15 @@ package:
   ## Internet
   firefox:
     ensure: present
+  firefox-locale-de:
+    ensure: present
   torbrowser-launcher:
     ensure: present
   chromium-browser:
     ensure: present
   thunderbird:
+    ensure: present
+  thunderbird-locale-de:
     ensure: present
   xul-ext-ubufox:
     ensure: purged
