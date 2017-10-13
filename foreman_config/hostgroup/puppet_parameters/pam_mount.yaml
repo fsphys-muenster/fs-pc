@@ -23,8 +23,8 @@ true
 - nosuid
 
 --- # volume_definitions
-# Mount des Gruppenlaufwerks der Fachschaft
-- extended_user_control: <user regex="yes">^(?!root$)</user>
+# Einbinden des Gruppenlaufwerks der Fachschaft
+- extended_user_control: <user regex="yes">^(?!root$|gdm$)</user>
   fstype: cifs
   options:
   - nodev
@@ -98,7 +98,9 @@ true
   server: nwz.wwu.de
   path: dfs/home/f/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
-- extended_user_control: <user regex="yes">^g.*</user>
+# Der reguläre Ausdruck für den Buchstaben „g“ muss modifiziert werden, damit
+# gdm nicht auch davon erfasst wird.
+- extended_user_control: <user regex="yes">^(?!gdm$)g.*</user>
   fstype: cifs
   options:
   - nodev
