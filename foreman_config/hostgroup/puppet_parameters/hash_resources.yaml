@@ -102,6 +102,13 @@ exec:
     user: root
     refreshonly: true
     subscribe: File[/srv/fsphys]
+  # sejda (PDF-Werkzeug) installieren
+  install-icaclient:
+    command: apt install /srv/fsphys/sejda-console.deb
+    path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+    user: root
+    refreshonly: true
+    subscribe: File[/srv/fsphys]
 
 ### GNOME-Einstellungen
 gnome::gsettings:

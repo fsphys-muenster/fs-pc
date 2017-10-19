@@ -1,6 +1,10 @@
+- Home-Verzeichnisse durch Verwendung eines custom fact für Puppet zugänglich
+  machen
+- LAN-Antrag für pcfstest.nwz.wwu.de
 - Firefox-Startseite mit nützlichen Links für Fachschaftsarbeit erstellen
 - Firefox: „Welcome to Firefox“-Startseite deaktivieren
-- Scanner einrichten
+- Firefox: Standard-Suchmaschine einrichten
+- Scanner einrichten → Gibt es einen Linux-Treiber?
 - Test, ob Rechner bereits der Domäne beigetreten ist, schlägt in der neuesten
   Version des realmd-Moduls fehl. Siehe
   https://github.com/walkamongus/realmd/issues/36
@@ -8,14 +12,17 @@
   (Firefox: Addons können nicht installiert werden;
   Thunderbird: Stürzt beim Beenden des Programms ab?)
 - Nutzer werden nur ihrer Hauptgruppe zugeordnet – warum fehlen die Zusatzgruppen?
-  → Mit enumerate=True in sssd.conf funktioniert es. Auf anderen Distributionen
-    (z.B. CentOS) scheint es aber auch ohne enumerate=True zu funktionieren.
+  → Mit enumerate=True und ldap_use_tokengroups=False in sssd.conf funktioniert
+    es. Auf anderen Distributionen (z.B. CentOS) scheint es aber auch ohne zu
+    funktionieren.
+  https://bugs.launchpad.net/ubuntu/+source/sssd/+bug/1317949
 - Alle Nutzer zu den Gruppen cdrom und plugdev hinzufügen?
   https://wiki.ubuntu.com/Security/Privileges
+- Drucker werden mit jeder Puppet-Ausführung neu angelegt
+  https://github.com/leoarnold/puppet-cups/issues/12
 - CUPS-Berechtigungen konfigurieren (/etc/cups/cupsd.conf)
+  → Brauchen Nutzer überhaupt die Berechtigung, Drucker hinzuzufügen?
 - FS-Platte mit ownCloud synchronisieren
-- Timeout/automatisch neu einbinden, falls die Verbindung zu den CIFS-Mounts
-  hängt? (Evtl. autofs statt pam_mount verwenden?)
 - Beim Neustart des PC erscheinen in den Foreman-Berichten Fehlermeldungen der
   Form „Failed to open TCP connection to nwzpuppet.nwz.wwu.de:8140
   (getaddrinfo: Name or service not known)“

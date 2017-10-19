@@ -26,21 +26,31 @@ sssd:
   services: nss,pam
 domain/nwz.wwu.de:
   ad_domain: nwz.wwu.de
+  krb5_realm: nwz.wwu.de
   access_provider: ad
   id_provider: ad
   cache_credentials: 'True'
   default_shell: /bin/bash
+  # Alle Nutzer as dem Active Directory abfragen und zur Nutzerdatenbank
+  # (z.B. getent passwd) hinzufügen, statt diese erst bei Bedarf (z.B. beim
+  # Login) abzufragen
   enumerate: 'True'
-  krb5_realm: nwz.wwu.de
   krb5_store_password_if_offline: 'True'
   ldap_id_mapping: 'False'
   ldap_search_base: OU=Physik,OU=Fachbereiche,OU=Domain Members,DC=nwz,DC=wwu,DC=de
   ldap_group_search_base: OU=Physik,OU=Fachbereiche,OU=Domain Members,DC=nwz,DC=wwu,DC=de
   ldap_user_search_base: OU=Physik,OU=Fachbereiche,OU=Domain Members,DC=nwz,DC=wwu,DC=de
+  # Workaround, damit zusätzliche Gruppen eines Nutzers verlässlich zugeordnet
+  # werden (auch nach dem Login des betreffenden Nutzers).
+  # S. auch https://pagure.io/SSSD/sssd/issue/2667
+  ldap_use_tokengroups: 'False'
   override_homedir: /home/%u
   realmd_tags: manages-system joined-with-samba
-  # Ohne diese Einstellung schlägt der Login aus irgendeinem Grund mit dem
-  # Ergebnis (4 System Error) fehl
+  # Ohne diese Einstellung schlägt der Login mit dem Ergebnis (4 System Error)
+  # fehl. Die Logs zeigen, dass SSSD offenbar der Meinung ist, dass die
+  # Anmeldung von Nutzern am PC laut GPO nicht erlaubt sei. Da wir ohnehin
+  # keine GPO nutzen, kann auf deren Anwendung bzgl. Zugriffsrechten problemlos
+  # verzichtet werden.
   # S. auch https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=859445
   ad_gpo_access_control: permissive
 
