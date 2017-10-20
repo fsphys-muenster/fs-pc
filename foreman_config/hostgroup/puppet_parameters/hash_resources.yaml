@@ -90,21 +90,21 @@ exec:
     refreshonly: true
   # Citrix Receiver via APT installieren
   install-icaclient:
-    command: apt install /srv/fsphys/icaclient.deb
+    command: apt-get install /srv/fsphys/icaclient.deb
     path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
     user: root
     refreshonly: true
     subscribe: File[/srv/fsphys]
   # Dell-Druckertreiber für Dell Color MFP S2825cdn via APT installieren
   install-dell-printer-driver:
-    command: apt install /srv/fsphys/dell-color-mfp-s2825cdn.deb
+    command: apt-get install /srv/fsphys/dell-color-mfp-s2825cdn.deb
     path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
     user: root
     refreshonly: true
     subscribe: File[/srv/fsphys]
   # sejda (PDF-Werkzeug) installieren
   install-icaclient:
-    command: apt install /srv/fsphys/sejda-console.deb
+    command: apt-get install /srv/fsphys/sejda-console.deb
     path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
     user: root
     refreshonly: true

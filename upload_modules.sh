@@ -8,7 +8,7 @@
 path_default='/etc/puppetlabs/code/environments/p2fsphys'
 echo 'Bitte den gewünschten Zielpfad zur Foreman-Umgebung angeben'
 echo "(Voreinstellung: $path_default/)"
-read path
+read -r path
 if [ -z "$path" ]; then
 	path="$path_default"
 fi

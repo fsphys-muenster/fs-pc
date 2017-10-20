@@ -26,6 +26,9 @@
 - Beim Neustart des PC erscheinen in den Foreman-Berichten Fehlermeldungen der
   Form „Failed to open TCP connection to nwzpuppet.nwz.wwu.de:8140
   (getaddrinfo: Name or service not known)“
+- keytab nicht per Puppet verteilen, sondern nach der Installation per
+  Shell-Skript liefern
+- root-Passwort nach der Installation ändern
 
 - Symbol für kabelgebundenes Netzwerk in GNOME Shell zeigt an, dass keine
   Verbindung besteht, obwohl das Kabel verbunden ist und die Netzwerk-/
