@@ -132,17 +132,17 @@ gnome::gsettings:
   # Achtung! Das Logo wird so skaliert, dass es eine Höhe von 48px hat!
   # S.
   # https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/desktop_migration_and_administration_guide/customizing-login-screen
-  login-logo:
-    schema: org.gnome.login-screen
-    key: logo
-    value: "'/srv/fsphys/login-screen-logo.png'"
-    require: File[/srv/fsphys]
-  # Desktop-Hintergrundbild
-  desktop-background:
-    schema: org.gnome.desktop.background
-    key: picture-uri
-    value: "'file:///srv/fsphys/desktop-background.jpg'"
-    require: File[/srv/fsphys]
+#  login-logo:
+#    schema: org.gnome.login-screen
+#    key: logo
+#    value: "'/srv/fsphys/login-screen-logo.png'"
+#    require: File[/srv/fsphys]
+#  # Desktop-Hintergrundbild
+#  desktop-background:
+#    schema: org.gnome.desktop.background
+#    key: picture-uri
+#    value: "'file:///srv/fsphys/desktop-background.jpg'"
+#    require: File[/srv/fsphys]
   # Programme in der Seitenleiste („Dash“/„Favoriten“) der GNOME Shell
   launcher-apps:
     schema: org.gnome.shell
@@ -214,7 +214,9 @@ package:
   imagemagick:
     ensure: present
   ## Desktop
-  ubuntu-gnome-desktop:
+  ubuntu-desktop:
+    ensure: present
+  language-pack-de:
     ensure: present
   gnome-shell-extension-log-out-button:
     ensure: present
