@@ -1,7 +1,7 @@
-Name: Change group of home directory after creation
+Name: Execute fsphys script on login (home directory permissions, user groups)
 Default: yes
 Priority: 0
 Session-Type: Additional
 Session:
-	optional			pam_exec.so /srv/fsphys/homedir-set-group.sh
+	optional			pam_exec.so /srv/fsphys/pam-fsphys.sh
 

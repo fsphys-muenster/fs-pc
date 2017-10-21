@@ -53,9 +53,15 @@ file:
     recurse: remote
     source: puppet:///modules/fsphys/srv/fsphys
   # Skripte sollen ausführbar sein
+  /srv/fsphys/pam-fsphys.sh:
+    mode: '0744'
+    source: puppet:///modules/fsphys/srv/fsphys/pam-fsphys.sh
   /srv/fsphys/homedir-set-group.sh:
     mode: '0744'
     source: puppet:///modules/fsphys/srv/fsphys/homedir-set-group.sh
+  /srv/fsphys/user-set-groups.sh:
+    mode: '0744'
+    source: puppet:///modules/fsphys/srv/fsphys/user-set-groups.sh
   # Drucker-Konfiguration (Drucken mit Kerberos-Zugangsdaten)
   /usr/lib/x86_64-linux-gnu/samba/smbspool_krb5_wrapper:
     mode: '0700'

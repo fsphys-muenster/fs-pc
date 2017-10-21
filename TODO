@@ -11,19 +11,19 @@
 - Probleme mit Firefox/Thunderbird auf dem Netzlaufwerk?
   (Firefox: Addons können nicht installiert werden;
   Thunderbird: Stürzt beim Beenden des Programms ab?)
+  https://unix.stackexchange.com/q/398812
 - Nutzer werden nur ihrer Hauptgruppe zugeordnet – warum fehlen die Zusatzgruppen?
   → Mit enumerate=True und ldap_use_tokengroups=False in sssd.conf funktioniert
     es. Auf anderen Distributionen (z.B. CentOS) scheint es aber auch ohne zu
     funktionieren.
   https://bugs.launchpad.net/ubuntu/+source/sssd/+bug/1317949
-- Alle Nutzer zu den Gruppen cdrom und plugdev hinzufügen?
-  https://wiki.ubuntu.com/Security/Privileges
 - Drucker werden mit jeder Puppet-Ausführung neu angelegt
   https://github.com/leoarnold/puppet-cups/issues/12
 - FS-Platte mit ownCloud synchronisieren
 - Beim Neustart des PC erscheinen in den Foreman-Berichten Fehlermeldungen der
   Form „Failed to open TCP connection to nwzpuppet.nwz.wwu.de:8140
   (getaddrinfo: Name or service not known)“
+  → Probleme mit dem Wechsel zu systemd-resolved für DNS seit Ubuntu 16.10?
 - keytab nicht per Puppet verteilen, sondern nach der Installation per
   Shell-Skript liefern
 - root-Passwort nach der Installation ändern
@@ -38,6 +38,7 @@
   („(rdconf1.c:598): pcre_exec: no match“… erscheint vor und nach MOTD)
 - Wie Nachrichten von pam_mount „(rdconf1.c:598): pcre_exec: no match“…
   deaktivieren?
+  https://superuser.com/q/1260248
 - „user“-Ressourcen in Puppet für Nutzer aus dem Active Directory anlegen?
   (Eigenes Puppet-Modul?)
 - Können Dateiberechtigungen (Windows-ACL) auf den Netzlaufwerken (CIFS)

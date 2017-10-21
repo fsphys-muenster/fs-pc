@@ -2,17 +2,18 @@
 # Ändert die Gruppe des Home-Verzeichnisses einmalig auf p0fsphys.
 # Ist die Datei ~/.config/fsphys/firstlogin vorhanden, wird keine Änderung
 # durchgeführt.
+# Parameter #1: Der Nutzer, dessen Home-Verzeichnis verändert werden soll
 
-user=$PAM_USER
+user="$1"
 fsphys_config_path="/home/$user/.config/fsphys"
 firstlogin_path="$fsphys_config_path/firstlogin"
 
 # Nicht ausführen, wenn:
-# - $PAM_USER nicht gesetzt ist
+# - $user nicht gesetzt ist
 # - der Nutzer ein System-Account (UID < 1000) ist
 # - die Datei $fsphys_config_path bereits existiert
 if [ -z "$user" ] || \
-	[ $(id -u $user) -lt 1000 ] || \
+	[ $(id -u "$user") -lt 1000 ] || \
 	[ -f "$firstlogin_path" ]
 then
 	exit 0
