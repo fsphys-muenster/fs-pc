@@ -11,7 +11,7 @@ firstlogin_path="$fsphys_config_path/firstlogin"
 # - $PAM_USER nicht gesetzt ist
 # - der Nutzer ein System-Account (UID < 1000) ist
 # - die Datei $fsphys_config_path bereits existiert
-if [ -z "$PAM_USER" ] || \
+if [ -z "$user" ] || \
 	[ $(id -u $user) -lt 1000 ] || \
 	[ -f "$firstlogin_path" ]
 then
