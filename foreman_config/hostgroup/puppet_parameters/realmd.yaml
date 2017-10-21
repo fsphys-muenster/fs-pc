@@ -31,10 +31,7 @@ domain/nwz.wwu.de:
   id_provider: ad
   cache_credentials: 'True'
   default_shell: /bin/bash
-  # Alle Nutzer as dem Active Directory abfragen und zur Nutzerdatenbank
-  # (z.B. getent passwd) hinzufügen, statt diese erst bei Bedarf (z.B. beim
-  # Login) abzufragen
-  enumerate: 'True'
+  enumerate: 'False'
   krb5_store_password_if_offline: 'True'
   ldap_id_mapping: 'False'
   ldap_search_base: OU=Physik,OU=Fachbereiche,OU=Domain Members,DC=nwz,DC=wwu,DC=de

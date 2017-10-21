@@ -20,8 +20,6 @@
   https://wiki.ubuntu.com/Security/Privileges
 - Drucker werden mit jeder Puppet-Ausführung neu angelegt
   https://github.com/leoarnold/puppet-cups/issues/12
-- CUPS-Berechtigungen konfigurieren (/etc/cups/cupsd.conf)
-  → Brauchen Nutzer überhaupt die Berechtigung, Drucker hinzuzufügen?
 - FS-Platte mit ownCloud synchronisieren
 - Beim Neustart des PC erscheinen in den Foreman-Berichten Fehlermeldungen der
   Form „Failed to open TCP connection to nwzpuppet.nwz.wwu.de:8140
