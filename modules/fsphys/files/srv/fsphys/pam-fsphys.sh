@@ -5,7 +5,7 @@
 user=$PAM_USER
 
 if [ -z "$user" ]; then
-	exit 0
+	exit 1
 fi
 
 /srv/fsphys/homedir-set-group.sh "$user" && \
