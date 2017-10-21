@@ -221,7 +221,7 @@ package:
   gnome-shell-extension-log-out-button:
     ensure: present
   ## Utility (GUI)
-  gnuplot5-qt:
+  gnuplot-qt:
     ensure: present
   keepass2:
     ensure: present
