@@ -15,8 +15,6 @@
     es. Auf anderen Distributionen (z.B. CentOS) scheint es aber auch ohne zu
     funktionieren.
   https://bugs.launchpad.net/ubuntu/+source/sssd/+bug/1317949
-- Drucker werden mit jeder Puppet-Ausführung neu angelegt
-  https://github.com/leoarnold/puppet-cups/issues/12
 - FS-Platte mit ownCloud synchronisieren
 - Beim Neustart des PC erscheinen in den Foreman-Berichten Fehlermeldungen der
   Form „Failed to open TCP connection to nwzpuppet.nwz.wwu.de:8140
