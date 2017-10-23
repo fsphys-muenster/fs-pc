@@ -2,8 +2,6 @@
   machen
 - LAN-Antrag für pcfstest.nwz.wwu.de
 - Firefox-Startseite mit nützlichen Links für Fachschaftsarbeit erstellen
-- Firefox: „Welcome to Firefox“-Startseite deaktivieren
-- Firefox: Standard-Suchmaschine einrichten
 - Scanner einrichten → Gibt es einen Linux-Treiber?
 - Test, ob Rechner bereits der Domäne beigetreten ist, schlägt in der neuesten
   Version des realmd-Moduls fehl. Siehe
@@ -28,10 +26,9 @@
   Shell-Skript liefern
 - root-Passwort nach der Installation ändern
 
-- Symbol für kabelgebundenes Netzwerk in GNOME Shell zeigt an, dass keine
-  Verbindung besteht, obwohl das Kabel verbunden ist und die Netzwerk-/
+- Symbol für kabelgebundenes Netzwerk in GNOME Shell zeigt „Nicht verbunden“/
+  „Unmanaged“ an, obwohl das Kabel verbunden ist und die Netzwerk-/
   Internet-Verbindung funktioniert
-- Symbole auf dem Desktop (ja/nein? org.gnome.nautilus.desktop)
 - Soll außer Firefox/Thunderbird noch etwas auf das Netzlaufwerk synchronisiert
   werden? Falls ja: was?
 - pam_mount scheint beim Login zweimal ausgeführt zu werden?

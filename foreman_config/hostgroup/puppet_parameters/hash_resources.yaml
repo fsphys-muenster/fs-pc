@@ -119,11 +119,14 @@ exec:
 ### GNOME-Einstellungen
 gnome::gsettings:
   # Liste der aktivierten Shell-Erweiterungen
-  enabled-extensions:
-    schema: org.gnome.shell
-    key: enabled-extensions
-    value: "['LogOutButton@kyle.aims.ac.za']"
-    require: Package[gnome-shell-extension-log-out-button]
+# TODO: gnome-shell-extension-log-out-button funktioniert nicht mehr mit
+#       Ubuntu 17.10?
+#       https://bugs.launchpad.net/ubuntu/+source/gnome-shell-extension-log-out-button/+bug/1726325
+#  enabled-extensions:
+#    schema: org.gnome.shell
+#    key: enabled-extensions
+#    value: "['LogOutButton@kyle.aims.ac.za']"
+#    require: Package[gnome-shell-extension-log-out-button]
   # Benachrichtigungen über Software-Updates deaktivieren (Updates werden
   # automatisch durch das Paket „unattended-upgrades“ installiert)
   disable-update-notifications:
