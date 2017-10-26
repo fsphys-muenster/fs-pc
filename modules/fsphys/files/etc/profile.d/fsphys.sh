@@ -5,6 +5,4 @@
 # nicht ins Leere zeigen.
 mkdir -p ~/IVV4_I-Laufwerk/AppData/Mozilla/Firefox/
 mkdir -p ~/IVV4_I-Laufwerk/AppData/Thunderbird/
-# Platzhalter {$USER} in GTK-Lesezeichen ersetzen
-sed -i s/'{$USER}'/$(whoami)/g ~/.config/gtk-3.0/bookmarks 2>/dev/null
 

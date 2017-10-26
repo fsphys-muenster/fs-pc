@@ -203,6 +203,8 @@ package:
     ensure: present
   unp:
     ensure: present
+  pwgen:
+    ensure: present
   rdesktop:
     ensure: present
   wine-stable:

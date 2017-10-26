@@ -24,7 +24,7 @@ true
 
 --- # volume_definitions
 # Einbinden des Gruppenlaufwerks der Fachschaft
-- extended_user_control: <user regex="yes">^(?!root$|gdm$)</user>
+- sgrp: p0fsphys
   fstype: cifs
   options:
   - nodev
