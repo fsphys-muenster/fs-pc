@@ -209,6 +209,8 @@ package:
     ensure: present
   wine-stable:
     ensure: present
+  sshpass:
+    ensure: present
   # PDF-Werkzeuge
   ghostscript:
     ensure: present
