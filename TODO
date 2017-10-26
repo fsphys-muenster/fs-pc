@@ -24,9 +24,7 @@
   Shell-Skript liefern
 - root-Passwort nach der Installation ändern
 
-- Symbol für kabelgebundenes Netzwerk in GNOME Shell zeigt „Nicht verbunden“/
-  „Unmanaged“ an, obwohl das Kabel verbunden ist und die Netzwerk-/
-  Internet-Verbindung funktioniert
+- Dateien wie Thumbs.db, desktop.ini oder $RECYCLE.BIN verstecken
 - Soll außer Firefox/Thunderbird noch etwas auf das Netzlaufwerk synchronisiert
   werden? Falls ja: was?
 - pam_mount scheint beim Login zweimal ausgeführt zu werden?
@@ -34,6 +32,7 @@
 - Wie Nachrichten von pam_mount „(rdconf1.c:598): pcre_exec: no match“…
   deaktivieren?
   https://superuser.com/q/1260248
+  https://sourceforge.net/p/pam-mount/bugs/122/
 - „user“-Ressourcen in Puppet für Nutzer aus dem Active Directory anlegen?
   (Eigenes Puppet-Modul?)
 - Können Dateiberechtigungen (Windows-ACL) auf den Netzlaufwerken (CIFS)
