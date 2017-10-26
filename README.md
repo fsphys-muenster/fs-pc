@@ -8,3 +8,9 @@ Es wird, wenn nicht anders geschrieben, weder empfolen, noch Haftung dafür übe
 
 ### Zum Unterordner [`foreman_config`](foreman_config/)
 Alle komplexeren Einstellungen, die in der Administrationsoberfläche von [Foreman](https://theforeman.org/) insb. zu Puppet-Modulen getroffen wurden, sind hier nachgehalten.
+
+## Hinweise zu Backups
+Backups können von sudoern über folgenden Befehl erstellt werden:
+```
+sudo rsync -avz --exclude={"Fachschaftsplatte","IVV4_I-Laufwerk",".cache","ybbier","b_bier05","ysmay","s_may006"} /home/* ~/IVV4_I-Laufwerk/fspcbackup
+```
