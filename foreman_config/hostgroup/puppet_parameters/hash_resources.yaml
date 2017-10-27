@@ -20,6 +20,9 @@ file:
     recurse: remote
     links: manage
     source: puppet:///modules/fsphys/var/lib/gdm3/.config
+  # Vorgegebene Dateitypzuordnungen
+  /etc/xdg/mimeapps.list:
+    source: puppet:///modules/fsphys/etc/xdg/mimeapps.list
   # Einstellungen für PAM-Authentifizierung (/usr/share/pam-configs/)
   # (Zur Zeit verwendet, um Nutzergruppe neuer Home-Verzeichnisse auf p0fsphys
   # zu setzen)
@@ -44,8 +47,6 @@ file:
     ensure: directory
     recurse: remote
     source: puppet:///modules/fsphys/usr/lib/firefox/distribution
-    # Firefox-Konfiguration kann erst angelegt werden, nachdem Firefox
-    # installiert wurde
     require: Package[firefox]
   # FSPHYS-spezifische Ressourcen
   /srv/fsphys:
@@ -196,6 +197,8 @@ package:
   curl:
     ensure: present
   wget:
+    ensure: present
+  aptitude:
     ensure: present
   tree:
     ensure: present
