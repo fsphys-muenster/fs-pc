@@ -22,7 +22,7 @@ fi
 # Gruppe rekursiv ändern – aber nicht die Ordner
 # Fachschaftsplatte und IVV4_I-Laufwerk (Netzlaufwerke)
 find "/home/$user/" -maxdepth 1 \
-	! \( -o -name Fachschaftsplatte -o -name IVV4_I-Laufwerk \) \
+	! \( -name Fachschaftsplatte -o -name IVV4_I-Laufwerk \) \
 	-exec chgrp -hR p0fsphys {} +
 # s-Bit setzen, damit alle im Home-Verzeichnis erstellten Dateien die
 # Gruppe „erben“
