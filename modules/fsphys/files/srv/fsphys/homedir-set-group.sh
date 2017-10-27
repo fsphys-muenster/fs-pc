@@ -19,10 +19,14 @@ then
 	exit 0
 fi
 
-# Gruppe rekursiv ändern – aber nicht die Ordner
+# Gruppe des Home-Verzeichnisses ändern (nicht rekursiv!)
+chgrp p0fsphys "/home/$user/"
+# Gruppe der Unterordner rekursiv ändern – aber nicht die Ordner
 # Fachschaftsplatte und IVV4_I-Laufwerk (Netzlaufwerke)
-find "/home/$user/" -maxdepth 1 \
-	! \( -name Fachschaftsplatte -o -name IVV4_I-Laufwerk \) \
+find "/home/$user/" -mindepth 1 -maxdepth 1 \
+	! \( -path "/home/$user/Fachschaftsplatte" -o \
+		-path "/home/$user/IVV4_I-Laufwerk" \
+	\) \
 	-exec chgrp -hR p0fsphys {} +
 # s-Bit setzen, damit alle im Home-Verzeichnis erstellten Dateien die
 # Gruppe „erben“
