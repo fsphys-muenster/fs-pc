@@ -1,5 +1,3 @@
-- Home-Verzeichnisse durch Verwendung eines custom fact für Puppet zugänglich
-  machen
 - LAN-Antrag für pcfstest.nwz.wwu.de
 - Firefox-Startseite mit nützlichen Links für Fachschaftsarbeit erstellen
 - Scanner einrichten → Gibt es einen Linux-Treiber?
@@ -7,14 +5,8 @@
   Version des realmd-Moduls fehl. Siehe
   https://github.com/walkamongus/realmd/issues/36
 - Probleme mit Firefox/Thunderbird auf dem Netzlaufwerk?
-  (Firefox: Addons können nicht installiert werden;
-  Thunderbird: Stürzt beim Beenden des Programms ab?)
+  (Firefox: Addon-Installation ist problematisch)
   https://unix.stackexchange.com/q/398812
-- Nutzer werden nur ihrer Hauptgruppe zugeordnet – warum fehlen die Zusatzgruppen?
-  → Mit enumerate=True und ldap_use_tokengroups=False in sssd.conf funktioniert
-    es. Auf anderen Distributionen (z.B. CentOS) scheint es aber auch ohne zu
-    funktionieren.
-  https://bugs.launchpad.net/ubuntu/+source/sssd/+bug/1317949
 - FS-Platte mit ownCloud synchronisieren
 - Beim Neustart des PC erscheinen in den Foreman-Berichten Fehlermeldungen der
   Form „Failed to open TCP connection to nwzpuppet.nwz.wwu.de:8140
@@ -25,16 +17,12 @@
 - root-Passwort nach der Installation ändern
 
 - Dateien wie Thumbs.db, desktop.ini oder $RECYCLE.BIN verstecken
-- Soll außer Firefox/Thunderbird noch etwas auf das Netzlaufwerk synchronisiert
-  werden? Falls ja: was?
 - pam_mount scheint beim Login zweimal ausgeführt zu werden?
   („(rdconf1.c:598): pcre_exec: no match“… erscheint vor und nach MOTD)
 - Wie Nachrichten von pam_mount „(rdconf1.c:598): pcre_exec: no match“…
   deaktivieren?
   https://superuser.com/q/1260248
   https://sourceforge.net/p/pam-mount/bugs/122/
-- „user“-Ressourcen in Puppet für Nutzer aus dem Active Directory anlegen?
-  (Eigenes Puppet-Modul?)
 - Können Dateiberechtigungen (Windows-ACL) auf den Netzlaufwerken (CIFS)
   angezeigt/bearbeitet werden?
 - Das Betriebssystem eines Rechners, der mit einer selbst angelegten Version
