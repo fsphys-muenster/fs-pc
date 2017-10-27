@@ -27,8 +27,8 @@ sshpass -e ssh "$user@nwzpuppet.nwz.wwu.de" \
 "cp    private/keytab   modules/fsphys/files/srv/fsphys/;"\
 "cp    private/*.*      modules/fsphys/files/srv/fsphys/;"\
 "cp -r private/ff-meta/ modules/fsphys/files/usr/local/share/fonts/;"\
-"chgrp -R p2fsphys '$path/modules/';"\
-"chmod -R u=rwx,g=rwxs,o-rwx '$path/modules/'"
+"chgrp -R p2fsphys '$path/modules/'           2>/dev/null;"\
+"chmod -R u=rwx,g=rwxs,o-rwx '$path/modules/' 2>/dev/null"
 
 SSHPASS=''
 
