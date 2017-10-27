@@ -8,10 +8,6 @@
   (Firefox: Addon-Installation ist problematisch)
   https://unix.stackexchange.com/q/398812
 - FS-Platte mit ownCloud synchronisieren
-- Beim Neustart des PC erscheinen in den Foreman-Berichten Fehlermeldungen der
-  Form „Failed to open TCP connection to nwzpuppet.nwz.wwu.de:8140
-  (getaddrinfo: Name or service not known)“
-  → Probleme mit dem Wechsel zu systemd-resolved für DNS seit Ubuntu 16.10?
 - keytab nicht per Puppet verteilen, sondern nach der Installation per
   Shell-Skript liefern
 - root-Passwort nach der Installation ändern
@@ -19,15 +15,6 @@
 - Dateien wie Thumbs.db, desktop.ini oder $RECYCLE.BIN verstecken
 - pam_mount scheint beim Login zweimal ausgeführt zu werden?
   („(rdconf1.c:598): pcre_exec: no match“… erscheint vor und nach MOTD)
-- Wie Nachrichten von pam_mount „(rdconf1.c:598): pcre_exec: no match“…
-  deaktivieren?
-  https://superuser.com/q/1260248
-  https://sourceforge.net/p/pam-mount/bugs/122/
 - Können Dateiberechtigungen (Windows-ACL) auf den Netzlaufwerken (CIFS)
   angezeigt/bearbeitet werden?
-- Das Betriebssystem eines Rechners, der mit einer selbst angelegten Version
-  installiert wurde (z.B. Ubuntu_p2fsphys 17.04) wird nach der Installation
-  in Foreman (durch die automatische Weitergabe von Systeminformationen an
-  Foreman) auf das Betriebssystem mit dem „echten“ Namen (z.B. Ubuntu 17.04)
-  umgeschaltet, wenn ein solches existiert.
 
