@@ -75,6 +75,10 @@ file:
     owner: p0fsphys-sync
     mode: '0600'
     require: User[p0fsphys-sync]
+  /home/p0fsphys-sync/logrotate.conf:
+    owner: p0fsphys-sync
+    source: puppet:///modules/fsphys/home/p0fsphys-sync/logrotate.conf
+    require: User[p0fsphys-sync]
   # Drucker-Konfiguration (Drucken mit Kerberos-Zugangsdaten)
   /usr/lib/x86_64-linux-gnu/samba/smbspool_krb5_wrapper:
     mode: '0700'

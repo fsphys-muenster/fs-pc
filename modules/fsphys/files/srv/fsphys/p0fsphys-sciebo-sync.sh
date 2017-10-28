@@ -26,4 +26,5 @@ owncloudcmd -n -h --non-interactive \
 	2>&1 | ts "$ts_format" >> "$owncloudcmd_log"
 echo 'owncloudcmd done' | ts "$ts_format" >> "$owncloudcmd_log"
 sudo umount -l ~/p0fsphys/
+logrotate -s ~/logrotate_status ~/logrotate.conf
 
