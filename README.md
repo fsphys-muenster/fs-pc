@@ -12,5 +12,5 @@ Alle komplexeren Einstellungen, die in der Administrationsoberfläche von [Forem
 ## Hinweise zu Backups
 Backups können von sudoern über folgenden Befehl erstellt werden:
 ```
-sudo rsync -avz --exclude={"Fachschaftsplatte","IVV4_I-Laufwerk",".cache","ybbier","b_bier05","ysmay","s_may006"} /home/* ~/IVV4_I-Laufwerk/fspcbackup
+sudo rsync -avz --exclude=Fachschaftsplatte --exclude=IVV4_I-Laufwerk --exclude=.cache --exclude=ybbier --exclude=ysmay --exclude=b_bier05 --exclude=s_may006 /home/* ~/IVV4_I-Laufwerk/fspcbackup/
 ```
