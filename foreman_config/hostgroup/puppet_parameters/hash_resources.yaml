@@ -109,6 +109,7 @@ cron:
   p0fsphys-sync-owncloudcmd:
     command: /usr/bin/flock -n /tmp/p0fsphys-sciebo-sync.lock /srv/fsphys/p0fsphys-sciebo-sync.sh
     user: p0fsphys-sync
+    environment: PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
     # Synchronisation alle 20 Minuten ausführen
     minute:
       - 0

@@ -21,7 +21,7 @@ read -r SSHPASS
 export SSHPASS
 stty echo
 
-sshpass -e rsync -avz --delete \
+sshpass -e rsync -avz --no-perms --delete \
 	modules/* "$user@nwzpuppet.nwz.wwu.de:$path/modules/"
 sshpass -e ssh "$user@nwzpuppet.nwz.wwu.de" \
 "cd '$path/';"\
