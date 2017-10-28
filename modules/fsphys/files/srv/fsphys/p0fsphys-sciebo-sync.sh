@@ -21,7 +21,7 @@ mkdir -p ~/p0fsphys/
 sudo mount -t cifs //nwznas02.nwz.wwu.de/p0fsphys ~/p0fsphys/ \
 	-o "credentials=$HOME/fsphys_credentials,uid=$(id -u)$mount_opts"
 # owncloudcmd nur ausführen, falls mount erfolgreich war
-if [ $? -eq 0]; then
+if [ $? -eq 0 ]; then
 	owncloudcmd -n -h --non-interactive \
 		~/p0fsphys/G01/ \
 		https://uni-muenster.sciebo.de/remote.php/webdav/Fachschaft/Fachschaftsplatte \
