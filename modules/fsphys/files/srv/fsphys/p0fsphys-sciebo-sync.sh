@@ -20,11 +20,14 @@ owncloudcmd_log="$HOME/owncloudcmd.log"
 mkdir -p ~/p0fsphys/
 sudo mount -t cifs //nwznas02.nwz.wwu.de/p0fsphys ~/p0fsphys/ \
 	-o "credentials=$HOME/fsphys_credentials,uid=$(id -u)$mount_opts"
-owncloudcmd -n -h --non-interactive \
-	~/p0fsphys/G01/ \
-	https://uni-muenster.sciebo.de/remote.php/webdav/Fachschaft/Fachschaftsplatte \
-	2>&1 | ts "$ts_format" >> "$owncloudcmd_log"
-echo 'owncloudcmd done' | ts "$ts_format" >> "$owncloudcmd_log"
+# owncloudcmd nur ausführen, falls mount erfolgreich war
+if [ $? -eq 0]; then
+	owncloudcmd -n -h --non-interactive \
+		~/p0fsphys/G01/ \
+		https://uni-muenster.sciebo.de/remote.php/webdav/Fachschaft/Fachschaftsplatte \
+		2>&1 | ts "$ts_format" >> "$owncloudcmd_log"
+	echo 'owncloudcmd done' | ts "$ts_format" >> "$owncloudcmd_log"
+fi
 sudo umount -l ~/p0fsphys/
-logrotate -s ~/logrotate_status ~/logrotate.conf
+logrotate -l ~/logrotate.log -s ~/logrotate_status ~/logrotate.conf
 
