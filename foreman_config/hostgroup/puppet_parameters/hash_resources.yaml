@@ -63,6 +63,18 @@ file:
   /srv/fsphys/user-set-groups.sh:
     mode: '0755'
     source: puppet:///modules/fsphys/srv/fsphys/user-set-groups.sh
+  /srv/fsphys/p0fsphys-sciebo-sync.sh:
+    mode: '0755'
+    source: puppet:///modules/fsphys/srv/fsphys/p0fsphys-sciebo-sync.sh
+  # Zugriffsrechte auf Dateien mit Zugangsdaten für sciebo-Synchronisation
+  /home/p0fsphys-sync/fsphys_credentials:
+    owner: p0fsphys-sync
+    mode: '0600'
+    require: User[p0fsphys-sync]
+  /home/p0fsphys-sync/.netrc:
+    owner: p0fsphys-sync
+    mode: '0600'
+    require: User[p0fsphys-sync]
   # Drucker-Konfiguration (Drucken mit Kerberos-Zugangsdaten)
   /usr/lib/x86_64-linux-gnu/samba/smbspool_krb5_wrapper:
     mode: '0700'
@@ -74,12 +86,30 @@ file:
     target: /usr/lib/x86_64-linux-gnu/samba/smbspool_krb5_wrapper
     require: Package[cups]
 
-# Dummy-Nutzer anlegen um zu verhindern, dass gnome-initial-setup nach der
-# Installation ausgeführt wird
 user:
+  # Dummy-Nutzer anlegen um zu verhindern, dass gnome-initial-setup nach der
+  # Installation ausgeführt wird
   disable-gis:
     ensure: present
     managehome: true
+  # Account, der via cron das Netzlaufwerk der Fachschaft mit sciebo
+  # synchronisiert
+  p0fsphys-sync:
+    ensure: present
+    system: true
+    managehome: true
+
+### cron (periodisch ausgeführte Befehle)
+cron:
+  # Netzlaufwerk der Fachschaft mit sciebo-Projektbox synchronisieren
+  p0fsphys-sync-owncloudcmd:
+    command: /usr/bin/flock -n /tmp/p0fsphys-sciebo-sync.lock /srv/fsphys/p0fsphys-sciebo-sync.sh
+    user: p0fsphys-sync
+    # Synchronisation alle 20 Minuten ausführen
+    minute:
+      - 0
+      - 20
+      - 40
 
 ### Befehle
 exec:
@@ -110,7 +140,7 @@ exec:
     refreshonly: true
     subscribe: File[/srv/fsphys]
   # sejda (PDF-Werkzeug) installieren
-  install-icaclient:
+  install-sejda:
     command: apt-get install /srv/fsphys/sejda-console.deb
     path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
     user: root
@@ -162,13 +192,6 @@ gnome::gsettings:
 ### Software-Pakete
 package:
   ## Pakete zur Installation via APT
-  # Citrix Receiver von lokaler .deb-Datei installieren
-  # TODO- Dies sorgt dafür, dass das Paket jedes Mal neu installiert wird, wenn
-  #       Puppet ausgeführt wird (Provider dpkg und gdebi haben leider dasselbe
-  #       Problem).
-  #  citrix-receiver:
-  #    source: /srv/fsphys/icaclient.deb
-  #    subscribe: File[/srv/fsphys]
   ## Utility (Kommandozeile)
   # xmllint installieren, bevor pam_mount aktiviert wird
   # Das Puppet-Modul pam_mount verwendet xmllint, um die Konfigurationsdatei
@@ -208,11 +231,15 @@ package:
     ensure: present
   pwgen:
     ensure: present
+  sshpass:
+    ensure: present
+  moreutils:
+    ensure: present
   rdesktop:
     ensure: present
   wine-stable:
     ensure: present
-  sshpass:
+  owncloud-client-cmd:
     ensure: present
   # PDF-Werkzeuge
   ghostscript:

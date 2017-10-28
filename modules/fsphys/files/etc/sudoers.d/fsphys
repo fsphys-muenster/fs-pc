@@ -1,6 +1,10 @@
 # Den Gruppen p2fsphys (Y-Accounts der Fachschaft Physik) und p1fsphys
 # (W-Accounts der Fachschaft Physik) die gleichen sudo-Rechte geben wie root
 # bzw. der Gruppe sudo
-%p2fsphys	ALL=(ALL:ALL) ALL
-%p1fsphys	ALL=(ALL:ALL) ALL
+%p2fsphys      ALL=(ALL:ALL) ALL
+%p1fsphys      ALL=(ALL:ALL) ALL
+
+# Dem Nutzer p0fsphys-sync mount-Befehle erlauben, damit dieser die
+# Fachschaftsplatte einbinden kann
+p0fsphys-sync  ALL=(root) NOPASSWD: /bin/mount, /bin/umount
 

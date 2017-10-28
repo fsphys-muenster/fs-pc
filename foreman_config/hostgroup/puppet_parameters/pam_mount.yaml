@@ -205,7 +205,9 @@ true
   server: nwznas03.nwz.wwu.de
   path: home_o/%(DOMAIN_USER)
   mountpoint: "/home/%(DOMAIN_USER)/IVV4_I-Laufwerk/"
-- extended_user_control: <user regex="yes">^p.*</user>
+# Der reguläre Ausdruck für den Buchstaben „p“ muss modifiziert werden, damit
+# p0fsphys-sync nicht auch davon erfasst wird.
+- extended_user_control: <user regex="yes">^(?!p0fsphys-sync$)p.*</user>
   fstype: cifs
   options:
   - nodev
