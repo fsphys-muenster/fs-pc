@@ -17,6 +17,8 @@ mount_opts=',vers=3.0,nobrl,nodev,nosuid'
 ts_format='[%Y-%m-%d %H:%M:%S]'
 owncloudcmd_log="$HOME/owncloudcmd.log"
 
+logrotate -l ~/logrotate.log -s ~/logrotate_status ~/logrotate.conf
+
 mkdir -p ~/p0fsphys/
 sudo mount -t cifs //nwznas02.nwz.wwu.de/p0fsphys ~/p0fsphys/ \
 	-o "credentials=$HOME/fsphys_credentials,uid=$(id -u)$mount_opts"
@@ -29,5 +31,4 @@ if [ $? -eq 0 ]; then
 	echo 'owncloudcmd done' | ts "$ts_format" >> "$owncloudcmd_log"
 fi
 sudo umount -l ~/p0fsphys/
-logrotate -l ~/logrotate.log -s ~/logrotate_status ~/logrotate.conf
 
