@@ -1,9 +1,6 @@
 - LAN-Antrag für pcfstest.nwz.wwu.de
 - Firefox-Startseite mit nützlichen Links für Fachschaftsarbeit erstellen
 - Scanner einrichten → Gibt es einen Linux-Treiber?
-- Test, ob Rechner bereits der Domäne beigetreten ist, schlägt in der neuesten
-  Version des realmd-Moduls fehl. Siehe
-  https://github.com/walkamongus/realmd/issues/36
 - Probleme mit Firefox/Thunderbird auf dem Netzlaufwerk?
   (Firefox: Addon-Installation ist problematisch)
   https://unix.stackexchange.com/q/398812
@@ -12,6 +9,7 @@
 - root-Passwort nach der Installation ändern
 
 - Dateien wie Thumbs.db, desktop.ini oder $RECYCLE.BIN verstecken
+- Thumbs.db auf FS-Platte regelmäßig löschen
 - pam_mount scheint beim Login zweimal ausgeführt zu werden?
   („(rdconf1.c:598): pcre_exec: no match“… erscheint vor und nach MOTD)
 - Können Dateiberechtigungen (Windows-ACL) auf den Netzlaufwerken (CIFS)

@@ -244,6 +244,8 @@ package:
     ensure: present
   wine-stable:
     ensure: present
+  ttf-mscorefonts-installer:
+    ensure: present
   owncloud-client-cmd:
     ensure: present
   # PDF-Werkzeuge
