@@ -1,3 +1,8 @@
 --- # mail
 to: fsphys@uni-muenster.de
 
+--- # origins
+- "${distro_id}:${distro_codename}"
+- "${distro_id}:${distro_codename}-security"
+- "${distro_id}:${distro_codename}-updates"
+
