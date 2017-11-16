@@ -48,6 +48,14 @@ file:
     recurse: remote
     source: puppet:///modules/fsphys/usr/lib/firefox/distribution
     require: Package[firefox]
+  # Firefox-Addons
+  # S. auch https://developer.mozilla.org/en-US/Add-ons/Installing_extensions
+  # (ec8030f7-c20a-464f-9b0e-13a3a9e97384 ist die App-ID von Firefox)
+  /usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}:
+    ensure: directory
+    recurse: remote
+    source: puppet:///modules/fsphys/usr/share/mozilla/extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}
+    require: Package[firefox]
   # FSPHYS-spezifische Ressourcen
   /srv/fsphys:
     ensure: directory
@@ -314,10 +322,6 @@ package:
   thunderbird:
     ensure: present
   thunderbird-locale-de:
-    ensure: present
-  xul-ext-ubufox:
-    ensure: purged
-  xul-ext-ublock-origin:
     ensure: present
   enigmail:
     ensure: present
