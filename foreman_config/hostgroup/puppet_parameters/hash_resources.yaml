@@ -256,6 +256,10 @@ package:
     ensure: present
   owncloud-client-cmd:
     ensure: present
+  exfat-fuse:
+    ensure: present
+  exfat-utils:
+    ensure: present
   # PDF-Werkzeuge
   ghostscript:
     ensure: present
