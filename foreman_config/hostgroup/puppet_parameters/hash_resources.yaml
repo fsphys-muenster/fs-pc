@@ -350,6 +350,8 @@ package:
     ensure: present
   audacity:
     ensure: present
+  kdenlive:
+    ensure: present
   ## Programmierung
   git-all:
     ensure: present
