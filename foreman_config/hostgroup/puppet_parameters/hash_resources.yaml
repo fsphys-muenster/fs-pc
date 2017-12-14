@@ -291,6 +291,8 @@ package:
     ensure: present
   virtualbox-qt:
     ensure: present
+  breeze-icon-theme:
+    ensure: present
   ## Office
   libreoffice:
     ensure: present
