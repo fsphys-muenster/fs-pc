@@ -201,6 +201,11 @@ gnome::gsettings:
     schema: org.gnome.shell
     key: favorite-apps
     value: "['nautilus.desktop', 'firefox.desktop', 'thunderbird.desktop', 'texstudio.desktop', 'libreoffice-startcenter.desktop', 'yelp.desktop']"
+  # Erinnerung an Backups mit Déjà Dup deaktivieren
+  disable-deja-dup:
+    schema: org.gnome.DejaDup
+    key: prompt-check
+    value: "'disabled'"
 
 ### Software-Pakete
 package:
