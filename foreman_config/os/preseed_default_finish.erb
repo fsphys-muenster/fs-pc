@@ -57,5 +57,11 @@ https://help.ubuntu.com/lts/installation-guide/amd64/apb.html
 <%= snippet 'saltstack_setup' %>
 <% end -%>
 
+# swap file von 2 auf 8 GB vergrößern
+/sbin/swapoff /swapfile
+/bin/dd if=/dev/zero of=/swapfile bs=1M count=6144 oflag=append conv=notrunc
+/sbin/mkswap /swapfile
+/sbin/swapon /swapfile
+
 <%= snippet 'preseed_networking_setup' %>
 /usr/bin/wget --no-proxy --quiet --output-document=/dev/null --no-check-certificate <%= foreman_url('built') %>
