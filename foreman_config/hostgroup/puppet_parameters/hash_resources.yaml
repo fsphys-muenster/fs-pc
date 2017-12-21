@@ -265,6 +265,8 @@ package:
     ensure: present
   exfat-utils:
     ensure: present
+  htop:
+    ensure: present
   # PDF-Werkzeuge
   ghostscript:
     ensure: present
