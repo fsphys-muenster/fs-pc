@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Run in terminal
+Name[de]=In Terminal ausführen
+TryExec=gnome-terminal
+Exec=/srv/fsphys/run-terminal-emulator/run-terminal-emulator.sh %f
+Icon=utilities-terminal
+Categories=System;TerminalEmulator;
+NoDisplay=true
+MimeType=application/x-shellscript;
+

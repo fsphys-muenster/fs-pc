@@ -1,0 +1,2 @@
+msgid "Script execution completed. Press ENTER to close."
+msgstr "Ausführung des Skripts abgeschlossen. ENTER drücken zum Schließen."

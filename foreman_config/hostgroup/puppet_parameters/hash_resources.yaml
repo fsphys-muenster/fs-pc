@@ -23,6 +23,11 @@ file:
   # Vorgegebene Dateitypzuordnungen
   /etc/xdg/mimeapps.list:
     source: puppet:///modules/fsphys/etc/xdg/mimeapps.list
+  # Zusätzliche .desktop-Dateien
+  /usr/share/applications:
+    ensure: directory
+    recurse: remote
+    source: puppet:///modules/fsphys/usr/share/applications
   # Einstellungen für PAM-Authentifizierung (/usr/share/pam-configs/)
   # (Zur Zeit verwendet, um Nutzergruppe neuer Home-Verzeichnisse auf p0fsphys
   # zu setzen)
@@ -74,6 +79,9 @@ file:
   /srv/fsphys/p0fsphys-sciebo-sync.sh:
     mode: '0755'
     source: puppet:///modules/fsphys/srv/fsphys/p0fsphys-sciebo-sync.sh
+  /srv/fsphys/run-terminal-emulator/run-terminal-emulator.sh:
+    mode: '0755'
+    source: puppet:///modules/fsphys/srv/fsphys/run-terminal-emulator/run-terminal-emulator.sh
   # Zugriffsrechte auf Dateien mit Zugangsdaten für sciebo-Synchronisation
   /home/p0fsphys-sync/fsphys_credentials:
     owner: p0fsphys-sync
