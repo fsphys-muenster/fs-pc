@@ -5,6 +5,6 @@
 TEXTDOMAIN=run-terminal-emulator
 TEXTDOMAINDIR=/srv/fsphys/run-terminal-emulator/
 msg=$(gettext -s 'Script execution completed. Press ENTER to close.')
-gnome-terminal --working-directory=$(dirname "$1") -- \
-	sh -c "'$1' ; echo $msg ; read _"
+gnome-terminal --working-directory="$(dirname "$1")" -- \
+	sh -c "'$1' ; echo ; echo $msg ; read _"
 
