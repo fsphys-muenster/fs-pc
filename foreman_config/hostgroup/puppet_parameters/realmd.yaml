@@ -27,7 +27,6 @@ sssd:
 domain/nwz.wwu.de:
   ad_domain: nwz.wwu.de
   krb5_realm: nwz.wwu.de
-  access_provider: ad
   id_provider: ad
   cache_credentials: 'True'
   default_shell: /bin/bash
@@ -43,11 +42,3 @@ domain/nwz.wwu.de:
   ldap_use_tokengroups: 'False'
   override_homedir: /home/%u
   realmd_tags: manages-system joined-with-samba
-  # Ohne diese Einstellung schlägt der Login mit dem Ergebnis (4 System Error)
-  # fehl. Die Logs zeigen, dass SSSD offenbar der Meinung ist, dass die
-  # Anmeldung von Nutzern am PC laut GPO nicht erlaubt sei. Da wir ohnehin
-  # keine GPO nutzen, kann auf deren Anwendung bzgl. Zugriffsrechten problemlos
-  # verzichtet werden.
-  # S. auch https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=859445
-  ad_gpo_access_control: permissive
-
