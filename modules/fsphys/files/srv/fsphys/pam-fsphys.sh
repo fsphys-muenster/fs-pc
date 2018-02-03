@@ -11,3 +11,4 @@ fi
 /srv/fsphys/homedir-set-group.sh "$user" && \
 /srv/fsphys/user-set-groups.sh   "$user"
 
+true
