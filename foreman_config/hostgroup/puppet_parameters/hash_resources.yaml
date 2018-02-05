@@ -384,4 +384,5 @@ package:
     ensure: present
   php-cli:
     ensure: present
-
+  eclipse:
+    ensure: present
