@@ -105,6 +105,10 @@ file:
     ensure: link
     target: /usr/lib/x86_64-linux-gnu/samba/smbspool_krb5_wrapper
     require: Package[cups]
+  # Workaround für Problem mit TLS-Zertifikat von nwzcitrix.nwz.wwu.de
+  /opt/Citrix/ICAClient/keystore/cacerts/T-TeleSec_GlobalRoot_Class_2.pem:
+    ensure: link
+    target: /etc/ssl/certs/T-TeleSec_GlobalRoot_Class_2.pem
 
 user:
   # Dummy-Nutzer anlegen um zu verhindern, dass gnome-initial-setup nach der
