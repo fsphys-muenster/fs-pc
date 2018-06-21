@@ -20,6 +20,7 @@ file:
     recurse: remote
     links: manage
     source: puppet:///modules/fsphys/var/lib/gdm3/.config
+    require: Package[ubuntu-desktop]
   # Vorgegebene Dateitypzuordnungen
   /etc/xdg/mimeapps.list:
     source: puppet:///modules/fsphys/etc/xdg/mimeapps.list
@@ -109,6 +110,7 @@ file:
   /opt/Citrix/ICAClient/keystore/cacerts/T-TeleSec_GlobalRoot_Class_2.pem:
     ensure: link
     target: /etc/ssl/certs/T-TeleSec_GlobalRoot_Class_2.pem
+    require: Exec[install-icaclient]
 
 user:
   # Dummy-Nutzer anlegen um zu verhindern, dass gnome-initial-setup nach der
@@ -152,21 +154,29 @@ exec:
     refreshonly: true
   # Citrix Receiver via APT installieren
   install-icaclient:
-    command: apt-get install /srv/fsphys/icaclient.deb
+    command: apt-get -y install /srv/fsphys/icaclient.deb
     path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
     user: root
     refreshonly: true
     subscribe: File[/srv/fsphys]
   # Dell-Druckertreiber für Dell Color MFP S2825cdn via APT installieren
   install-dell-printer-driver:
-    command: apt-get install /srv/fsphys/dell-color-mfp-s2825cdn.deb
+    command: apt-get -y install /srv/fsphys/dell-color-mfp-s2825cdn.deb
     path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
     user: root
     refreshonly: true
     subscribe: File[/srv/fsphys]
   # sejda (PDF-Werkzeug) installieren
   install-sejda:
-    command: apt-get install /srv/fsphys/sejda-console.deb
+    command: apt-get -y install /srv/fsphys/sejda-console.deb
+    path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+    user: root
+    refreshonly: true
+    subscribe: File[/srv/fsphys]
+  # pdftk installieren, da es in Ubuntu 18.04 nicht mehr enthalten ist
+  # (Quelle: https://launchpad.net/ubuntu/+source/pdftk)
+  install-pdftk:
+    command: apt-get -y install /srv/fsphys/pdftk_2.02-4build1_amd64.deb
     path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
     user: root
     refreshonly: true
@@ -282,8 +292,9 @@ package:
   # PDF-Werkzeuge
   ghostscript:
     ensure: present
-  pdftk:
-    ensure: present
+  # pdftk fehlt in Ubuntu 18.04!
+#  pdftk:
+#    ensure: present
   pdf2svg:
     ensure: present
   pdfgrep:
@@ -329,8 +340,9 @@ package:
     ensure: present
   okular:
     ensure: present
-  pdfchain:
-    ensure: present
+  # Fehlt in Ubuntu 18.04, da pdftk dort nicht mehr enthalten ist
+#  pdfchain:
+#    ensure: present
   pdfshuffler:
     ensure: present
   scribus:
@@ -379,6 +391,10 @@ package:
   colordiff:
     ensure: present
   wdiff:
+    ensure: present
+  python3-pip:
+    ensure: present
+  python3-requests:
     ensure: present
   ipython3:
     ensure: present
