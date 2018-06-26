@@ -24,5 +24,5 @@ for module in \
 done
 # Berechtigungen setzen
 chgrp -R p2fsphys "$path"
-chmod -R u=rwx,g=rwx,o=rx "$path"
+chmod -R u=rwx,g=rwx,o-rwx "$path"
 

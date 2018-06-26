@@ -111,6 +111,13 @@ file:
     ensure: link
     target: /etc/ssl/certs/T-TeleSec_GlobalRoot_Class_2.pem
     require: Exec[install-icaclient]
+  # keytab für Active Directory-Join
+  /srv/fsphys/keytab_:
+    owner: root
+    group: root
+    mode: '0400'
+    source: puppet:///modules/fsphys/srv/fsphys/keytab
+    before: Class[realmd::join::keytab]
 
 user:
   # Dummy-Nutzer anlegen um zu verhindern, dass gnome-initial-setup nach der
@@ -140,6 +147,13 @@ cron:
 
 ### Befehle
 exec:
+  copy-keytab:
+    command: cp /srv/fsphys/keytab_ /srv/fsphys/keytab
+    path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+    user: root
+    refreshonly: true
+    subscribe: File[/srv/fsphys/keytab_]
+    before: Class[realmd::join::keytab]
   pam-auth-update:
     command: pam-auth-update --package
     path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -174,9 +188,13 @@ exec:
     refreshonly: true
     subscribe: File[/srv/fsphys]
   # pdftk installieren, da es in Ubuntu 18.04 nicht mehr enthalten ist
-  # (Quelle: https://launchpad.net/ubuntu/+source/pdftk)
+  # S. auch https://askubuntu.com/q/1029450
+  # Quellen für die Pakete:
+  #   https://launchpad.net/ubuntu/+source/pdftk
+  #   https://launchpad.net/ubuntu/artful/amd64/libgcj-common/
+  #   https://launchpad.net/ubuntu/artful/amd64/libgcj17/
   install-pdftk:
-    command: apt-get -y install /srv/fsphys/pdftk_2.02-4build1_amd64.deb
+    command: apt-get -y install /srv/fsphys/libgcj-common_6.4-3ubuntu1_all.deb /srv/fsphys/libgcj17_6.4.0-8ubuntu1_amd64.deb /srv/fsphys/pdftk_2.02-4build1_amd64.deb
     path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
     user: root
     refreshonly: true
@@ -292,6 +310,9 @@ package:
   # PDF-Werkzeuge
   ghostscript:
     ensure: present
+  gcc-6-base:
+    ensure: present
+    before: Exec[install-pdftk]
   # pdftk fehlt in Ubuntu 18.04!
 #  pdftk:
 #    ensure: present
