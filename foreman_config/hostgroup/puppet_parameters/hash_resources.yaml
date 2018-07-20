@@ -249,6 +249,9 @@ gnome::gsettings:
 
 ### Software-Pakete
 package:
+  # Amazon Web Launcher entfernen
+  ubuntu-web-launchers:
+    ensure: absent
   ## Pakete zur Installation via APT
   ## Utility (Kommandozeile)
   # xmllint installieren, bevor pam_mount aktiviert wird
