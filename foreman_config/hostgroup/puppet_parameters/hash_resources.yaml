@@ -43,10 +43,13 @@ file:
   # WWU-Schrift (FontFont Meta Office Pro) installieren
   # S. auch
   # https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/desktop_migration_and_administration_guide/configure-fonts
+  /usr/local/share/fonts:
+    ensure: directory
   /usr/local/share/fonts/ff-meta:
     ensure: directory
     recurse: remote
     source: puppet:///modules/fsphys/usr/local/share/fonts/ff-meta
+    require: File[/usr/local/share/fonts]
     notify: Exec[update-font-cache-local]
   # Globale Firefox-Einstellungen
   /usr/lib/firefox/distribution:
