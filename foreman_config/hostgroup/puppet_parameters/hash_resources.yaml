@@ -272,6 +272,11 @@ package:
   keyutils:
     ensure: present
     before: Class[pam_mount]
+  # CUPS und HP-Drucker-Treiber installieren, bevor Puppet-Modul „cups“
+  # aktiviert wird
+  hplip:
+    ensure: present
+    before: Class[cups]
   samba:
     ensure: present
   smbclient:

@@ -18,6 +18,7 @@ FS-Drucker_Dell-Color-MFP-S2825cdn:
     policy: allow
     users:
       - '@p0fsphys'
+  require: Exec[install-dell-printer-driver]
 # Informationen zu Druckern im NWZ:
 # https://www.uni-muenster.de/NWZ/Angebot/Drucken.html
 DCKP01:
@@ -27,6 +28,7 @@ DCKP01:
   uri: smb://zivprint.uni-muenster.de/DCKP01
   model: postscript-hp:0/ppd/hplip/HP/hp-laserjet_5100_series-ps.ppd
   accepting: true
+  require: File[/usr/lib/cups/backend/smb]
 DCLFTLASER-PS:
   ensure: printer
   description: HP LaserJet P4014dn
@@ -34,4 +36,5 @@ DCLFTLASER-PS:
   uri: smb://zivprint2.uni-muenster.de/DCLFTLASER-PS
   model: drv:///hpcups.drv/hp-laserjet_p4014dn.ppd
   accepting: true
+  require: File[/usr/lib/cups/backend/smb]
 
