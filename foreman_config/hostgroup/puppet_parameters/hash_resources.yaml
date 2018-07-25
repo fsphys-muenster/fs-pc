@@ -1,6 +1,21 @@
 --- # resources
 ### Dateien
+file_line:
+  # Proxy-Einstellungen der auf nwzpuppet eingerichteten Betriebssystem-
+  # Vorlage „Ubuntu 18.04 LTS“ (Bereitstellungsvorlage „aptproxy_Ubuntu_18_04“)
+  # entfernen
+  environment_proxy:
+    path: /etc/environment
+    match: ^https?_proxy=
+    match_for_absence: true
+    ensure: absent
+    multiple: true
 file:
+  # Proxy-Einstellungen der auf nwzpuppet eingerichteten Betriebssystem-
+  # Vorlage „Ubuntu 18.04 LTS“ (Bereitstellungsvorlage „aptproxy_Ubuntu_18_04“)
+  # entfernen
+  /etc/apt/apt.conf.d/proxy.conf:
+    ensure: absent
   # Einstellungen für sudo
   /etc/sudoers.d/fsphys:
     owner: root
