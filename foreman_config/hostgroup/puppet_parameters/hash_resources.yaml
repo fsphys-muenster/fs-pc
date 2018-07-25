@@ -123,11 +123,6 @@ file:
     before: Class[realmd::join::keytab]
 
 user:
-  # Dummy-Nutzer anlegen um zu verhindern, dass gnome-initial-setup nach der
-  # Installation ausgeführt wird
-  disable-gis:
-    ensure: present
-    managehome: true
   # Account, der via cron das Netzlaufwerk der Fachschaft mit sciebo
   # synchronisiert
   p0fsphys-sync:
@@ -255,6 +250,9 @@ package:
   # Amazon Web Launcher entfernen
   ubuntu-web-launchers:
     ensure: absent
+  # GNOME Initial Setup (Willkommensbildschirm beim ersten Login) entfernen
+  gnome-initial-setup:
+    ensure: absent
   ## Pakete zur Installation via APT
   ## Utility (Kommandozeile)
   # xmllint installieren, bevor pam_mount aktiviert wird
@@ -354,6 +352,8 @@ package:
   virtualbox-qt:
     ensure: present
   breeze-icon-theme:
+    ensure: present
+  gnome-system-monitor:
     ensure: present
   ## Office
   libreoffice:
