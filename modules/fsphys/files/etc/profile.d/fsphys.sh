@@ -7,6 +7,8 @@ if [ $(id -u) -ge 1000 ]; then
 	# nicht ins Leere zeigen.
 	mkdir -p ~/IVV4_I-Laufwerk/AppData/Mozilla/Firefox/
 	mkdir -p ~/IVV4_I-Laufwerk/AppData/Thunderbird/
+	# Platzhalter {$USER} in GTK-Lesezeichen ersetzen
+	sed -i s/'{$USER}'/$(whoami)/g ~/.config/gtk-3.0/bookmarks 2>/dev/null
 
 	# Leere sqlite-Dateien aus Firefox-Profilen entfernen.
 	# Diese rufen die Fehlermeldung „Das Lesezeichen- und Chronik-System wird
