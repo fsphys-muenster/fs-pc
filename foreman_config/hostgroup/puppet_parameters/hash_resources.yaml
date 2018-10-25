@@ -453,3 +453,5 @@ package:
     ensure: present
   eclipse:
     ensure: present
+  spyder3:
+    ensure: present
