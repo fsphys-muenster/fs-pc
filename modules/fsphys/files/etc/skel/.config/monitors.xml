@@ -77,4 +77,61 @@
       </monitor>
     </logicalmonitor>
   </configuration>
+  <configuration>
+    <logicalmonitor>
+      <x>0</x>
+      <y>0</y>
+      <scale>1</scale>
+      <monitor>
+        <monitorspec>
+          <connector>HDMI-1</connector>
+          <vendor>ENC</vendor>
+          <product>S1921</product>
+          <serial>Q1777117</serial>
+        </monitorspec>
+        <mode>
+          <width>1280</width>
+          <height>1024</height>
+          <rate>60.019741058349609</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+    <logicalmonitor>
+      <x>1280</x>
+      <y>0</y>
+      <scale>1</scale>
+      <monitor>
+        <monitorspec>
+          <connector>VGA-1</connector>
+          <vendor>HWP</vendor>
+          <product>HP 23xig</product>
+          <serial>3CM4320K2B</serial>
+        </monitorspec>
+        <mode>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>60</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+    <logicalmonitor>
+      <x>3200</x>
+      <y>0</y>
+      <scale>1</scale>
+      <primary>yes</primary>
+      <monitor>
+        <monitorspec>
+          <connector>eDP-1</connector>
+          <vendor>DEL</vendor>
+          <product>0x93d7</product>
+          <serial>0x00000001</serial>
+        </monitorspec>
+        <mode>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>60.160427093505859</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+  </configuration>
 </monitors>
