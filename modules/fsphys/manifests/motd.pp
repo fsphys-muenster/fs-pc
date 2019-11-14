@@ -9,6 +9,7 @@ class fsphys::motd
 	Numeric $cli_line_length = 80,
 	Boolean $dynamic_motd = true,
 	String  $motd         = '',
+	Boolean $show_user_list = false,
 )
 {
 	### CLI
@@ -37,5 +38,9 @@ class fsphys::motd
 		key    => banner-message-text,
 		value  => $motd_gsettings,
 	}
+	gnome::gsettings { fsphys-motd-gdm-nolist:
+		schema => 'org.gnome.login-screen',
+		key    => disable-user-list,
+		value  => !$show_user_list,
+	}
 }
-
