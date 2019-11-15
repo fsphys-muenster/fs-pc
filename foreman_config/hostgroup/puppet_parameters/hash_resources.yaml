@@ -370,6 +370,8 @@ package:
     ensure: present
   gnome-system-monitor:
     ensure: present
+  icc-profiles:
+    ensure: present
   ## Office
   libreoffice:
     ensure: present
