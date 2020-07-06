@@ -143,6 +143,9 @@ file:
     ensure: directory
   /etc/postfix/main.cf:
     source: puppet:///modules/fsphys/etc/postfix/main.cf
+  /etc/postfix/transport:
+    source: puppet:///modules/fsphys/etc/postfix/transport
+    notify: Exec[apply-postfix]
 
 user:
   # Account, der via cron das Netzlaufwerk der Fachschaft mit sciebo
@@ -224,6 +227,12 @@ exec:
   #   https://launchpad.net/ubuntu/artful/amd64/libgcj17/
   install-pdftk:
     command: apt-get -y install /srv/fsphys/libgcj-common_6.4-3ubuntu1_all.deb /srv/fsphys/libgcj17_6.4.0-8ubuntu1_amd64.deb /srv/fsphys/pdftk_2.02-4build1_amd64.deb
+    path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+    user: root
+    refreshonly: true
+    subscribe: File[/srv/fsphys]
+  apply-postfix:
+    command: postmap /etc/postfix/transport && postfix reload
     path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
     user: root
     refreshonly: true

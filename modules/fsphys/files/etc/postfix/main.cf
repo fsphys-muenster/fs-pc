@@ -46,4 +46,4 @@ inet_protocols = all
 smtputf8_enable = no
 message_size_limit = 0
 disable_vrfy_command = yes
-
+transport_maps = hash:/etc/postfix/transport
