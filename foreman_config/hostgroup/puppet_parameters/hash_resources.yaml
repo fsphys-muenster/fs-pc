@@ -98,6 +98,9 @@ file:
   /srv/fsphys/p0fsphys-sciebo-sync.sh:
     mode: '0755'
     source: puppet:///modules/fsphys/srv/fsphys/p0fsphys-sciebo-sync.sh
+  /srv/fsphys/p0fsphys-treediff.sh:
+    mode: '0755'
+    source: puppet:///modules/fsphys/srv/fsphys/p0fsphys-treediff.sh
   /srv/fsphys/run-terminal-emulator/run-terminal-emulator.sh:
     mode: '0755'
     source: puppet:///modules/fsphys/srv/fsphys/run-terminal-emulator/run-terminal-emulator.sh
@@ -136,6 +139,10 @@ file:
     mode: '0400'
     source: puppet:///modules/fsphys/srv/fsphys/keytab
     before: Class[realmd::join::keytab]
+  /etc/postfix:
+    ensure: directory
+  /etc/postfix/main.cf:
+    source: puppet:///modules/fsphys/etc/postfix/main.cf
 
 user:
   # Account, der via cron das Netzlaufwerk der Fachschaft mit sciebo
@@ -147,16 +154,25 @@ user:
 
 ### cron (periodisch ausgeführte Befehle)
 cron:
-  # Netzlaufwerk der Fachschaft mit sciebo-Projektbox synchronisieren
-  p0fsphys-sync-owncloudcmd:
-    command: /usr/bin/flock -n /tmp/p0fsphys-sciebo-sync.lock /srv/fsphys/p0fsphys-sciebo-sync.sh
+#  # Netzlaufwerk der Fachschaft mit sciebo-Projektbox synchronisieren
+#  p0fsphys-sync-owncloudcmd:
+#    command: /usr/bin/flock -n /tmp/p0fsphys-sciebo-sync.lock /srv/fsphys/p0fsphys-sciebo-sync.sh
+#    user: p0fsphys-sync
+#    environment: PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+#    # Synchronisation alle 20 Minuten ausführen
+#    minute:
+#      - 0
+#      - 20
+#      - 40
+  # Netzlaufwerk auf Änderungen überprüfen
+  p0fsphys-treediff:
+    # Nicht zeitgleich mit owncloud sync ausführen
+    command: /usr/bin/flock -n /tmp/p0fsphys-sciebo-sync.lock /srv/fsphys/p0fsphys-treediff.sh
     user: p0fsphys-sync
     environment: PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-    # Synchronisation alle 20 Minuten ausführen
-    minute:
-      - 0
-      - 20
-      - 40
+    # Jeden Mittwoch um 16 Uhr ausführen
+    weekday: 3
+    hour: 16
 
 ### Befehle
 exec:
@@ -349,6 +365,8 @@ package:
   libpodofo-utils:
     ensure: present
   imagemagick:
+    ensure: present
+  postfix:
     ensure: present
   ## Desktop
   ubuntu-desktop:
