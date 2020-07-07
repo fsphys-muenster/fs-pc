@@ -5,7 +5,7 @@ mount_opts=',vers=3.0,nobrl,nodev,nosuid'
 mkdir -p /home/p0fsphys-sync/p0fsphys/
 until sudo mount -t cifs //nwznas02.nwz.wwu.de/p0fsphys /home/p0fsphys-sync/p0fsphys/ \
 	-o "credentials=$HOME/fsphys_credentials,uid=$(id -u)$mount_opts"
-# owncloudcmd nur ausführen, falls mount erfolgreich war
+# Folgendes Skript erst ausführen, wenn mount erfolgreich war
 do
   sudo umount -l /home/p0fsphys-sync/p0fsphys/
   echo "Mount unsuccessful, trying again..."
