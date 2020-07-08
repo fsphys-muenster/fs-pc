@@ -176,6 +176,7 @@ cron:
     # Jeden Mittwoch um 16 Uhr ausführen
     weekday: 3
     hour: 16
+    minute: 0
 
 ### Befehle
 exec:
